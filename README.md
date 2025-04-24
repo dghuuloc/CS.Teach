@@ -1,4 +1,4 @@
-# CS.Teach
+# [CS.Teach]
 
 ```
 >>> KEYNOTES
@@ -23,3 +23,4 @@
 * [A Comprehensive Survey of Compression Algorithms for Language Models](https://arxiv.org/pdf/2401.15347)
 * [Understanding Compression of Large Language Models (LLMs)](https://medium.com/@sasirekharameshkumar/understanding-compression-of-large-language-models-2ee3b8a350a2)
 * [Prompt Compression: A Guide With Python Example](https://www.datacamp.com/tutorial/prompt-compression)
+* [Ensemble Models: What Are They and When Should You Use Them?](https://builtin.com/machine-learning/ensemble-model#:~:text=What%20Are%20Ensemble%20Models%3F,of%20building%20a%20single%20estimator.)
