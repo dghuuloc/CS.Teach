@@ -1,1 +1,17 @@
 # CS.Teach
+
+```
+>>> KEYNOTES
+- Challenges & Limitations of Large Language Models
+
+```
+
+## Reference
+* [Compressing Large Language Models (LLMs)](https://towardsdatascience.com/compressing-large-language-models-llms-9f406eea5b5e/)
+* [How to combine results from multiple retrievers](https://python.langchain.com/docs/how_to/ensemble_retriever/)
+* [Compression Techniques for Large Language Models — Learn Together — Part 5](https://medium.com/@anilguven1055/compression-techniques-for-large-language-models-learn-together-part-5-8c9ae13b0c04)
+* [DeltaZip: Efficient Serving of Multiple Full-Model-Tuned LLMs](https://dl.acm.org/doi/pdf/10.1145/3689031.3717468)
+* [Prompt Compression in Large Language Models (LLMs): Making Every Token Count](https://medium.com/@sahin.samia/prompt-compression-in-large-language-models-llms-making-every-token-count-078a2d1c7e03)
+* [LLMs == Compression](https://www.youtube.com/watch?v=2D2uRvW9A3w)
+* [LLMZip: Lossless Text Compression using Large Language Models](https://openreview.net/forum?id=jhCzPwcVbG)
+* 
