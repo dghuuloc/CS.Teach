@@ -24,3 +24,7 @@
 * [Understanding Compression of Large Language Models (LLMs)](https://medium.com/@sasirekharameshkumar/understanding-compression-of-large-language-models-2ee3b8a350a2)
 * [Prompt Compression: A Guide With Python Example](https://www.datacamp.com/tutorial/prompt-compression)
 * [Ensemble Models: What Are They and When Should You Use Them?](https://builtin.com/machine-learning/ensemble-model#:~:text=What%20Are%20Ensemble%20Models%3F,of%20building%20a%20single%20estimator.)
+* [A Comprehensive Guide to Ensemble Learning (with Python codes)](https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/)
+* [What is ensemble learning?](https://www.ibm.com/think/topics/ensemble-learning)
+* [ensemble modeling](https://www.techtarget.com/searchbusinessanalytics/definition/Ensemble-modeling)
+* [Ensemble Learning](https://www.geeksforgeeks.org/a-comprehensive-guide-to-ensemble-learning/)
