@@ -28,3 +28,6 @@
 * [What is ensemble learning?](https://www.ibm.com/think/topics/ensemble-learning)
 * [ensemble modeling](https://www.techtarget.com/searchbusinessanalytics/definition/Ensemble-modeling)
 * [Ensemble Learning](https://www.geeksforgeeks.org/a-comprehensive-guide-to-ensemble-learning/)
+* [Understanding Large Language Models (LLMs): A Comprehensive Overview](https://www.reddit.com/r/learnmachinelearning/comments/1h1awif/understanding_large_language_models_llms_a/)
+* [Artificial Intelligence for Beginners - A Curriculum](https://github.com/microsoft/AI-For-Beginners)
+* [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
