@@ -5,6 +5,7 @@
 - Challenges & Limitations of Large Language Models
 - Compression Algorithms for Large Language Models
 - A Survey on Model Compression for Large Language Models
+- compression multiple LLMs together ensemble models
 ```
 
 ## Reference
@@ -20,3 +21,4 @@
 * [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression)
 * [A Comprehensive Survey of Compression Algorithms for Language Models](https://arxiv.org/pdf/2401.15347)
 * [Understanding Compression of Large Language Models (LLMs)](https://medium.com/@sasirekharameshkumar/understanding-compression-of-large-language-models-2ee3b8a350a2)
+* [Prompt Compression: A Guide With Python Example](https://www.datacamp.com/tutorial/prompt-compression)
