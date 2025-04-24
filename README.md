@@ -9,6 +9,51 @@
 - ensemble Models
 ```
 
+```txt
+As you embark on learning about Large Language Models (LLMs), you might feel overwhelmed by the sheer amount of content available online. To ease this journey, I’ve compiled an overview of key topics in LLMs to help you grasp the concept in a structured way. Simply hearing about a new technology might not be enough to fully understand it, but breaking it down into digestible concepts and providing resources can be a great way to deepen your understanding.
+
+In this post, I’ll share important resources and topics to explore, which will help you build a solid foundation in the world of LLMs. If a topic catches your interest, I encourage you to dive deeper into it using the provided links. Each video will guide you through a specific aspect of LLMs, ranging from the basics to more advanced topics.
+
+Here’s an overview to get you started:
+
+1. Introduction to Large Language Models (LLMs)
+Get started with the basics of LLMs, what they are, and why they matter. Watch here
+
+2. Pretraining vs. Fine-tuning LLMs
+Learn the difference between pretraining and fine-tuning, two crucial steps in the development of LLMs. Watch here
+
+3. What are Transformers?
+Transformers are the backbone of many modern LLMs. Understand how this architecture works. Watch here
+
+4. How Does GPT-3 Really Work?
+Dive into the inner workings of one of the most well-known LLMs—GPT-3. Watch here
+
+5. Stages of Building an LLM from Scratch
+Explore the steps involved in building an LLM from the ground up. Watch here
+
+6. Coding an LLM Tokenizer from Scratch in Python
+A hands-on guide to understanding and building an LLM tokenizer. Watch here
+
+7. The GPT Tokenizer: Byte Pair Encoding
+Learn about one of the key techniques used in tokenization: Byte Pair Encoding (BPE). Watch here
+
+8. What are Token Embeddings?
+Understand the concept of token embeddings and their role in LLMs. Watch here
+
+9. The Importance of Positional Embeddings
+Explore how positional embeddings help LLMs understand the order of tokens in sequences. Watch here
+
+10. The Data Preprocessing Pipeline of LLMs
+Learn about the complex data preprocessing pipeline that powers LLMs. Watch here
+
+By exploring these videos, you’ll gain a clearer understanding of how LLMs work and the various components that contribute to their success. I encourage you to follow these resources in the order that works best for you and dive deeper into topics that pique your interest.
+
+If you have any questions or need further resources, feel free to ask! Happy learning
+
+
+```
+
+
 ## Reference
 * [Compressing Large Language Models (LLMs)](https://towardsdatascience.com/compressing-large-language-models-llms-9f406eea5b5e/)
 * [How to combine results from multiple retrievers](https://python.langchain.com/docs/how_to/ensemble_retriever/)
