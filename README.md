@@ -6,6 +6,7 @@
 - Compression Algorithms for Large Language Models
 - A Survey on Model Compression for Large Language Models
 - compression multiple LLMs together ensemble models
+- ensemble Models
 ```
 
 ## Reference
