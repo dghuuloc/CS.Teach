@@ -1,8 +1,8 @@
 # <p align="center"> Getting Started with LaTeX </p>
 ---
 
-## Document Formats and Layouts
-When starting a new blank project. The `\documentclass{article}` command specifies the document class. The second command `\usepackage[utf8]{inpuenc}` at this point. It is related to how the TeX compiler expects input and processes characters.
+## The structure of a LaTeX document
+When starting a new blank project. The `\documentclass{article}` command specifies the document class. The second command `\usepackage[utf8]{inputenc}` at this point. It is related to how the TeX compiler expects input and processes characters.
 ```tex
 \documentclass[12pt, oneside, a4paper]{article}
 \usepackage[utf8]{inputenc}
