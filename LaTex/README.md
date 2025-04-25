@@ -468,6 +468,12 @@ Another sentence follows.
 ## Bibliography
 In a thesis, it is often necessary to cite several references in a row. If you use multiple `\cite` commands `(\cite{ref1}\cite{ref2}\cite{ref3})`, the references will be displayed in separate blocks: [1][2][3]. If you want to display the references differently, it is possible to put the references in the same command, by separating them with commas. It is necessary to remove all spaces from the inside of the command: `\cite{ref1,ref2,ref3}`. The references are now displayed as [1,2,3]. To display the references in a "smarter way", it is also possible to use the cite package, and the reference will be displayed as [1-3].
 
+In most of my academic works follows the IEEE format, will show you how to set IEEE formatted References in your document.
+
+`\bibliographystyle{IEEEtran}` — will helps to determined the reference style need to follow, it can be either IEEE reference standards or anything else.
+
+`\bibliography{refer}` — this will link the .bib file with the .tex document, inside the curly brackets, users need to include the bibTex file name user created to include reference bibTexs. As per this example refer is the bib file name (refer.bib).
+
 ---
 ## LaTeX's other commands
 * `\& for & \% for %` for special characters use `\` other examples are # { $ _ " '
