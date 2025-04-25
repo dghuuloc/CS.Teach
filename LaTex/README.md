@@ -60,6 +60,10 @@ The foundation of any well structured paper, titles and subtitles are as easy in
 
 ## Bold, Italic & Underline
 Emphasizing key concepts it vital to ensure your work gets to your readers. As everything with LaTeX, it is quite intuitive!
+* `\textbf{Virtualisation}` With this command you cna bold the word you type in curly braces
+* `\textit{container}` With this command you can italicise the word you type inside curly braces.
+* `\emph{should not}` With this command you can emphasize(highlight) the word you type in curly braces
+* `\enumerate{Advantages}` With this command you can make an ordered list.
 * **Bold:** `\textbf{Bold}`
 * **Italic:** `\textit{Italic}`
 * **Underline:** `\underline{Underline}`
