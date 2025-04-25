@@ -284,3 +284,11 @@ While outside the scope here, there’s a few more things that you can do with/i
 Another sentence follows.
 \end{document}
 ```
+
+## Bibliography
+In a thesis, it is often necessary to cite several references in a row. If you use multiple `\cite` commands `(\cite{ref1}\cite{ref2}\cite{ref3})`, the references will be displayed in separate blocks: [1][2][3]. If you want to display the references differently, it is possible to put the references in the same command, by separating them with commas. It is necessary to remove all spaces from the inside of the command: `\cite{ref1,ref2,ref3}`. The references are now displayed as [1,2,3]. To display the references in a "smarter way", it is also possible to use the cite package, and the reference will be displayed as [1-3].
+
+## Layout
+Now, let’s talk about layout. LaTeX generally takes care of everything for you, but you may want to change some elements. For instance, LaTeX systematically remove the paragraph indent at the beginning of a chapter, a section or a subsection. To avoid such behavior, it is possible to use the package _indentfirst_. It is possible to set the indentation by using the `\setlength{\parindent}{1mm}`. This will set the indentation to 1mm from the place the command is written until a new `\setlength{\parindent}`. Note that it is also possible to change the space between paragraphs using a `\setlength{\parskip}{1mm}`.
+
+It is also possible to add an element to the table of contents. to do so, just use the `\addcontentsline`. This command is very useful, for instance to add the bibliography to the table of content, because it is not added by default. Beware, however, of the place where you put the command. In particular, at the beginning of a page (for instance after a `\newpage`) you may be a bit surprised. To avoid wrong page numbers, you can use the `\clearpage` command before the `\addcontentsline`.
