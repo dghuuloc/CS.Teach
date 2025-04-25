@@ -1,108 +1,283 @@
 # <p align="center"> Getting Started with LaTeX </p>
 ---
 
-## The structure of a LaTeX document
-When starting a new blank project. The `\documentclass{article}` command specifies the document class. The second command `\usepackage[utf8]{inputenc}` at this point. It is related to how the TeX compiler expects input and processes characters.
+## What are LaTeX Packages?
+A basic TeX distribution doesn't actually provide much functionality. In most cases, creating a LaTeX document will require packages that provide additional options or functionality. The packages generally come into use when you want to insert an image or graphics, colored texts, or a source code from a file into a document, etc.
+
+Packages required by a document are called in the **preamble** of your LaTeX document, i.e. before the `\begin{document}` statement. The syntax to do so is `\usepackage[options]{package_name}`, with the name of the package included in the brackets.
+
+## __Understanding `\documentclass [option] {type}`__
+A LaTeX document starts with the command `\documentclass [option] {type}`. The most common document-classes in LaTex are: ___Book___, ___Report___, ___Article___ or ___Letter___
+- An `article` does not provide `chapter`, whereas `book` and `report` do. Thus, the first structuring element of an `article` is `\section{name}`.
+- In a `book`, a header is automatically added to each page indicating the page number as well as the chapter name on even pages and the section name on odd pages
+- A `book` is always 2-sided whereas in a `report` or `article` you have to specify it by using the `twoside` option. In addition, in a `book` and `report` the `titlepage` and `abstract` will take a whole page each, which is not the case for `article`. In an `article`, you can use the options `titlepage` and `abstract`.
+
+### __Available document structure commands:__
+* **Book:** `\part{}`, `\chapter{}`, `\section{}`, `\subsection{}`, `\subsubsection{}`, `\paragraph{}`, `\subparagraph{}`.
+* **Report:** `\part{}`, `\chapter{}`, `\section{}`, `\subsection{}`, `\subsubsection{}`, `\paragraph{}`, `\subparagraph{}`.
+* **Article:** `\part{}`, `\section{}`, `\subsection{}`, `\subsubsection{}`, `\paragraph{}`, `\subparagraph{}`.
+* **Letter:** A letter does not know the same structuring commands as other formats, but more specific commands like `\signature{}`, `\address{}`, `\opening{}` and `\closing{}`.
+
+Except `\part{}`, all structuring commands build a hierarchy. They have a standard formating and numeration.
+
+## Understanding LaTeX Commands
+LaTeX commands begin with a backslash, followed by big or small letters, and are usually named in a descriptive way.
+
+Commands can have **parameters**, that is, options that determine in which way the command does its work. The values that we hand over as parameters are called **arguments**. They are given in curly braces or square brackets, as we will explain now.
+
+So, calling a command can look like this:
 ```tex
-\documentclass[12pt, oneside, a4paper]{article}
+\commandname[optional_argument]{main_argument}
+```
+Note, that all commands must be proceeded by the backslash mark and the main argument must be included inside `{..}` pair.
+
+Some commands have more than one arguments, for example:
+```tex
+\multicolumn{number of columns joined}{alignment}{content} 
+```
+Some commands do not need {} pair to work well, for example:
+```tex
+\item Text being item content
+```
+> [!NOTE]
+> __Commands, macros, and declarations__
+> 
+> Most LaTex commands, including those we define ourselves, consist of other commands. That's why LaTeX commands are also called __macros__, and the terms _macro_ and _command_ are used interchangeably. A command or macro the doesn't print something but just changes current settings, such as the font shape or text alignment, is also called a __declaration__.
+
+## Understanding LaTeX Environments
+Environment is a special type of command. LaTeX environments start with `\begin` and end with `\end`. Both commands require the name of the environment as their argument.
+
+General environment structure is as following:
+```tex
+\begin{environmentname}[optional argument]{main argument}
+  ...
+\end{environmentname}
+```
+Some environments take arguments and optional arguments, like commands. For example
+```tex
+\begin{tabular}[table position]{column specifications}
+ table content
+\end{tabular}
+```
+---
+## The preamble of a document
+The preamble in a LaTeX document is the space between the `\documentclass` and `\begin{document}` commands where you define the document class, include packages, specify properties, set page layout, and define custom commands. For example:
+```tex
+\documentclass[12pt, a4paper, twoside]{article}
 \usepackage[utf8]{inputenc}
-
-\title{The bare minimum guide to LaTeX}
-\author{Cookieblues}
-\date{April 2019}
-
-\begin{document}
-  \maketitle
-  \section{Introduction}
-\end{document}
-```
-
-## LaTex's Components
-Using document classes to influence design
-LaTeX is supplied with a set of standard classes, all of which look similar but with some variations:
-* **article**: intended for short documents and articles for publication. Articles do not have chapters, and when  `\maketitle` is used to generate a title (see Section 9), the title appears at the top of the first page rather than on a page of its own.
-* **report:** intended for longer technical documents. It is similar to article, except that it contains chapters and the title appears on a page of its own.
-* **book:** intended as a basis for book publication. Page layout is adjusted assuming that the output will eventually be used to print on both sides of the paper.
-* **letter:** intended for producing personal letters. This style will allow you to produce all the elements of a well laid out letter: addresses, date, signature, etc..
-* **slides**: for presentations
-
-## Introduction to Cover
-* **Title:**
-Hard to imagine a cover without a title, to define it just type `\title{My First Article in LaTeX!\vfill}` and give your work a title that suits it. For good measure, you should add `\vfill` at the end of your title. This label will push everything that comes after the title so it just fits within the same page. This way, we can ensure that while the title is at the top of the page, things like authors or date are left at the bottom.
----
-* **Author(s)**
-Give credit where credit is due! Add as many authors as you need with `\author{author1}` . You can add more authors and display them all at the same height, possibly avoiding hurting egos, like `\author{auhtor1 \and author2}`. To add them verticaly, swap `\and` with `\\` to make a line break between the authors.
----
-* **Affiliation**
-Your work took place in an institution? Make sure to mention / give credit to it, with this simple tag \affil{Universidad Carlos III de Madrid, Spain}`.
----
-* **Date**
-And last but not least, it’s always nice to specify when your work took place. Just add `\date{Once upon a time}` and you are good to go!
-
-As we anticipated before, we must construct the cover from within the document with `\maketitle` , which should look something like the following:
-```tex
-\begin{document}
-  \maketitle
-  \thispagestyle{empty}
-  \newpage
-  \section{Introduction}
-\end{document}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\newcommand{\mycommand}[1]{\textcolor{red}{#1}}
 ```
 > [!NOTE]
-> There is a `\newpage` tag just after `\maketitle` , which ensures that only the cover is featured on the front page. We use `\thispagestyle{empty}` to remove the page counter at the bottom of the page.
+> In this section of the text file you will tell LaTeX about all the tools that you need to use:
+> - Packages
+> - Commands
+> - Files
 
-## Index
+## The main body of the document
+The body of the document should be placed between the `\begin{document}` and `\end{document}` commands, anything after the `\end{document}` command will be ignored.
+```tex
+\documentclass[12pt, a4paper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\newcommand{\mycommand}[1]{\textcolor{red}{#1}}
 
+% start main body of document
+\begin{document}
+This is my first document in LaTeX.
+\end{document}
+% end main body of document
+```
+
+## Top Matter
+The LaTeX engine defines the document and author information as Top Matter. Although there does not exist any command as such `\topmatter`, the top matter includes document information like title, date, and author information like name, email, etc.
+A standard article will begin with a document title, followed by author names and addresses. The code to obtain these are:
 ```tex
 \begin{document}
-  [...]
-  \tableofcontents{}
-  \setcounter{page}{1}
-  \newpage
-  [...]
-\enddocument 
+\title{Title of the document}
+\author{Donald Knuth and Leslie Lamport \cr
+{Address of Authors}
+\date{\today}
+\maketitle
+\end{document}
 ```
-> [!NOTE]
-> How we have to set the page number of our index to 1, as otherwise it will still count the cover (although we are not displaying) and mark the index as page 2.
+Here, `\cr` is used for breaking the line after the names in `\author`. The document date can be simply changed by writing the date in it, for example, `\date{30 August 2021}`, or the date can be ignored by leaving its content empty, i.e., \date{}.
 
----
-## Titles & Subtitles
-The foundation of any well structured paper, titles and subtitles are as easy in LaTeX as you may already expect! Just add `\section{Title}` for your titles, and `\subsection{Subtitle}` all the way down to `\subsubsection{Sub-subtitle}`.
-
-## Bold, Italic & Underline
-Emphasizing key concepts it vital to ensure your work gets to your readers. As everything with LaTeX, it is quite intuitive!
-* `\textbf{Virtualisation}` With this command you cna bold the word you type in curly braces
-* `\textit{container}` With this command you can italicise the word you type inside curly braces.
-* `\emph{should not}` With this command you can emphasize(highlight) the word you type in curly braces
-* `\enumerate{Advantages}` With this command you can make an ordered list.
-* `{\color{colorname} *text*}` is used to write the text in a given color (in this case, colorname).
-
-And all the possible combinations of the three above! For example, we may want to have **bold** and **italic** at the same time, which can be done with something like this:
+## Comments in LaTeX
+### Sinngle line comment in LaTeX
+In case of single-line comment, you need to use percent symbol `(%)`.
 ```tex
-\textbf{\textit{Bold and Italic!}}
+% This is a multiline comment in LaTeX
+% You can use the % symbol at the beginning of each line
+\documentclass{article}
+\begin{document}
+\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium nibh turpis. Donec nec magna neque. Pellentesque metus urna, volutpat at risus et, euismod hendrerit ex. Vestibulum semper quis metus in pretium.
+
+% The following lines are commented out
+% This is line 1 of the comment
+% This is line 2 of the comment
+% This is line 3 of the comment
+
+\end{document}
 ```
+### Multi-line comments in LaTeX
+___Using `iffalse` and `fi` commands___
 
-## Pagebreaks, Linebreaks & Paragraphs
-You can create a new page by using the `\newpage` command. Similarly, you can jump to a new line using the `\newline` command. There is another shortcut for creating a line break. You can also use the double back-slash `\\` wherever you want to create a line-break.
-
-## Lists
-Personally, I could not live without bullet lists, they just make everything look clean and organised. Here is how you can make one in LaTeX:
+`\iffalse` and `\fi` commands can be used to create a block comment. Anything between `\iffalse` and `\fi` will be ignored by the compiler.
 ```tex
 \documentclass{article}
-\usepackage[T1]{fontenc}
 \begin{document}
-Ordered
-\begin{enumerate}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
-\end{enumerate}
-Unordered
+\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium nibh turpis. Donec nec magna neque. Pellentesque metus urna, volutpat at risus et, euismod hendrerit ex. Vestibulum semper quis metus in pretium.
+
+\iffalse
+    This is a multiline comment in LaTeX.
+    You can use \iffalse and \fi to comment out multiple lines.
+    These lines will be ignored during compilation.
+\fi
+
+\end{document}
+```
+
+___Use comment package___
+
+`comment` package provides a convenient way to create block comments. But, Remember to include the `\usepackage{comment}` line in preamble of your document.
+```tex
+\documentclass{article}
+\usepackage{comment}
+\begin{document}
+\noindent Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin finibus vestibulum feugiat. Phasellus a enim aliquet, cursus magna ut, bibendum tellus. Integer nibh magna, sollicitudin at dui quis, ullamcorper varius leo. \\[6pt]
+
+\begin{comment}
+    This is a block comment using the comment package.
+    You can include as many lines as you want in this block,
+    and they will be ignored during compilation.
+\end{comment}
+
+\noindent Nulla malesuada facilisis dui, quis auctor ante facilisis convallis. Ut bibendum luctus massa, a molestie arcu tempor id. Maecenas faucibus congue eros ac convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vel purus odio. 
+\end{document}
+```
+---
+## Text Effects
+If you want to emphasise text, you can use the `\emph{}` command, which will emphasise the text in between the curly brackets, usually by putting it in italics. You can also specify this and other effects more directly:
+- `\emph{}` emphasises text (usually italicised)
+- `{\em some_text }` also emphasises text (usually italicised) but note the different placing of brackets!
+- `{\bf some_text }` emboldens text but note the different placing of brackets!
+- `\textrm{}` sets text in the `normal Roman font`
+- `\textit{}` sets text in `italic` typeface
+- `\textbf{}` sets text in `bold` typeface
+- `\texttt{}` sets text in the `typewriter font family`, fixed-width fount
+- `\textsc{}` sets text in the `small capitals` typeface; everything will be in uppercase, but any capital letters will be typeset slightly bigger than the normal letters
+- `\textnormal{}` sets text in the `document font family`
+- `\textsf{}` sets text in the `sans sefiffont family`
+- `\textup{}` sets text in the `upright shape`
+- `\textsl{}` sets text in the `slated shape`
+- `\textmd{}` sets text in the `normal weight and width`
+
+### Paragraph Alignment
+
+| Alignment         | Environment        | Command           |
+| :---------------- | :----------------: | :---------------- |
+| Left justified    | flushleft          | \raggedright      |
+| Right justified   | flushright         | \raggedleft       |
+| Center            | center             | \centering        |
+
+## List structures
+List often appear in documents, especially academic, as their purpose is often to present information in a clear and concise fashion. List structures in LaTeX are simply environments which essentially come in three flavours: itemize, enumerate and description.
+
+All list follow the basic format:
+```tex
+\begin{list_type}
+  \item The first item
+  \item The second item
+  \item The third item etc \ldots
+\end{list_type}
+```
+### Itemize
+This environment is for your standard bulleted list of items
+```tex
 \begin{itemize}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item The first item
+  \item The second item
+  \item The third etc \ldots
 \end{itemize}
+```
+#### Enumerate
+The enumerate environment is for ordered lists, where by default, each item is numbered sequentially.
+```tex
+\begin{enumerate}
+  \item The first item
+  \item The second item
+  \item The third etc \ldots
+\end{enumerate}
+```
+### Description
+The description environment is slightly different. You can specify the item label by passing it as an optional argument (although optional, it would look odd if you didn't include it!). Ideal for a series of definitions, such as a glossary.
+```tex
+\begin{description}
+  \item[First] The first item
+  \item[Second] The second item
+  \item[Third] The third etc \ldots
+\end{description}
+```
+### Nested List
+LaTeX will happily allow you to insert a list environment into an existing one (up to a depth of four). Simply begin the appropriate environment at the desired point within the current list. LaTeX will sort out the layout and any numbering for you.
+```tex
+\begin{enumerate}
+  \item The First item
+  \begin{enumerate}
+    \item Nested item 1
+    \item Nested item 2
+  \end{enumerate}
+  \item The second item
+  \item The thirds etc \ldots
+\end{enumerate}
+```
+---
+## Fonts in Documents
+```tex
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+ 
+\setmainfont{Times New Roman}
+\title{Sample font document}
+\author{dghuuloc}
+\date{\today}
+   
+\begin{document}
+\maketitle
+
+\setmainfont{Times New Roman}
+Sử dụng Font Times New Roman cho việc gõ tiếng Việt
+     
+This is an \textit{example} of a document compiled 
+with \textbf{LuaLaTeX}.
+
+\setmainfont{Latin Modern Sans}
+How to use latin Modern Sans Fonts
+
+\end{document}
+```
+```tex
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[main=vietnamese, english]{babel}
+% \usepackage[T5]{fontenc}
+% \usepackage[utf8]{vietnam}
+
+\title{Sample font document}
+\author{dghuuloc}
+\date{\today}
+   
+\begin{document}
+\maketitle
+
+Hà Nội là thủ đô, đồng thời là thành phố đứng đầu Việt Nam về diện
+tích tự nhiên và đứng thứ hai về diện tích đô thị sau thành phố Hồ Chí
+Minh.
+
 \end{document}
 ```
 ---
@@ -121,7 +296,7 @@ Let’s tackle this line by line. What `\begin{tabular}` means is straightforwar
 
 In the following lines the cells are configured. `&` is used for column breaks. And at the end of each line is `\\` which is there to indicate a line break. If you want a horizontal line between the rows you can add `\hline` after each line break.
 
-
+---
 ## Images
 Images add life to your work, making it easier to follow, so don’t forget to add some! In order to add images in LaTeX, we must add the following package at the beginning of the document: `\usepackage{graphicx}`.
 
@@ -135,7 +310,6 @@ Changing its dimensions its a bit more complicated. To give you an insight, let�
 ```tex
 \includegraphics[width=\textwidth]{img.jpg}
 ```
-
 
 ---
 ## Math & Equations
@@ -245,24 +419,6 @@ an alternative syntax.
 \end{document}
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 ## Syntax highlighting
 Syntax highlighting is a must for me, as I work around code all the time, and I must say I was really impressed by the performance of LaTeX in this field compared to other popular text editors. In order to user syntax highlighting we must add another package at the beginning of our document, `\usepackage{minted}`.
@@ -318,7 +474,9 @@ Another sentence follows.
 ## Bibliography
 In a thesis, it is often necessary to cite several references in a row. If you use multiple `\cite` commands `(\cite{ref1}\cite{ref2}\cite{ref3})`, the references will be displayed in separate blocks: [1][2][3]. If you want to display the references differently, it is possible to put the references in the same command, by separating them with commas. It is necessary to remove all spaces from the inside of the command: `\cite{ref1,ref2,ref3}`. The references are now displayed as [1,2,3]. To display the references in a "smarter way", it is also possible to use the cite package, and the reference will be displayed as [1-3].
 
-## Layout
-Now, let’s talk about layout. LaTeX generally takes care of everything for you, but you may want to change some elements. For instance, LaTeX systematically remove the paragraph indent at the beginning of a chapter, a section or a subsection. To avoid such behavior, it is possible to use the package _indentfirst_. It is possible to set the indentation by using the `\setlength{\parindent}{1mm}`. This will set the indentation to 1mm from the place the command is written until a new `\setlength{\parindent}`. Note that it is also possible to change the space between paragraphs using a `\setlength{\parskip}{1mm}`.
-
-It is also possible to add an element to the table of contents. to do so, just use the `\addcontentsline`. This command is very useful, for instance to add the bibliography to the table of content, because it is not added by default. Beware, however, of the place where you put the command. In particular, at the beginning of a page (for instance after a `\newpage`) you may be a bit surprised. To avoid wrong page numbers, you can use the `\clearpage` command before the `\addcontentsline`.
+---
+## References
+- [LaTeX Quickstart](https://www.texready.ir/docs/quickstart)
+- [Learn LaTeX — A Beginner's Step-By-Step Guide](https://typeset.io/resources/learn-latex-beginners-step-by-step-guide/)
+- [UTF-8](https://tex.stackexchange.com/questions/507109/how-can-i-use-utf-8vietnamese-in-equation-environment)
+- [Foreign language](https://tex.stackexchange.com/questions/644783/table-captions-default-to-foreign-language)
