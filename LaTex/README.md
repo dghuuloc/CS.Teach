@@ -56,6 +56,7 @@ As we anticipated before, we must construct the cover from within the document w
 > [!NOTE]
 > How we have to set the page number of our index to 1, as otherwise it will still count the cover (although we are not displaying) and mark the index as page 2.
 
+---
 ## Titles & Subtitles
 The foundation of any well structured paper, titles and subtitles are as easy in LaTeX as you may already expect! Just add `\section{Title}` for your titles, and `\subsection{Subtitle}` all the way down to `\subsubsection{Sub-subtitle}`.
 
@@ -73,6 +74,9 @@ And all the possible combinations of the three above! For example, we may want t
 ```tex
 \textbf{\textit{Bold and Italic!}}
 ```
+
+## Pagebreaks, Linebreaks & Paragraphs
+You can create a new page by using the `\newpage` command. Similarly, you can jump to a new line using the `\newline` command. There is another shortcut for creating a line break. You can also use the double back-slash `\\` wherever you want to create a line-break.
 
 ## Lists
 Personally, I could not live without bullet lists, they just make everything look clean and organised. Here is how you can make one in LaTeX:
