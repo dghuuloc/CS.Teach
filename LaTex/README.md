@@ -581,6 +581,46 @@ A ___references.bib___ file. This will contain my references in the bibtex forma
 A ___figures.tex___ file. This file contains codes of all my figures and images for the paper
 A ___tables.tex___ file. Similar to the one for figures, it contains all my tables codes for the paper.
 
+```tex
+%%%%%% Preamble of the document begins here %%%%%%
+% mention the type of document, here we are using an article
+
+\documentclass[a4paper]{article}
+
+% load the packages that we shall use for building the document
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+% this package is for tables
+\usepackage{booktabs}
+% write the title and author here
+% You must supply your own values
+\title{A Sample Research Paper}
+\author{Arin Basu}
+\date{\today}
+\begin{document}
+\maketitle
+%%%%% Preamble to the document ends here %%%%%%
+% next we include the different sections. 
+% Each section is included in the document
+\include{summary}
+\include{introduction}
+% special sections for tables and figures
+% then go after the main text of the article
+% you can also copy paste from these sections and codes there
+\include{tables}
+\include{figures}
+% This part is for including references and citatins
+\bibliography{references}
+\bibliographystyle{plain}
+% The document must end with this code
+\end{document}
+
+```
+
 ---
 ## References
 - [LaTeX Quickstart](https://www.texready.ir/docs/quickstart)
