@@ -4,8 +4,17 @@
 ## Document Formats and Layouts
 When starting a new blank project. The `\documentclass{article}` command specifies the document class. The second command `\usepackage[utf8]{inpuenc}` at this point. It is related to how the TeX compiler expects input and processes characters.
 ```tex
-\documentclass[12pt, oneside, a4paper]{report}
-\usepackage[utf8]{inpuenc}
+\documentclass[12pt, oneside, a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\title{The bare minimum guide to LaTeX}
+\author{Cookieblues}
+\date{April 2019}
+
+\begin{document}
+  \maketitle
+  \section{Introduction}
+\end{document}
 ```
 
 ## LaTex's Components
