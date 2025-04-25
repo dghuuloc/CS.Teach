@@ -618,8 +618,17 @@ A ___tables.tex___ file. Similar to the one for figures, it contains all my tabl
 \bibliographystyle{plain}
 % The document must end with this code
 \end{document}
-
 ```
+### How to add figures
+* Upload the figure (either a jpg or a png figure) to the file space
+* Use the following code to add the figure either to the figures.tex file or directly in the document where you want the figures to appear.
+```tex
+\begin{figure}[ht]
+\includegraphics[width=\textwidth]{name_of_the_file}
+\end{figure}
+```
+
+
 
 ---
 ## References
