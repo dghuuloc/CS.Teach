@@ -505,16 +505,62 @@ In most of my academic works follows the IEEE format, will show you how to set I
 \usepackage[utf8]{inputenc}
 \usepackage{fontspec}           % using for \setmainfont{Times New Roman}
 \usepackage[main=vietnamese, english]{babel}
-
-\usepackage[top=3.0cm, bottom=3.0cm, left=3.0cm, right=2.0cm]{geometry}
+\usepackage[top=3.0cm, bottom=3.0cm, left=2.0cm, right=2.0cm]{geometry}
+\geometry{a4paper}
+\usepackage{textcomp}
+\usepackage{graphicx} 
+\usepackage{amsmath,amssymb}  
+\usepackage{bm}
+\usepackage[pdftex,bookmarks,colorlinks,breaklinks]{hyperref}  
+%\hypersetup{linkcolor=black,citecolor=black,filecolor=black,urlcolor=black} % black links, for printed output
+\usepackage{memhfixc} 
+\usepackage{pdfsync}  
+\usepackage{fancyhdr}
 
 \title{Hướng dẫn sử dụng \LaTeX}
 \author{dlox}
 \date{\today}
 
 \begin{document}
-
     \maketitle
+    \tableofcontents
+
+    \section{Introduction}
+    My project was about \ldots
+
+    I developed a system to \ldots
+    
+    We did some experiments to find out \ldots
+    
+    The main results were \ldots
+    
+    \pagebreak
+
+    \section{Background}
+
+    I did some background reading in the following areas \ldots
+    
+    \pagebreak
+    
+    \section{System Design}
+    
+    My system worked as follows \ldots
+    
+    \pagebreak
+    
+    \section{Evaluation}
+    
+    We did some experiments \ldots
+    
+    \pagebreak
+    
+    \section{Conclusions and Future Work}
+    
+    From our experiments we can conclude that \ldots
+    
+    \bibliographystyle{abbrv}
+    % \bibliography{references}  % need to put bibtex references in references.bib
+
 
     Hello \LaTeX \\
 
