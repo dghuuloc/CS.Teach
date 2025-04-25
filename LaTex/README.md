@@ -154,11 +154,25 @@ And a more complex equation:
   dz = \frac{{f^{(n)}(z_0)}}{{n!}} \) \\ 
 \end{document}
 ```
-
-
-
-
-
+A matrix:
+```tex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+$$
+\begin{bmatrix} 
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{bmatrix}
+$$
+\end{document}
+```
+> [!NOTE]
+> Matrices and arrays are bit tricky as each LaTeX library seems to 
+deal with them in a different way, here we had to import a package:
+amsmath, also note the use of $$ instead of `\[ ... \]` which is 
+an alternative syntax.
 
 ---
 ## Syntax highlighting
