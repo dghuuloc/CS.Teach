@@ -3,7 +3,14 @@
 
 
 
-
+## LaTex's Components
+Using document classes to influence design
+LaTeX is supplied with a set of standard classes, all of which look similar but with some variations:
+* **article**: short documents without chapters
+* **report:** longer documents with chapters, single-sided printing
+* **book:** longer documents with chapters, double-sided printing, with front- and back-matter (for example an index)
+* **letter:** correspondence with no sections
+* **slides**: for presentations
 
 
 
@@ -65,12 +72,22 @@ And all the possible combinations of the three above! For example, we may want t
 ## Bullet Lists
 Personally, I could not live without bullet lists, they just make everything look clean and organised. Here is how you can make one in LaTeX:
 ```tex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\begin{document}
+Ordered
+\begin{enumerate}
+  \item An entry
+  \item Another One
+  \item Wow! Three entries
+\end{enumerate}
+Unordered
 \begin{itemize}
-    \item First!
-    \item Second!
-    [...]
-    \item Last!                      
+  \item An entry
+  \item Another One
+  \item Wow! Three entries
 \end{itemize}
+\end{document}
 ```
 ## Images
 Images add life to your work, making it easier to follow, so don’t forget to add some! In order to add images in LaTeX, we must add the following package at the beginning of the document: `\usepackage{graphicx}`.
