@@ -174,6 +174,65 @@ deal with them in a different way, here we had to import a package:
 amsmath, also note the use of $$ instead of `\[ ... \]` which is 
 an alternative syntax.
 
+***And a simple example involving theorems, definitions, and proofs:**
+```tex
+\documentclass{article}
+\usepackage{amsthm} % Required for theorem environments
+
+\theoremstyle{plain} % Style for theorems (italicized body)
+\newtheorem{theorem}{Theorem} % Define theorem environment
+
+\begin{document}
+
+  \begin{theorem}[Fundamental Theorem of Arithmetic]
+  Every integer greater than 1 can be uniquely expressed as a
+  product of prime numbers, up to the order of the factors.
+  \end{theorem}
+  
+  \begin{proof}
+  Let \( n \) be an integer greater than 1. We'll prove the 
+  theorem by induction on \( n \).
+  
+  \textbf{Base Case:} For \( n = 2 \), the theorem holds 
+  since 2 is itself a prime number.
+  
+  \textbf{Inductive Step:} Assume the theorem holds f
+  or all integers \( k \) such that \( 2 \leq k \leq n \). 
+  We'll show that it holds for \( n + 1 \).
+  
+  If \( n + 1 \) is prime, then it can be expressed as a 
+  product of a single prime number, which satisfies the theorem.
+  
+  If \( n + 1 \) is composite, then it can be expressed as 
+  \( n + 1 = ab \), where \( 2 \leq a, b \leq n \). 
+  By the induction hypothesis, both \( a \) and \( b \) 
+  can be expressed as products of prime numbers. 
+  Therefore, \( n + 1 \) can also be expressed as a product of prime numbers.
+  
+  Thus, by mathematical induction, the theorem holds for 
+  all integers greater than 1.
+  \end{proof}
+\end{document}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 ## Syntax highlighting
 Syntax highlighting is a must for me, as I work around code all the time, and I must say I was really impressed by the performance of LaTeX in this field compared to other popular text editors. In order to user syntax highlighting we must add another package at the beginning of our document, `\usepackage{minted}`.
@@ -211,5 +270,17 @@ Finally, Section~\ref{conclusions} gives the conclusions.
 \section{Previous work}\label{previous work}
 \section{Results}\label{results}
 \section{Conclusions}\label{conclusions}
+\end{document}
+```
+
+## More Features
+While outside the scope here, there’s a few more things that you can do with/in LaTeX, these are a few that caught my eye:
+
+**Academic Paper Elements (like footnotes)**:
+```tex
+\documentclass{article}
+\begin{document}
+  This is a sentence with a footnote\footnote{This is the footnote text.}.
+Another sentence follows.
 \end{document}
 ```
