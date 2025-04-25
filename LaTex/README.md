@@ -1,2 +1,2 @@
-# <p align="center"> LaTex </p>
+# <p align="center"> Essencial LaTex </p>
 ---
