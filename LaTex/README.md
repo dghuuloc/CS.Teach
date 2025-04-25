@@ -574,12 +574,21 @@ In most of my academic works follows the IEEE format, will show you how to set I
 ```
 
 ---
-## Configure a workflow
+## Start using LaTeX for writing research papers!
+1. Formatting
+2. Document Style
+3. Figure and Table Styling
+We can set it to cover the whole text length by using `\includegraphics[width=\textwidth]` or `\includegraphics[width=\columnwidth]` to column length in a double-column layout.
+4. Automatic Equation, Figure, Table and Reference Numbering
+Just assign everyone their unique label and refer to it in the text as `\ref{label}` or `\cite{label}` in the case of references and it will be automatically replaced by the required number.
+5. References using BibLaTeX
+BibLaTeX style file of the publication you want to submit in and write `\bibliographystyle{style_file_name}` and `\bibliography{mybibfile}` and voila the references are automatically formatted. It saves a lot of time and if you ever want to change the publication just download the style file of the new publisher and the references will be formatted accordingly.
 
-A ___main.tex___ file. This file manager panel for all templates. Think of it like the engine of your writing. The ___main.tex___ contains all the essential codes that will compile the paper and will render.
-A ___references.bib___ file. This will contain my references in the bibtex format (this is the only technical bit that you will need to learn here)
-A ___figures.tex___ file. This file contains codes of all my figures and images for the paper
-A ___tables.tex___ file. Similar to the one for figures, it contains all my tables codes for the paper.
+### Configure a workflow
+* A ___main.tex___ file. This file manager panel for all templates. Think of it like the engine of your writing. The ___main.tex___ contains all the essential codes that will compile the paper and will render.
+* A ___references.bib___ file. This will contain my references in the bibtex format (this is the only technical bit that you will need to learn here)
+* A ___figures.tex___ file. This file contains codes of all my figures and images for the paper
+* A ___tables.tex___ file. Similar to the one for figures, it contains all my tables codes for the paper.
 
 ```tex
 %%%%%% Preamble of the document begins here %%%%%%
