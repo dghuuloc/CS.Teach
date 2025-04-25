@@ -20,10 +20,10 @@ When starting a new blank project. The `\documentclass{article}` command specifi
 ## LaTex's Components
 Using document classes to influence design
 LaTeX is supplied with a set of standard classes, all of which look similar but with some variations:
-* **article**: short documents without chapters
-* **report:** longer documents with chapters, single-sided printing
-* **book:** longer documents with chapters, double-sided printing, with front- and back-matter (for example an index)
-* **letter:** correspondence with no sections
+* **article**: intended for short documents and articles for publication. Articles do not have chapters, and when  `\maketitle` is used to generate a title (see Section 9), the title appears at the top of the first page rather than on a page of its own.
+* **report:** intended for longer technical documents. It is similar to article, except that it contains chapters and the title appears on a page of its own.
+* **book:** intended as a basis for book publication. Page layout is adjusted assuming that the output will eventually be used to print on both sides of the paper.
+* **letter:** intended for producing personal letters. This style will allow you to produce all the elements of a well laid out letter: addresses, date, signature, etc..
 * **slides**: for presentations
 
 ## Introduction to Cover
