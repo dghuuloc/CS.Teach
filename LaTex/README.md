@@ -128,6 +128,30 @@ Newton's second law:
 \noindent Einstein's famous equation \( E = mc^2\) relates \\
 energy (\( E \)), mass (\( m \)), and the speed of light (\( c \)).
 ```
+Here we enclose an Equation with `\( Equation... \)` , note that variables have double parentheses : `(\( Variable \))` , there’s also a little bit of formatting, removing the Indent of the first line with `\noindent` and adding a line break with `\\`.
+
+Here's some, more basic Mathematical Expressions:
+```tex
+\documentclass{article}
+\begin{document}
+  Fractions: \( \frac{3}{4} \)
+  Exponents: \( x^{2} \)
+  Square Roots: \( \sqrt{2} \)
+  Subscripts and Superscripts: \( x_{1} \)
+  Greek Letters: \( \alpha, \beta, \gamma \)
+  Summation: \( \sum_{i=1}^{n} i \)
+  Integrals: \( \int_{0}^{\pi} \sin(x) dx \)
+  Limits: \( \lim_{x \to 0} \frac{\sin(x)}{x} \)
+  Multiplication: \( 3 \cdot 4 \)
+  Divisions: \( 10/2 \)
+\end{document}
+```
+
+
+
+
+
+
 
 ---
 ## Syntax highlighting
