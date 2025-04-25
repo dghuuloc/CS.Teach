@@ -495,6 +495,30 @@ Another sentence follows.
 In a thesis, it is often necessary to cite several references in a row. If you use multiple `\cite` commands `(\cite{ref1}\cite{ref2}\cite{ref3})`, the references will be displayed in separate blocks: [1][2][3]. If you want to display the references differently, it is possible to put the references in the same command, by separating them with commas. It is necessary to remove all spaces from the inside of the command: `\cite{ref1,ref2,ref3}`. The references are now displayed as [1,2,3]. To display the references in a "smarter way", it is also possible to use the cite package, and the reference will be displayed as [1-3].
 
 ---
+## LaTeX's other commands
+* `\& for & \% for %` for special characters use `\` other examples are # { $ _ " '
+* `\t{00}` `\AA` `\0e` `\day` `\pound` `\copyright` `\pi` `\Pi`
+* `$...$` to insert inline formulas
+* `$$...$$` to insert center justified formulas
+* `\begin {array}`
+* `^ {}` for super scripts
+* `- {}` for sub scripts
+* `\begin {eqharray} enter equation here \end {eqharray}`
+* `\nonumbe` use this in above statement to skip numbering of equation
+* `\begin {figure}`
+* `\begin {minipage}`
+* `\input {path}` to import files
+* `\VSpace {-0.5cm}`
+* `\begin {aligh}`
+* `\begin {aligh*}`
+* `\begin {tabular} {# of col, alignment, vertical yes/no}`
+* `\hline`
+* `\cline {column start - column end}`
+* `\begin {table}` this contains tabular as child element
+* `\caption { }`
+* `\label { }`
+
+---
 ## References
 - [LaTeX Quickstart](https://www.texready.ir/docs/quickstart)
 - [Learn LaTeX — A Beginner's Step-By-Step Guide](https://typeset.io/resources/learn-latex-beginners-step-by-step-guide/)
