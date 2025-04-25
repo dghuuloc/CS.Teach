@@ -9,7 +9,7 @@
 
 
 
-## Introduction
+## Introduction to Cover
 * **Title:**
 Hard to imagine a cover without a title, to define it just type `\title{My First Article in LaTeX!\vfill}` and give your work a title that suits it. For good measure, you should add `\vfill` at the end of your title. This label will push everything that comes after the title so it just fits within the same page. This way, we can ensure that while the title is at the top of the page, things like authors or date are left at the bottom.
 ---
@@ -33,6 +33,61 @@ As we anticipated before, we must construct the cover from within the document w
 ```
 > [!NOTE]
 > There is a `\newpage` tag just after `\maketitle` , which ensures that only the cover is featured on the front page. We use `\thispagestyle{empty}` to remove the page counter at the bottom of the page.
+
+## Index
+
+```tex
+\begin{document}
+  [...]
+  \tableofcontents{}
+  \setcounter{page}{1}
+  \newpage
+  [...]
+\enddocument 
+```
+> [!NOTE]
+> How we have to set the page number of our index to 1, as otherwise it will still count the cover (although we are not displaying) and mark the index as page 2.
+
+## Titles & Subtitles
+The foundation of any well structured paper, titles and subtitles are as easy in LaTeX as you may already expect! Just add `\section{Title}` for your titles, and `\subsection{Subtitle}` all the way down to `\subsubsection{Sub-subtitle}`.
+
+## Bold, Italic & Underline
+Emphasizing key concepts it vital to ensure your work gets to your readers. As everything with LaTeX, it is quite intuitive!
+* **Bold:** `\textbf{Bold}`
+* **Italic:** `\textit{Italic}`
+* **Underline:** `\underline{Underline}`
+
+And all the possible combinations of the three above! For example, we may want to have **bold** and **italic** at the same time, which can be done with something like this:
+```tex
+\textbf{\textit{Bold and Italic!}}
+```
+
+## Bullet Lists
+Personally, I could not live without bullet lists, they just make everything look clean and organised. Here is how you can make one in LaTeX:
+```tex
+\begin{itemize}
+    \item First!
+    \item Second!
+    [...]
+    \item Last!                      
+\end{itemize}
+```
+## Images
+Images add life to your work, making it easier to follow, so don’t forget to add some! In order to add images in LaTeX, we must add the following package at the beginning of the document: `\usepackage{graphicx}`.
+
+Now adding images is easy peasy, just use `\includegraphics{img.jpg}`. But editing them takes more effort than what MS Words as gotten us used to. The easiest way to center and image is by surrounding it with `center`:
+```tex
+\begin{center}
+  \includegraphics{img.jpg}
+\end{center}
+```
+Changing its dimensions its a bit more complicated. To give you an insight, let’s take a look at how to change the width of an image so it matches the width of the text:
+```tex
+\includegraphics[width=\textwidth]{img.jpg}
+```
+
+
+
 
 
 ```tex
