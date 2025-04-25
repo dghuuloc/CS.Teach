@@ -451,34 +451,8 @@ To use it, you must follow the following structure:
 \end{minted}
 ```
 As far as I’m concerned, it also supports `java` and `c`.
-```tex
-\documentclass{article}
-\title{Research in Project Engineering: the nature of questions asked}
-\author{
-Wan Geoffrey Hillary \\
-School of Engineering, Economics and Management,\\
-University of the, \underline{Wakanda}
-}
-\date{\May 2021}
-\begin{document}
-\maketitle
-\begin{abstract}
-This is the paper's abstract \ldots
-\end{abstract}
-\section{Purpose of the Paper}
-The objective of this research was to categorize the access the nature of the project, design and management of engineering project questions that were proposed for final year research \ldots
 
-\paragraph{Outline}
-The remainder of this article is organized as follows.
-Section~\ref{previous work} gives account of previous work.
-Our new and exciting results are described in Section~\ref{results}.
-Finally, Section~\ref{conclusions} gives the conclusions.
-\section{Previous work}\label{previous work}
-\section{Results}\label{results}
-\section{Conclusions}\label{conclusions}
-\end{document}
-```
-
+---
 ## More Features
 While outside the scope here, there’s a few more things that you can do with/in LaTeX, these are a few that caught my eye:
 
@@ -518,6 +492,80 @@ In a thesis, it is often necessary to cite several references in a row. If you u
 * `\caption { }`
 * `\label { }`
 
+---
+## Sample Tex
+```tex
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}           % using for \setmainfont{Times New Roman}
+\usepackage[main=vietnamese, english]{babel}
+
+\usepackage[top=3.0cm, bottom=3.0cm, left=3.0cm, right=2.0cm]{geometry}
+
+\title{Hướng dẫn sử dụng \LaTeX}
+\author{dlox}
+\date{\today}
+
+\begin{document}
+
+    \maketitle
+
+    Hello \LaTeX \\
+
+    Trong bài này tôi sẽ trình bày cho các bạn cách sử dụng một template có sẵn để viết luận văn cho mình. 
+    Template có sẵn tôi hiệu chỉnh từ template của Đại Học Cambridge do giáo sư Harish Bhanderi trình bày. 
+    Đây là template được viết theo bản quyền GNU, tác giả cho phép mọi người sử dụng, 
+    hiệu chỉnh và phục vụ cho mục đích giáo dục, đào tạo.\\
+
+    ``Vui lòng nhấn phím `x' để kết thúc.''\\
+
+    Trong bài này tôi sẽ \textbf{trình bày} cho các bạn {\bf cách sử dụng một template} có sẵn để viết luận văn cho mình. 
+    Template có sẵn tôi hiệu chỉnh từ template của {\it Đại Học Cambridge} do giáo sư \underline{Harish Bhanderi} trình bày. 
+    \emph{Đây là template được viết theo bản quyền GNU}, tác giả cho phép mọi người sử dụng, 
+    hiệu chỉnh và phục vụ cho mục đích giáo dục, đào tạo.\\
+
+    {\tiny Hello World on tiny font text}
+
+    {\scriptsize Hello World on scriptsize font text}
+
+    {\footnotesize Hello World on footnotesize font text}
+
+    {\small Hello World on small font text}
+
+    {\normalsize Hello World on normalsize font text}
+
+    {\large Hello World on large font text}
+
+    {\Large Hello World on Large font text}
+
+    {\LARGE Hello World on LARGE font text}
+
+    {\huge Hello World on huge font text} 
+    
+    Let me go on ask ..She is our hiring manager. So she'd know if the position has been filled yet.\\
+
+    \begin{tabular}{ | c | c | c | }
+        \hline
+        \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+        \hline
+        1 & 1110.1 & a\\
+        \hline
+        2 & 10.1 & b\\
+        \hline
+        3 & 23.113231 & c\\
+        \hline
+    \end{tabular}
+
+    \setmainfont{Times New Roman}
+    Sử dụng Font Times New Roman cho việc gõ tiếng Việt
+
+    This is an \textit{example} of a document compiled
+    with \textbf{LuaLaTeX}.
+
+    \setmainfont{Latin Modern Sans}
+    How to use latin Modern Sans Fonts
+\end{document}
+```
 ---
 ## References
 - [LaTeX Quickstart](https://www.texready.ir/docs/quickstart)
