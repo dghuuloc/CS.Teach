@@ -572,6 +572,15 @@ In most of my academic works follows the IEEE format, will show you how to set I
     How to use latin Modern Sans Fonts
 \end{document}
 ```
+
+---
+## Configure a workflow
+
+A ___main.tex___ file. This file manager panel for all templates. Think of it like the engine of your writing. The ___main.tex___ contains all the essential codes that will compile the paper and will render.
+A ___references.bib___ file. This will contain my references in the bibtex format (this is the only technical bit that you will need to learn here)
+A ___figures.tex___ file. This file contains codes of all my figures and images for the paper
+A ___tables.tex___ file. Similar to the one for figures, it contains all my tables codes for the paper.
+
 ---
 ## References
 - [LaTeX Quickstart](https://www.texready.ir/docs/quickstart)
