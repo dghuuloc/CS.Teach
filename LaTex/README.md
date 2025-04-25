@@ -146,7 +146,14 @@ Here's some, more basic Mathematical Expressions:
   Divisions: \( 10/2 \)
 \end{document}
 ```
-
+And a more complex equation:
+```tex
+\documentclass{article}
+\begin{document}
+  \( \frac{{1}}{{2\pi i}} \oint_C \frac{{f(z)}}{{(z - z_0)^{n+1}}} \, 
+  dz = \frac{{f^{(n)}(z_0)}}{{n!}} \) \\ 
+\end{document}
+```
 
 
 
