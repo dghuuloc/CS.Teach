@@ -106,18 +106,30 @@ Changing its dimensions its a bit more complicated. To give you an insight, letâ
 ```tex
 \includegraphics[width=\textwidth]{img.jpg}
 ```
+
+---
 ## Math & Equations
 As a CS student, I find myself adding equations more time that I would like in my papers. Thankfully adding equations in LaTeX is as simple as everything else.
 
 To add equations inline with text, we must wrap the equation with the dollar sign:
 ```tex
 Newton's second law: $F=ma$
+The sum of two variables \(a\) and \(b\) is given by:
+\[ a + b \]
 ```
 If you otherwise prefer to display your equations centered on a different line, we have to wrap our equation with `\[ ... \]`
 ```tex
 Newton's second law:
 \[F=ma\]
 ```
+
+* **Baby Steps:** Moving on, let's do a slightly more complex example:
+```tex
+\noindent Einstein's famous equation \( E = mc^2\) relates \\
+energy (\( E \)), mass (\( m \)), and the speed of light (\( c \)).
+```
+
+---
 ## Syntax highlighting
 Syntax highlighting is a must for me, as I work around code all the time, and I must say I was really impressed by the performance of LaTeX in this field compared to other popular text editors. In order to user syntax highlighting we must add another package at the beginning of our document, `\usepackage{minted}`.
 
