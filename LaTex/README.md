@@ -1,2 +1,2 @@
-# <p align="center"> Essencial LaTex </p>
+# <p align="center"> Getting Started with LaTeX </p>
 ---
