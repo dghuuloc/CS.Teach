@@ -66,9 +66,7 @@ Emphasizing key concepts it vital to ensure your work gets to your readers. As e
 * `\textit{container}` With this command you can italicise the word you type inside curly braces.
 * `\emph{should not}` With this command you can emphasize(highlight) the word you type in curly braces
 * `\enumerate{Advantages}` With this command you can make an ordered list.
-* **Bold:** `\textbf{Bold}`
-* **Italic:** `\textit{Italic}`
-* **Underline:** `\underline{Underline}`
+* `{\color{colorname} *text*}` is used to write the text in a given color (in this case, colorname).
 
 And all the possible combinations of the three above! For example, we may want to have **bold** and **italic** at the same time, which can be done with something like this:
 ```tex
