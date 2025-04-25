@@ -7,6 +7,7 @@
 - A Survey on Model Compression for Large Language Models
 - compression multiple LLMs together ensemble models
 - ensemble Models
+- What is about one hot encoded
 ```
 
 ```txt
