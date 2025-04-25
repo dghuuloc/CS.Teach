@@ -472,7 +472,7 @@ In most of my academic works follows the IEEE format, will show you how to set I
 
 `\bibliographystyle{IEEEtran}` — will helps to determined the reference style need to follow, it can be either IEEE reference standards or anything else.
 
-`\bibliography{refer}` — this will link the .bib file with the .tex document, inside the curly brackets, users need to include the bibTex file name user created to include reference bibTexs. As per this example refer is the bib file name (refer.bib).
+`\bibliography{refer}` — this will link the .bib file with the .tex document, inside the curly brackets, users need to include the bibTex file name user created to include reference bibTexs. As per this example refer is the bib file name **(refer.bib)**.
 
 ---
 ## LaTeX's other commands
