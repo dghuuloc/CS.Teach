@@ -1,6 +1,26 @@
 # <p align="center"> Getting Started with LaTeX </p>
 ---
+## Table Of Contents
 
+- Document structure
+- [LaTeX command instructions](https://github.com/dghuuloc/Full-Stack/tree/main/contents/latex/commands)
+- Document Preambles
+- Adding a Title, Author, and Date
+- Adding a Comment
+- Adding Bold, Italics, and Underlining
+- Adding images
+- Reamble of a Document
+- Captions, labels and references
+- Creating Lists
+- Creating Tables
+- Macros
+- Adding Math
+- Abstracts
+- Chapters and Sections
+- Captions, labels and references
+- Packages and Classes
+- Adding a Tables of Contents
+---
 ## What are LaTeX Packages?
 A basic TeX distribution doesn't actually provide much functionality. In most cases, creating a LaTeX document will require packages that provide additional options or functionality. The packages generally come into use when you want to insert an image or graphics, colored texts, or a source code from a file into a document, etc.
 
