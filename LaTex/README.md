@@ -89,7 +89,22 @@ Unordered
 \end{itemize}
 \end{document}
 ```
+---
 ## Tables
+Drawing tables ca be tricky but once you get the hang of it, the outcome is beautiful. The environment you use is `\tabular`
+```tex
+\begin{tabular}{| l | c r|}
+a & b & c \\
+d & e & f \\ 
+\hline
+g & h & i \\
+\hline
+\end{tabular}
+```
+Let’s tackle this line by line. What `\begin{tabular}` means is straightforward. It starts the table. The brackets following it is for the number of columns and text alignment in each column. `l` means left align, `c` for center and `r` for right align. The `|` in between means a vertical line separates the two columns. If you don’t want a vertical line replace it with a space just like between columns 2 and 3.
+
+In the following lines the cells are configured. `&` is used for column breaks. And at the end of each line is `\\` which is there to indicate a line break. If you want a horizontal line between the rows you can add `\hline` after each line break.
+
 
 ## Images
 Images add life to your work, making it easier to follow, so don’t forget to add some! In order to add images in LaTeX, we must add the following package at the beginning of the document: `\usepackage{graphicx}`.
