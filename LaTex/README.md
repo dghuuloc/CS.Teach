@@ -12,10 +12,6 @@ LaTeX is supplied with a set of standard classes, all of which look similar but 
 * **letter:** correspondence with no sections
 * **slides**: for presentations
 
-
-
-
-
 ## Introduction to Cover
 * **Title:**
 Hard to imagine a cover without a title, to define it just type `\title{My First Article in LaTeX!\vfill}` and give your work a title that suits it. For good measure, you should add `\vfill` at the end of your title. This label will push everything that comes after the title so it just fits within the same page. This way, we can ensure that while the title is at the top of the page, things like authors or date are left at the bottom.
@@ -73,7 +69,7 @@ And all the possible combinations of the three above! For example, we may want t
 \textbf{\textit{Bold and Italic!}}
 ```
 
-## Bullet Lists
+## Lists
 Personally, I could not live without bullet lists, they just make everything look clean and organised. Here is how you can make one in LaTeX:
 ```tex
 \documentclass{article}
@@ -93,6 +89,8 @@ Unordered
 \end{itemize}
 \end{document}
 ```
+## Tables
+
 ## Images
 Images add life to your work, making it easier to follow, so donâ€™t forget to add some! In order to add images in LaTeX, we must add the following package at the beginning of the document: `\usepackage{graphicx}`.
 
@@ -106,6 +104,7 @@ Changing its dimensions its a bit more complicated. To give you an insight, letâ
 ```tex
 \includegraphics[width=\textwidth]{img.jpg}
 ```
+
 
 ---
 ## Math & Equations
