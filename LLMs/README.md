@@ -91,7 +91,7 @@ Ensembles are good where high accuracy is crucial and errors are costly - such a
 The drawback is that ensemble models can be computationally heavy and header to interpret, with extra complexity as they often involve coordination multiple models simultaneously. However, the significant boost in reliability and performance makes ensembles a go-to approach for complex tasks where individual models may fall short.
 
 ---
-## Tokens vs Embeddings
+## Tokenization vs Embedding - How are they Different?
 In the context of Large Language Models (LLMs), tokens are the basic units of text that the model processes, while embeddings are numerical representations of those tokens that help the model understand their meaning and relationships. Think of it like this: a token is a single word, a subword, or even a character, and an embedding is a vector that captures the meaning and context of that token
 
 ---
@@ -316,6 +316,7 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 
 ---
 ## Reference
+* [Tokenization vs Embedding - How are they Different?](https://airbyte.com/data-engineering-resources/tokenization-vs-embeddings)
 * [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model)
 * [What does Generative Pre-trained Transformer (GPT) mean](https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f)
 * [Large Language Models Visualization](https://bbycroft.net/llm)
