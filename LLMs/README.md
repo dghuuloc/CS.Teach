@@ -133,7 +133,27 @@ from transformers import AutoTokenizer
 # Load pre-trained BERT tokenizer
 tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
 ```
+* **Step 2: Tokenizing Text**<br/>
+Using the loaded tokenizer, you can tokenize any sentence:
+```python
+sentence = "I love NPL."
+tokens = tokenizer.tokenize(sentence)
+print(tokens)
+```
+**Output:** `["I", "love", "NPL", "."]`
+* **Step 3: Mapping Tokens to Unique IDs**<br/>
+Each token is mapped to a unique ID in the tokenizer’s vocabulary:
+```python
+token_ids = tokenizer.encode(sentence)
+print(token_ids)
+```
+**Output:** `[101, 146, 1567, 23323, 119, 102]`
 
+Here:
+* `101`: Special token `[CLS]` (start of the sequence).
+* `102`: Special token `[SEP]` (end of the sequence).
+* `146`, `1567`, `23323`: IDs for the words "I", "love", and "NLP".
+* `119`: ID for the period `.`.
 
 
 ---
