@@ -37,6 +37,11 @@ OpenAI’s **GPT** models focused on text generation, while Google’s **BERT** 
 * **2023: The Year of Generative AI**<br/>
 The release of **ChatGPT** by OpenAI marked a turning point, bringing LLMs into the mainstream. With millions of users in mere months, it set the stage for widespread adoption of AI chatbots.
 
+## The Difference Between Machine Learning and Deep Learning
+**Machine Learning (ML)** uses statistical methods to help machines learn from data, whereas **Deep Learning (DL)** builds upon ML by using complex neural networks that enable machines to recognize patterns, even in unstructured data like images and sounds. In essence:
+* **Machine Learning** relies on pre-defined rules and simpler algorithms.
+* **Deep Learning** uses a layered approach called neural networks, allowing for more advanced learning capabilities.
+
 ---
 ## Popular Transformer Models:
 * **Encoder-Only Models:** BERT, RoBERTa
@@ -481,6 +486,12 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 
 ---
 ## Reference
+* [The Complete Guide to Recurrent Neural Networks](https://www.v7labs.com/blog/recurrent-neural-networks-guide)
+* [Recurrent Neural Networks Language Model](https://medium.com/@josephkiran2001/recurrent-neural-networks-language-model-56c14a10db41)
+* [Tokens and Embeddings](https://medium.com/@piyushkashyap045/tokens-and-embeddings-5d65c7543dea)
+* [Your Ultimate Roadmap to Becoming an AI Engineer in 2025](https://medium.com/@piyushkashyap045/your-ultimate-roadmap-to-becoming-an-ai-engineer-in-2025-3642b60b4fe4)
+* [Safeguarding Large Language Models: A Comprehensive Guide to Enhancing Trustworthy AI](https://medium.com/@piyushkashyap045/safeguarding-large-language-models-a-comprehensive-guide-to-enhancing-trustworthy-ai-21628ae4bf19)
+* [How Neural Networks Work: The Math, Structure, and Magic Behind Recognizing Handwritten Digits](https://medium.com/@piyushkashyap045/how-neural-networks-work-the-math-structure-and-magic-behind-recognizing-handwritten-digits-a948354d600e)
 * [Tokens and Embeddings](https://medium.com/@piyushkashyap045/tokens-and-embeddings-5d65c7543dea)
 * [Tokenization vs Embedding - How are they Different?](https://airbyte.com/data-engineering-resources/tokenization-vs-embeddings)
 * [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model)
@@ -533,3 +544,12 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 * [BERT for Entity Embeddings](https://medium.com/@piyushkashyap045/bert-for-entity-embeddings-61fefa23d194)
 * [Understanding Tokenizers in Natural Language Processing (NLP)](https://medium.com/@piyushkashyap045/understanding-tokenizers-in-natural-language-processing-nlp-1c295d3cfec2)
 * [Guide to Tokenization and Padding with BERT: Transforming Text into Machine-Readable Data](https://medium.com/@piyushkashyap045/guide-to-tokenization-and-padding-with-bert-transforming-text-into-machine-readable-data-5a24bf59d36b)
+* [What is Deep Learning? A Beginner’s Guide to Understanding Deep Learning Concepts](https://medium.com/@piyushkashyap045/what-is-deep-learning-a-beginners-guide-to-understanding-deep-learning-concepts-b2eef1370222)
+* [The Evolution of Transformer Architecture: From 2017 to 2024](https://medium.com/@arghya05/the-evolution-of-transformer-architecture-from-2017-to-2024-5a967488e63b)
+* [Large Language Models](https://medium.com/@piyushkashyap045/large-language-models-9dc970316887)
+* [Workings of Large Language Models](https://medium.com/@piyushkashyap045/workings-of-large-language-models-1c43a2eb8729)
+* [How to Build a Large Language Model: Step-by-Step Guide](https://www.softermii.com/blog/how-to-build-a-large-language-model-step-by-step-guide)
+* [Understanding Large Language Models](https://magazine.sebastianraschka.com/p/understanding-large-language-models)
+* [Large language models, explained with a minimum of math and jargon](https://www.understandingai.org/p/large-language-models-explained-with)
+* [7 Steps to Mastering Large Language Models (LLMs)](https://www.kdnuggets.com/7-steps-to-mastering-large-language-models-llms)
+* [How Large Language Models work](https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f)
