@@ -37,6 +37,7 @@ OpenAI’s **GPT** models focused on text generation, while Google’s **BERT** 
 * **2023: The Year of Generative AI**<br/>
 The release of **ChatGPT** by OpenAI marked a turning point, bringing LLMs into the mainstream. With millions of users in mere months, it set the stage for widespread adoption of AI chatbots.
 
+---
 ## Popular Transformer Models:
 * **Encoder-Only Models:** BERT, RoBERTa
 * **Decoder-Only Models:** GPT-2, GPT-3
@@ -49,7 +50,8 @@ The release of **ChatGPT** by OpenAI marked a turning point, bringing LLMs into 
 * **Deep Learning** is the field within ML that is focused on unstructured data, which includes text and images. It relies on artificial neural networks, a method that is (loosely) inspired by the human brain.
 * **Large Language Models** (LLMs) deal with text specifically, and that will be the focus of this article.
 
-## The architecture of Large Lnaguage Models
+---
+## The architecture of Large Language Models
 At their core, modern LLMs use a transformer architecture, a breakthrough in deep learning that revolationized natural language processing. This architecture, introduced in the landmark paper *Attention is All You Need*, represented a paradigm shift in how AI processes language.
 
 Unlike previous models that processed text sequentially, transformers can analyze entire dequences of text simultaneously, leading to better understanding of context and relationships between words.
@@ -113,6 +115,26 @@ The drawback is that ensemble models can be computationally heavy and header to 
 ---
 ## Tokenization vs Embedding - How are they Different?
 In the context of Large Language Models (LLMs), tokens are the basic units of text that the model processes, while embeddings are numerical representations of those tokens that help the model understand their meaning and relationships. Think of it like this: a token is a single word, a subword, or even a character, and an embedding is a vector that captures the meaning and context of that token
+
+
+### Why is Tokenization Important?
+Tokenization is crucial because modern NLP models like BERT cannot process raw text directly. Instead, they require numerical input that captures both meaning and structure. Tokenization provides this bridge:
+* **Standardizes Input:** Breaks down sentences into consistent, digestible pieces.
+* **Handles Out-of-Vocabulary Words:** Rare words or unknown tokens are split into subwords, ensuring the model can still make sense of them.
+* **Adds Special Tokens:** Special markers like `[CLS]` and `[SEP]` provide models with structural context.
+
+#### How Does Tokenization Work?
+Let’s break down the tokenization process using BERT’s tokenizer from Hugging Face’s Transformers library.
+* **Step 1: Loading the Tokenizer**<br/>
+Start by importing the tokenizer for BERT:
+```py
+from transformers import AutoTokenizer
+
+# Load pre-trained BERT tokenizer
+tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
+```
+
+
 
 ---
 ## The Science Behind Token Processing
