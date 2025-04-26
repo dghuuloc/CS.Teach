@@ -20,6 +20,7 @@ ___<p align="center">Generative AI has taken the world by storm, powering everyt
 - Know the metrics and frameworks essential for evaluating the performance of Large Language Models
 - Generation, OpenAI API, Hugging Face, and Vector databases
 - How Transformer Models Generate Images from Text
+- What is about Masked Self-Attention mechinism for decoder?
 ```
 
 ---
