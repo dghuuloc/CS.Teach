@@ -400,3 +400,4 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 * [How Transformer Models Generate Images from Text](https://www.linkedin.com/pulse/how-transformer-models-generate-images-from-text-santosh-kumar-az2oc)
 * [Understanding the Core Components of LLMs: Vectors, Tokens, and Embeddings Explained](https://www.linkedin.com/pulse/understanding-core-components-llms-vectors-tokens-embeddings-jain-dlv6e)
 * [BERT for Entity Embeddings](https://medium.com/@piyushkashyap045/bert-for-entity-embeddings-61fefa23d194)
+* [Understanding Tokenizers in Natural Language Processing (NLP)](https://medium.com/@piyushkashyap045/understanding-tokenizers-in-natural-language-processing-nlp-1c295d3cfec2)
