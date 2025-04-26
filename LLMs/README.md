@@ -68,6 +68,16 @@ Unlike previous models that processed text sequentially, transformers can analyz
 ## Neural Networks and LLMs
 LLMs are built on neural networks (as a mathematical model), millions or billions of nodes connected by links. There's an input layer of nodes and an ouput layer, with mathematics `signals` passed through thess connections. Different types of neural networks are suited for tasks like `classification`, `image recognition`, `sentiment analysis`, and `text completion`. LLMs, specifically, use a type of neural network called **Transformers**.
 
+### What is a Neural Network?
+At its core, a neural network is a piece of math. It’s a mathematical function that takes in a set of inputs (like pixel values from an image) and outputs predictions (like the digit in that image). Neural networks are inspired by the structure of the human brain but are much simpler in design. Here are the basics:
+* **Neurons:** In a neural network, a neuron is simply something that holds a number. For example, in the input layer, neurons hold pixel values ranging from 0 (black) to 1 (white).
+* **Layers:** Neurons are grouped into layers. A network has:
+* **Input Layer:** The first layer, where data (like an image of a handwritten digit) enters.
+* **Hidden Layers:** Layers between the input and output, where the magic happens.
+* **Output Layer:** The final layer, where the predictions come out (like 0, 1, 2, …, 9 for digits).
+* **Activations:** Each neuron “lights up” with a number (activation) between 0 and 1, depending on the inputs.
+
+
 ### Transformers
 Transformer models are a type of neural network used in Natural Language Processing (NLP). They excel at understanding contextual data, where the meaning of words depends on their surrounding context, sentences, and even entire paragraphs. The Transformer architecture is adept at learning these patterns, making it ideal for language-based tasks.
 
