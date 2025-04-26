@@ -155,6 +155,13 @@ Here:
 * `146`, `1567`, `23323`: IDs for the words "I", "love", and "NLP".
 * `119`: ID for the period `.`.
 
+* **Step 4: Decoding Token IDs back to text**<br/>
+You can reverse the process to reconstruct the original text:
+```python
+decoded_sentence = tokenizer.decode(token_ids)
+print(decoded_sentence)
+```
+
 #### Advanced Features
 * **Handling Out-of-Vocabulary Words**
 When a word is not present in the tokenizer's vocabulary, it is broken into subwords. For example,
