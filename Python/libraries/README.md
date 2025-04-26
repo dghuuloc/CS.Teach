@@ -11,6 +11,20 @@ pymongo (MongoDB driver)
 SQLAlchemy (Python SQL Toolkit)
 ```
 
+## Instaling Python Libraries for Machine Learning
+With Python installed and your virtual environment activated, you can now install the necessary libraries for machine learning. Common libraries include:
+* **Numpy:** For numerical computations.
+* **Pandas:** Fro data manipulation and analysis.
+* **Matplotlib:** For data visualization.
+* **Scikit-learn:** For machine learning algorithms.
+* **TensorFlow/PyTorch:** For deep learning.
+
+```shell
+$ python -m pip install numpy pandas matplotlib scikit-learn tensorflow
+```
+
+
+
 ---
 ## 1. NumPy
 * **Purpose:** _NumPy is the fundamental package for numerical computation in Python. It provides support for multi-dimensional arrays and matrices, along with a large collection of mathematical functions to operate on these arrays._
