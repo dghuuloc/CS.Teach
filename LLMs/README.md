@@ -27,14 +27,13 @@ LLMs are AI systems trained on massive datasets to understand and generate human
 * **1950s–2000s: Bag-of-Words**<br/>
 Early approaches treated text as a “bag” of disconnected words. For example, analyzing a movie review might count words like “great” or “boring” to infer sentiment. While simplistic, this laid the groundwork for text representation in AI systems.
 * **2013: Dense Vector Embeddings**<br/>
-Models like word2vec began capturing the meaning of words by analyzing the context in which they appeared. For instance, in word embeddings, “king” and “queen” might share similar properties, while differing slightly to reflect gender.
+Models like **word2vec** began capturing the meaning of words by analyzing the context in which they appeared. For instance, in word embeddings, “king” and “queen” might share similar properties, while differing slightly to reflect gender.
 * **2017: The Transformer Model**<br/>
-A groundbreaking paper titled “Attention is All You Need” introduced the Transformer architecture, which became the backbone of modern LLMs. Transformers used a mechanism called attention to understand context more effectively.
+A groundbreaking paper titled _“Attention is All You Need”_ introduced the **Transformer architecture**, which became the backbone of modern LLMs. Transformers used a mechanism called **attention** to understand context more effectively.
 * **2018 and Beyond: BERT and GPT**<br/>
-OpenAI’s GPT models focused on text generation, while Google’s BERT excelled at understanding context for tasks like classification. Both became cornerstones of Language AI.
+OpenAI’s **GPT** models focused on text generation, while Google’s **BERT** excelled at understanding context for tasks like classification. Both became cornerstones of Language AI.
 * **2023: The Year of Generative AI**<br/>
-The release of ChatGPT by OpenAI marked a turning point, bringing LLMs into the mainstream. With millions of users in mere months, it set the stage for widespread adoption of AI chatbots.
-
+The release of **ChatGPT** by OpenAI marked a turning point, bringing LLMs into the mainstream. With millions of users in mere months, it set the stage for widespread adoption of AI chatbots.
 
 ---
 ## The field of AI often visualized in layers
