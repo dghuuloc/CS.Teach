@@ -17,11 +17,17 @@ Creating a virtual environment is a best practice when working with Python, espe
 
 ## Instaling Python Libraries for Machine Learning
 With Python installed and your virtual environment activated, you can now install the necessary libraries for machine learning. Common libraries include:
-* **Numpy:** For numerical computations.
-* **Pandas:** Fro data manipulation and analysis.
+* **Numpy:** NumPy is a popular Python library for multi-dimensional array and matrix processing because it can be used to perform a great variety of mathematical operations. Its capability to handle linear algebra, Fourier transform, and more, makes NumPy ideal for machine learning and artificial intelligence (AI) projects, allowing users to manipulate the matrix to easily improve machine learning performance. 
+* **Pandas:** Pandas is another Python library that is built on top of NumPy, responsible for preparing high-level data sets for machine learning and training. It relies on two types of data structures, one-dimensional (series) and two-dimensional (DataFrame). This allows Pandas to be applicable in a variety of industries, including finance, engineering, and statistics. 
 * **Matplotlib:** For data visualization.
-* **Scikit-learn:** For machine learning algorithms.
-* **TensorFlow/PyTorch:** For deep learning.
+* **Scikit-learn:** Scikit-learn is a very popular machine learning library that is built on NumPy and SciPy. It supports most of the classic supervised and unsupervised learning algorithms, and it can also be used for data mining, modeling, and analysis.
+* **TensorFlow/PyTorch:** TensorFlow’s open-source Python library specializes in what’s called differentiable programming, meaning it can automatically compute a function’s derivatives within high-level language. Both machine learning and deep learning models are easily developed and evaluated with TensorFlow’s flexible architecture and framework. TensorFlow can be used to visualize machine learning models on both desktop and mobile.
+* **Seaborn:** Seaborn is another open-source Python library based on Matplotlib (which focuses on plotting and data visualization) but featuring Pandas’ data structures. It is often used in ML projects because it can generate plots of learning data. Of all the Python libraries, it produces the most aesthetically pleasing graphs and plots, making it an effective choice if you also use it for marketing and data analysis.
+* **Theano:** Theano is a Python library that focuses on numerical computation and is specifically made for machine learning. It is able to optimize and evaluate mathematical models and matrix calculations that use multi-dimensional arrays to create ML models. Theano is almost exclusively used by machine learning and deep learning developers or programmers.
+
+
+
+
 ```shell
 $ python -m pip install numpy pandas matplotlib scikit-learn tensorflow
 ```
