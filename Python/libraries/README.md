@@ -11,6 +11,10 @@ pymongo (MongoDB driver)
 SQLAlchemy (Python SQL Toolkit)
 ```
 
+## Setting Up a Virtual Environment
+Creating a virtual environment is a best practice when working with Python, especially for machine learning projects. It helps to manage dependencies and avoid conflicts between packages. We can create a virtual environment using Python's built-in `venv` module.
+
+
 ## Instaling Python Libraries for Machine Learning
 With Python installed and your virtual environment activated, you can now install the necessary libraries for machine learning. Common libraries include:
 * **Numpy:** For numerical computations.
