@@ -22,11 +22,15 @@ With Python installed and your virtual environment activated, you can now instal
 * **Matplotlib:** For data visualization.
 * **Scikit-learn:** For machine learning algorithms.
 * **TensorFlow/PyTorch:** For deep learning.
-
 ```shell
 $ python -m pip install numpy pandas matplotlib scikit-learn tensorflow
 ```
 
+## Installing the OpenAI Python Library
+With Python and the virtual environment set up, you can now install the OpenAI Python library. Make sure your virtual environment is activated, then run:
+```
+pip install openai
+```
 
 
 ---
