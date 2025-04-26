@@ -76,3 +76,42 @@ or:
 ```tex
 \usepackage[top=0.5in,left=1in,right=1in,bottom=0.5in]{geometry}
 ```
+
+---
+## Text alignment
+* By default, paragraphs are justified (which is good), with automatic hyphenation of long words.
+* If you need to center or left-align some text, you can use environments (but no hyphenation):
+```tex
+\begin{center}
+  This text will be centered horizontally on the page.
+\end{center}
+
+\begin{flushleft}
+  This text will be aligned to the left.
+\end{flushleft}
+
+\begin{flushright}
+  This text will be aligned to the right.
+\end{flushleft}
+```
+
+---
+## Structuring a document
+* It depends on the document class: letters have nothing, articles and beamer slides do not have chapters, reports, books and memoirs do. (If you do not want to give a number to the section, add a `*`)
+```tex
+\chapter{Introduction}
+\chapter{Related Work}
+  \section{Classical approach}
+  \section{Deep learning approach}
+    \subsection*{Fully-connected networks}
+    \subsection*{Convolutional networks}
+    \subsection*{Recurrent networks}
+\chapter{Methods}
+  \section{Neural networks}
+    \subsection{Architecture}
+    \subsection{Training procedure}
+  \section{Evaluation}
+\chapter{Results}
+\chapter{Discussion}
+```
+
