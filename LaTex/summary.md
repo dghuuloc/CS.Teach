@@ -115,3 +115,93 @@ or:
 \chapter{Discussion}
 ```
 
+---
+## Table Of Contents
+
+
+---
+## Labels and references
+* You can reference a section in the text by using `\ref` and `\label`:
+```tex
+\chapter{Introduction}
+  As we will see in section \ref{sec:training}, we...
+...
+\chapter{Methods}
+  \section{Neural Networks}
+    \subsection{Architecture}
+    \subsection{Training procedure}
+      \label{sec:training}
+  \section{Evaluation}
+...
+```
+> [!NOTE]
+> Labels have to unique. They correspond to the current level in the hierarchy.
+> You will have to compile the sourece twice to get the right references.
+
+---
+## Language
+* You will have noticed that words such as "Chapter", "Contents", and so on, are written in English.
+* If you write in German, make sure you import the `lable` package and configure it to German:
+```tex
+\usepackage[german]{babel}
+```
+
+---
+## Figures and Images
+* Images (png, jpg, pdf) can be included in figures:
+```tex
+\usepackage[graphicx}
+...
+\begin{figure}
+  \centering
+  \includegraphicc[width=0.6\textwidth]{images/alexnet.png}
+  \caption{AlexNet.\label{fig:alexnet}}
+\end{figure}
+```
+* You can specify its width (relative to the page width or absolute in mm/in), its height, its orientation and so on.
+* The caption will be automatically numbered.
+* If you add a label to the caption, you can cite the figure with `\ref`:
+```tex
+As depicted on Fig. `\ref{fig:alexnet}
+```
+
+---
+# Lists and enumerations
+* Lists are possible with the `itemize` environment.
+* Enumerations with the `enumerate` environment. Numbers are generated automatically.
+* They can be nested.
+```tex
+\begin{enumerate}
+  \item The first things to consider are:
+    \begin{itemize}
+      \item this;
+      \item that;
+      \item that also;
+`    \end{itemize}
+  \item Then one should take:
+    \begin{itemize}
+      \item this;
+      \item that.
+    \end{itemize}
+    into account.
+\end{enumerate}
+```
+
+---
+## Mathematical Equations
+
+---
+## References
+
+
+
+
+
+
+
+
+
+
+
+
+
