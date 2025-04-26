@@ -234,6 +234,27 @@ Unlike traditional LLMs, these models can process and _generate multiple types o
 * **Flamingo (DeepMind):** Specialises in vision-language tasks, used in captioning and image analysis.
 * **DALL·E (OpenAI):** Capable of generating images from textual descriptions, showcasing how LLMs can work with multimodal data.
 
+## BERT
+### What is BERT?
+BERT, short for **Bidirectional Encoder Representations from Transformers**, is a transformer-based model introduced by Google AI Research. Unlike traditional models like LSTMs or RNNs, BERT uses a **bidirectional approach** to analyze sentences. This means it understands words in their full context by looking both forward and backward in a sentence simultaneously.
+
+### Why is BERT So Powerful?
+* **Contextual Understanding:** Unlike earlier models that processed text sequentially, BERT examines the entire sentence at once, capturing richer contextual information.
+* **Transformer Architecture:** BERT is built on the transformer architecture, leveraging multi-headed attention mechanisms to understand relationships between words.
+* **Pre-training on Massive Data:** BERT is pre-trained on vast corpora like Wikipedia, enabling it to generalize effectively to new tasks.
+
+### The Transformer Architecture: Backbone of BERT
+Transformers revolutionized NLP by introducing a mechanism to process words in parallel, rather than sequentially. The transformer architecture comprises:
+* **Encoder:** Processes input text and generates encoded representations.
+* **Decoder:** Typically used for tasks like translation, it generates output sequences.
+
+### Key Component: Multi-Headed Attention
+Attention mechanisms allow the model to focus on important words in a sentence. Multi-headed attention adds layers of complexity, enabling BERT to grasp nuanced dependencies like:
+* **“France is a country. It is beautiful.”** (What does “it” refer to?)
+* **“Love is all that matters.”** (How do “love” and “matters” connect?)
+Pre-training BERT: How It Learns Language
+
+    
 ```
 >>> TAKE NOTE
 * **PaLM:** Google's Pathways Language Model (PaLM) is a transformer language model capable of common-sense and arithmetic reasoning, joke explanation, code generation, and translation.
@@ -378,3 +399,4 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 * [Encoder vs. Decoder: Understanding the Two Halves of Transformer Architecture](https://www.linkedin.com/pulse/encoder-vs-decoder-understanding-two-halves-transformer-anshuman-jha-bkawc)
 * [How Transformer Models Generate Images from Text](https://www.linkedin.com/pulse/how-transformer-models-generate-images-from-text-santosh-kumar-az2oc)
 * [Understanding the Core Components of LLMs: Vectors, Tokens, and Embeddings Explained](https://www.linkedin.com/pulse/understanding-core-components-llms-vectors-tokens-embeddings-jain-dlv6e)
+* [BERT for Entity Embeddings](https://medium.com/@piyushkashyap045/bert-for-entity-embeddings-61fefa23d194)
