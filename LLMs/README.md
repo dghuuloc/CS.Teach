@@ -116,7 +116,6 @@ The drawback is that ensemble models can be computationally heavy and header to 
 ## Tokenization vs Embedding - How are they Different?
 In the context of Large Language Models (LLMs), tokens are the basic units of text that the model processes, while embeddings are numerical representations of those tokens that help the model understand their meaning and relationships. Think of it like this: a token is a single word, a subword, or even a character, and an embedding is a vector that captures the meaning and context of that token
 
-
 ### Why is Tokenization Important?
 Tokenization is crucial because modern NLP models like BERT cannot process raw text directly. Instead, they require numerical input that captures both meaning and structure. Tokenization provides this bridge:
 * **Standardizes Input:** Breaks down sentences into consistent, digestible pieces.
@@ -174,6 +173,7 @@ print(tokens)
 
 The prefix `##` indicates that “believable” is a continuation of the previous token.
 
+---
 
 
 ---
