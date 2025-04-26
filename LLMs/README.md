@@ -155,6 +155,19 @@ Here:
 * `146`, `1567`, `23323`: IDs for the words "I", "love", and "NLP".
 * `119`: ID for the period `.`.
 
+#### Advanced Features
+* **Handling Out-of-Vocabulary Words**
+When a word is not present in the tokenizer's vocabulary, it is broken into subwords. For example,
+```python
+unknown_word = "unbelievable"
+tokens = tokenizer.tokenize(unknown_word)
+print(tokens)
+```
+**Output:** `["un", "##believable"]`
+
+The prefix `##` indicates that “believable” is a continuation of the previous token.
+
+
 
 ---
 ## The Science Behind Token Processing
