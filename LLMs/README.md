@@ -408,3 +408,4 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 * [Understanding the Core Components of LLMs: Vectors, Tokens, and Embeddings Explained](https://www.linkedin.com/pulse/understanding-core-components-llms-vectors-tokens-embeddings-jain-dlv6e)
 * [BERT for Entity Embeddings](https://medium.com/@piyushkashyap045/bert-for-entity-embeddings-61fefa23d194)
 * [Understanding Tokenizers in Natural Language Processing (NLP)](https://medium.com/@piyushkashyap045/understanding-tokenizers-in-natural-language-processing-nlp-1c295d3cfec2)
+* [Guide to Tokenization and Padding with BERT: Transforming Text into Machine-Readable Data](https://medium.com/@piyushkashyap045/guide-to-tokenization-and-padding-with-bert-transforming-text-into-machine-readable-data-5a24bf59d36b)
