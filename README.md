@@ -10,6 +10,11 @@
 - What is about one hot encoded
 ```
 
+```
+>>> RESEARCH
+- Generative AI in healthcare or financial services
+```
+
 ```txt
 As you embark on learning about Large Language Models (LLMs), you might feel overwhelmed by the sheer amount of content available online. To ease this journey, I’ve compiled an overview of key topics in LLMs to help you grasp the concept in a structured way. Simply hearing about a new technology might not be enough to fully understand it, but breaking it down into digestible concepts and providing resources can be a great way to deepen your understanding.
 
