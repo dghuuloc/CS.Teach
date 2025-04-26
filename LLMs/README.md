@@ -21,6 +21,7 @@ ___<p align="center">Generative AI has taken the world by storm, powering everyt
 - Generation, OpenAI API, Hugging Face, and Vector databases
 - How Transformer Models Generate Images from Text
 ```
+
 ---
 ## The Rise of Large Language Models
 LLMs are AI systems trained on massive datasets to understand and generate human-like text. But how did we get here? Let’s rewind the clock:
@@ -34,6 +35,11 @@ A groundbreaking paper titled _“Attention is All You Need”_ introduced the *
 OpenAI’s **GPT** models focused on text generation, while Google’s **BERT** excelled at understanding context for tasks like classification. Both became cornerstones of Language AI.
 * **2023: The Year of Generative AI**<br/>
 The release of **ChatGPT** by OpenAI marked a turning point, bringing LLMs into the mainstream. With millions of users in mere months, it set the stage for widespread adoption of AI chatbots.
+
+## Popular Transformer Models:
+* **Encoder-Only Models:** BERT, RoBERTa
+* **Decoder-Only Models:** GPT-2, GPT-3
+* **Encoder-Decoder Models:** T5, BART
 
 ---
 ## The field of AI often visualized in layers
