@@ -160,7 +160,6 @@ You can reverse the process to reconstruct the original text:
 decoded_sentence = tokenizer.decode(token_ids)
 print(decoded_sentence)
 ```
-
 #### Advanced Features
 * **Handling Out-of-Vocabulary Words**
 When a word is not present in the tokenizer's vocabulary, it is broken into subwords. For example,
@@ -174,7 +173,60 @@ print(tokens)
 The prefix `##` indicates that “believable” is a continuation of the previous token.
 
 ---
+### Padding?
+#### What is Padding?
+Padding is the process of ensuring that all input sequences in a batch have the same length. This is achieved by adding a special `[PAD]` token to shorter sequences.
 
+#### Why is Padding Important?
+* **Uniform Input Length:** Models process data in fixed-size batches. Padding ensures uniformity, allowing efficient parallel processing.
+* **Error Prevention:** Without padding, sequences of varying lengths can cause shape mismatches and processing errors.
+
+#### How Does Padding Work?
+Let’s explore how padding is implemented in practice.
+* **Step 1: Tokenizing Multiple Sentences**<br/>
+Start with a batch of sentences of varying lengths:
+```python
+sentences = [
+    "BERT is great.",
+    "Transformers excel in NLP.",
+    "Tokenization matters."
+]
+```
+* **Step 2: Adding Padding**<br/>
+Use the tokenizer to pad the sequences automatically:
+```python
+batch = tokenizer(sentences, padding=True)
+print(batch)
+```
+**Output:**
+```python
+{
+  'input_ids': [
+      [101, 1592, 1110, 1673, 119, 0, 0],
+      [101, 2307, 1973, 1107, 23323, 119, 102],
+      [101, 23323, 2407, 119, 102, 0, 0]
+  ],
+  'attention_mask': [
+      [1, 1, 1, 1, 1, 0, 0],
+      [1, 1, 1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1, 0, 0]
+  ]
+}
+```
+Here:
+* `input_ids`: Padded sequences of token IDs.
+* `attention_mask`: Ninay masks indicating real tokens (`1`) and padding (`0`)
+
+* **Step 3: Decoding Padded Sentences**<br/>
+Verify the padded sequences by decoding them back into text:
+```python
+for ids in batch["input_ids"]:
+  print(tokenizer.decode(ids))
+```
+**Output:**
+* **Sentence 1:** `[CLS] BERT is great. [SEP] [PAD] [PAD]`
+* **Sentence 2:** `[CLS] Transformers excel in NLP. [SEP]`
+* **Sentence 3:** `[CLS] Tokenization matters. [SEP] [PAD] [PAD]`
 
 ---
 ## The Science Behind Token Processing
