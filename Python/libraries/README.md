@@ -31,7 +31,7 @@ With Python and the virtual environment set up, you can now install the OpenAI P
 ```
 pip install openai
 ```
-
+This command will download and install the OpenAI library along with its dependencies, allowing you to start building deep learning applications.
 
 ---
 ## 1. NumPy
