@@ -42,6 +42,20 @@ or:
 `\usepackage{times} % Times New Roman`
 
 ---
+## Lists
+* Contens
+```tex
+\tableofcontents
+```
+* Figures
+```tex
+\listoffigures
+```
+* Tables
+```tex
+\listoftables
+```
+---
 ## Basic formatting
 * You can use **bold**, _emphasized_ or _italic_ and typewrite font faces: `\textbf{bold}`, `\emph{emphasized}`, `\textit{italic}`, and `\texttt{typewriter}` font faces.
 * Paragraphs are separated by a blank line. `\\` represents a line break
@@ -115,8 +129,6 @@ or:
 \chapter{Discussion}
 ```
 
----
-## Table Of Contents
 
 
 ---
@@ -145,7 +157,6 @@ or:
 ```tex
 \usepackage[german]{babel}
 ```
-
 ---
 ## Figures and Images
 * Images (png, jpg, pdf) can be included in figures:
@@ -185,6 +196,19 @@ As depicted on Fig. `\ref{fig:alexnet}
     \end{itemize}
     into account.
 \end{enumerate}
+```
+
+---
+## Tables
+```tex
+\begin[table}[h]
+  \begin{tabular}{|c|c|}
+  \hline
+  one & two  \\
+  three & four \\
+  \hline
+  \end{tabular}
+\end{table}
 ```
 
 ---
