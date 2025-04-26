@@ -22,7 +22,7 @@ ___<p align="center">Generative AI has taken the world by storm, powering everyt
 - How Transformer Models Generate Images from Text
 ```
 
-
+---
 ## The field of AI often visualized in layers
 * **Artificial Intelligence** (AI) is very a broad term, but generally it deals with intelligent machines.
 * **Machine Learning** (ML) is a subfield of AI that specifically focuses on pattern recognition in data. As you can imagine, once you recoginze a pattern, you can apply that pattern to new observations. That’s the essence of the idea, but we will get to that in just a bit.
@@ -89,6 +89,10 @@ Ensembles are good where high accuracy is crucial and errors are costly - such a
 **Voting** _is a method used to combine the outputs of multiple models to make a final prediction._ Voting is especially common in classification tasks, whree each model in the ensemble independently predicts a class label, and the ensemble the decides on the most likely class by `voting` among these predictions.
 
 The drawback is that ensemble models can be computationally heavy and header to interpret, with extra complexity as they often involve coordination multiple models simultaneously. However, the significant boost in reliability and performance makes ensembles a go-to approach for complex tasks where individual models may fall short.
+
+---
+## Tokens vs Embeddings
+In the context of Large Language Models (LLMs), tokens are the basic units of text that the model processes, while embeddings are numerical representations of those tokens that help the model understand their meaning and relationships. Think of it like this: a token is a single word, a subword, or even a character, and an embedding is a vector that captures the meaning and context of that token
 
 ---
 ## The Science Behind Token Processing
