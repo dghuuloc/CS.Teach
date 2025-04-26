@@ -316,6 +316,7 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 
 ---
 ## Reference
+* [Tokens and Embeddings](https://medium.com/@piyushkashyap045/tokens-and-embeddings-5d65c7543dea)
 * [Tokenization vs Embedding - How are they Different?](https://airbyte.com/data-engineering-resources/tokenization-vs-embeddings)
 * [Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model)
 * [What does Generative Pre-trained Transformer (GPT) mean](https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f)
