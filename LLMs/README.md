@@ -1,5 +1,9 @@
 # <p align="center"> Large Language Models (LLMs): The Backbone of Generative AI </p>
 ---
+
+___<p align="center">The theory and development of computer systems able to perform tasks normally requiring human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages.</p>___
+---
+
 ___<p align="center">Generative AI has taken the world by storm, powering everything from AI chatbots to code generation tools. At the heart of this revolution are Large Language Models (LLMs) </br>A massive AI systems trained to understand and generate human-like text.</p>___
 
 ```txt
