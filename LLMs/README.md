@@ -75,7 +75,7 @@ Reinforcement learning is a machine learning model that can be described as “l
 |Best suited for|ML is best for well-defined tasks with structured and labeled data|Deep learning is best for complex tasks that require machines to make sense of unstructured data|
 |Problem solving approach|ML solves problems through statistics and mathematics|Deep learning combines statistics and mathematics with neural network architecture|
 |Traing|You have to manually select and extract features from raw data and assign weights to train an ML model|Deep learning models can self-learn using feedback from known errors|
-|Resources required|ML is less complex and has a lower data volume|Deep learning is more complex with a very high data volume|
+|Resources required|ML is less complex and has a lower data volume. Can train on a CPU (central processing unit)|Deep learning is more complex with a very high data volume. Needs a specialized GPU (graphics processing unit) to train|
 
 
 ### The architectures of Deep Learning
