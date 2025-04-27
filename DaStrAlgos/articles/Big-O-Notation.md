@@ -5,7 +5,7 @@
 Asymptotic notations are a set of mathematical symbols used to describe the rate of growth of a function. In computer science, they are used to describe the time complexity and space complexity of algorithms and data structures.
 
 ### Types of Data Structure Asymptotic Notation
-<p align="center"><img src="https://github.com/dghuuloc/DaStrAlgos/blob/main/images/case.png"/></p>
+<p align="center"><img src="../images/case.png"/></p>
 
 1. Big-O Notation (Ο) – Omicron (Big O) notation specifically describes worst case scenario.
 2. Omega Notation (Ω) – Omega(Ω) notation specifically describes best case scenario.
@@ -35,7 +35,7 @@ S- earching for an element: O(n)
 When analyzing the efficiency of algorithms, it’s crucial to understand how well they scale with larger input sizes. That’s where Big O Notation comes into play. Big O Notation provides a way to express an algorithm’s time complexity, allowing us to compare different algorithms based on how they perform as inputs grow.
 
 ### What is Big O Notation?
-<p align="center"><img src="https://github.com/dghuuloc/DaStrAlgos/blob/main/images/BigOChart.png"/></p>
+<p align="center"><img src="../images/BigOChart.png"/></p>
 
 **Big O** is a notation that allows us to evaluate this, specifically it allows us to evaluate growth rates by analyzing how **time complexity** (Time of execution) and **space complexity** (memory usage) scale for a given algorithm when larger input sizes are processed by it. Big O is driven by the upper bound or higher complexity found in an algorithm so the worst case complexity will be the Big O representation of your code.
 
@@ -91,12 +91,12 @@ In case of passing different type of inputs to your algorithm, you need to calcu
 Big-O is also not concerned non dominant terms, so you can break it down and just keep the most dominant one in the notation as well as another example below. In this case, the Big-O of this function would be O(n + n²), and you can drop non-dominant term, which is (n) here. In the end, this gives you O(n²).
 
 ## Big-O Complexity Cheat Sheet
-<p align="center"><img src="https://github.com/dghuuloc/Data-Structures-and-Algorithms/blob/main/images/bigocheatsheet.png"/></p>
+<p align="center"><img src="../images/bigocheatsheet.png"/></p>
 
 ## Big-O Complexities
 The chart below depicts the Big-O complexities mentioned above and the number of elements in the input against the number of operations. The color coding provides a rough judgement on their performance.
 
-<p align="center"><img src="https://github.com/dghuuloc/Data-Structures-and-Algorithms/blob/main/images/complexity.png"/></p>
+<p align="center"><img src="../images/complexity.png"/></p>
 
 A number of very common order of magnitude functions will come up over and over as you study algorithms. The table below shows just how big of a difference the number of computations between these-alogorithms are for 10, 100, and 1000 input elements:
 
