@@ -9,6 +9,7 @@ ___<p align="center">The theory and development of computer systems able to perf
 ```txt
 >>> TODO:
 ------------
+- Read ARticles from: https://www.mdpi.com/2673-2688/4/1
 - [DONE] Difference between Supervised learning, Unsupervised learning, Reinforcement Learning in Machine Learning?
 - What is about `neural network`, `gradient descent` and `backpropagation` in deep learning?
 - Relationship between Linear regression an tokenization
