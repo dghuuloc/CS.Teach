@@ -64,6 +64,9 @@ A mixed approach machine learning called semi-supervised learning is also often 
 Reinforcement learning is a machine learning model that can be described as “learn by doing” through a series of trial and error experiments. An “agent” learns to perform a defined task through a feedback loop until its performance is within a desirable range. The agent receives positive reinforcement when it performs the task well and negative reinforcement when it performs poorly. An example of reinforcement learning is when Google researchers taught a reinforcement learning algorithm to play the game Go. The model had no prior knowledge of the rules of Go and simply moved pieces at random and “learned” the best results as the algorithm was trained, to the point that the machine learning model could beat a human player at the game.
 
 ---
+## [Deep Learning](https://www.ibm.com/think/topics/deep-learning#:~:text=Deep%20learning%20is%20a%20subset%20of%20machine,intelligence%20(AI)%20applications%20in%20our%20lives%20today.)
+
+---
 ## The Difference Between Machine Learning and Deep Learning
 **Machine Learning (ML)** uses statistical methods to help machines learn from data, whereas **Deep Learning (DL)** builds upon ML by using complex neural networks that enable machines to recognize patterns, even in unstructured data like images and sounds. In essence:
 * **Machine Learning** relies on pre-defined rules and simpler algorithms.
@@ -106,7 +109,6 @@ GAN involve two neural networks (a “generator” and a “discriminator") that
 * Generate abstractions (encoders) from a given set of inputs.
 * Operate in an unsupervised manner, desensitizing irrelevant information and sensitizing relevant features.
 * Additional layers create further abstractions, and these ideas can be employed by linear or nonlinear classifiers.
-
 
 ---
 ## The Rise of Large Language Models
