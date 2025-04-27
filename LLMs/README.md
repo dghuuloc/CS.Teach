@@ -563,6 +563,8 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 
 ---
 ## Reference
+* [End-to-End Transformer-Based Models in Textual-Based NLP](https://www.mdpi.com/2673-2688/4/1/4)
+* [The Transformer Model: Revolutionizing Natural Language Processing](https://medium.com/@lordmoma/the-transformer-model-revolutionizing-natural-language-processing-a16be54ddb1e)
 * [The Complete Guide to Recurrent Neural Networks](https://www.v7labs.com/blog/recurrent-neural-networks-guide)
 * [Recurrent Neural Networks Language Model](https://medium.com/@josephkiran2001/recurrent-neural-networks-language-model-56c14a10db41)
 * [Tokens and Embeddings](https://medium.com/@piyushkashyap045/tokens-and-embeddings-5d65c7543dea)
