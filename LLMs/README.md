@@ -35,11 +35,48 @@ ___<p align="center">The theory and development of computer systems able to perf
 * **Deep Learning** is the field within ML that is focused on unstructured data, which includes text and images. It relies on artificial neural networks, a method that is (loosely) inspired by the human brain.
 * **Large Language Models** (LLMs) deal with text specifically, and that will be the focus of this article.
 
+---
+## Machine Learning
+### What is Machine Learning?
+Machine learning is a subset of artificial intelligence that enables a system to autonomously learn and improve without being explicitly programmed. Machine learning algorithms work by recognizing patterns and data and making predictions when new data is inputted into the system.
+### Supervised Learning
+Supervised Learning is a machine learning model that uses labeled training data (structured data) to map as specific input to an output. In supervised learning, the output is known (such as recognizing a picture of an apple) and the model is trained on data of the known output. In simple terms, to train the algorithm to recognize pictures of apples, feed it pictures labeled as apples.
+#### The most common supervised learning alforithms used:
+* Linear regression
+* Polynomial regression
+* K-nearest neighbors
+* Naive Bayes
+* Decision trees
+
+### Unsupervised Learning
+Unsupervised learning is a machine learning model that uses unlabeled data (unstructured data) to learn patterns. Unlike supervised learning, the output is not known ahead of time. Rather, the algorithm learns from the data without human input (thus, unsupervised) and categorizes it into groups based on attributes. For instance, if the algorithm is given pictures of apples and bananas, it will work by itself to categorize which picture is an apple and which is a banana. Unsupervised learning is good at descriptive modeling and pattern matching.
+#### The most common supervised learning alforithms used:
+* Fuzzy means
+* K-means clustering
+* Hierarchical clustering
+* Principal component analysis
+* Partial least squares
+
+A mixed approach machine learning called semi-supervised learning is also often employed, where only some of the data is labeled. In semi-supervised learning, the algorithm must figure out how to organize and structure the data to achieve a known result. For instance, the machine learning model is told that the end result is an apple, but only some of the training data is labeled as an apple.
+
+### Reinforcement learning
+Reinforcement learning is a machine learning model that can be described as “learn by doing” through a series of trial and error experiments. An “agent” learns to perform a defined task through a feedback loop until its performance is within a desirable range. The agent receives positive reinforcement when it performs the task well and negative reinforcement when it performs poorly. An example of reinforcement learning is when Google researchers taught a reinforcement learning algorithm to play the game Go. The model had no prior knowledge of the rules of Go and simply moved pieces at random and “learned” the best results as the algorithm was trained, to the point that the machine learning model could beat a human player at the game.
+
+---
 ## The Difference Between Machine Learning and Deep Learning
 **Machine Learning (ML)** uses statistical methods to help machines learn from data, whereas **Deep Learning (DL)** builds upon ML by using complex neural networks that enable machines to recognize patterns, even in unstructured data like images and sounds. In essence:
 * **Machine Learning** relies on pre-defined rules and simpler algorithms.
 * **Deep Learning** uses a layered approach called neural networks, allowing for more advanced learning capabilities.
 **Deep Learning** as an evolution of machine learning. Deep learning is a mechine learning technique that layers algorithms and coputing units - or neurons -into what is called an artificial neural networks.
+
+||**Machine Learning**|**Deep Learning**|
+|-|-------------------|-----------------|
+|What is it?|ML is an artificial intelligence (AI) methodology. Not all ML is deep learning|Deep learning is an advanced ML methodology. All deep learning is ML|
+|Best suited for|ML is best for well-defined tasks with structured and labeled data|Deep learning is best for complex tasks that require machines to make sense of unstructured data|
+|Problem solving approach|ML solves problems through statistics and mathematics|Deep learning combines statistics and mathematics with neural network architecture|
+|Traing|You have to manually select and extract features from raw data and assign weights to train an ML model|Deep learning models can self-learn using feedback from known errors|
+|Resources required|ML is less complex and has a lower data volume|Deep learning is more complex with a very high data volume|
+
 
 ### The architectures of Deep Learning
 #### Unsupervised Pre-trained Networks (UPNs)
