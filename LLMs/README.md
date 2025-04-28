@@ -27,6 +27,7 @@ ___<p align="center">The theory and development of computer systems able to perf
 - How Transformer Models Generate Images from Text
 - What is about Masked Self-Attention mechinism for decoder?
 - What is about back-propagation
+- What is state-of-the-art?
 ```
 
 
