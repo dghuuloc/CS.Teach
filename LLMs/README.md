@@ -27,7 +27,7 @@ ___<p align="center">The theory and development of computer systems able to perf
 - How Transformer Models Generate Images from Text
 - What is about Masked Self-Attention mechinism for decoder?
 - What is about back-propagation
-- What is state-of-the-art?
+- What is the state of the art in NLP?
 
 >>> NOTE for Books
 we assume you are comfortable programming in Python and has a basic understanding of deep learning frameworks like PyTorch and TensorFlow. We also assume you have some practical experience with training models on GPUs.
