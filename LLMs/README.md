@@ -29,6 +29,7 @@ ___<p align="center">The theory and development of computer systems able to perf
 - What is about back-propagation
 - What is the state of the art in NLP?
 - Neural network architectures for artificial intelligence Hinton
+- Foundation of Machine Learning
 
 >>> NOTE for Books
 we assume you are comfortable programming in Python and has a basic understanding of deep learning frameworks like PyTorch and TensorFlow. We also assume you have some practical experience with training models on GPUs.
