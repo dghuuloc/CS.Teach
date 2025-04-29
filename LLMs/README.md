@@ -568,6 +568,7 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 
 ---
 ## Reference
+* [Six Types of Neural Networks You Need to Know About](https://www.sabrepc.com/blog/Deep-Learning-and-AI/6-types-of-neural-networks-to-know-about)
 * [End-to-End Transformer-Based Models in Textual-Based NLP](https://www.mdpi.com/2673-2688/4/1/4)
 * [The Transformer Model: Revolutionizing Natural Language Processing](https://medium.com/@lordmoma/the-transformer-model-revolutionizing-natural-language-processing-a16be54ddb1e)
 * [The Complete Guide to Recurrent Neural Networks](https://www.v7labs.com/blog/recurrent-neural-networks-guide)
