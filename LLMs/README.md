@@ -571,6 +571,7 @@ Some models can be downloaded and run on local mechines. Ollama is a good place 
 ---
 ## Reference
 * [Mathematicall Foundation of Reinforcement Learning](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning/blob/main/Book-all-in-one.pdf)
+* [Mathematical Foundations of Machine Learning](https://willett.psd.uchicago.edu/teaching/mathematical-foundations-of-machine-learning/)
 * [Six Types of Neural Networks You Need to Know About](https://www.sabrepc.com/blog/Deep-Learning-and-AI/6-types-of-neural-networks-to-know-about)
 * [Foundations of Machine Learning](https://bloomberg.github.io/foml/#home)
 * [End-to-End Transformer-Based Models in Textual-Based NLP](https://www.mdpi.com/2673-2688/4/1/4)
