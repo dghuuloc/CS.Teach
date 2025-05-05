@@ -370,7 +370,7 @@ print(items_view)  # Output: dict_items([('a', 1), ('b', 2), ('c', 3)])
 * `bin()`
 * `bool()`
 * `bytes()`
-* `get(key)`: retrieves the value associated with the key, but returns `None` if the key donesn't exist.
+* `get(key)`: retrieves the value associated with the key, but returns `None` if the key donesn't exist. The `get()` method provides a safer alternative to square brackets, avoiding `KeyError` exceptions.
 ```python
 my_dict = {"name": "John", "age": 30}
 print(my_dict["name"]) # Output: John
