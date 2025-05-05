@@ -198,7 +198,7 @@ another_list = tuple()
 Sets represent the mathematical notion of sets. Sets are mutable, iterable and don’t have any duplicate value. Python provides us, along with ‘set’ datatype, the mathematical functions associated with the sets such as **intersection**, **union**, **difference**, etc.
 ```python
 # empty set
-new_set = {}
+new_set = set()
 # another way
 another_set = set()
 ```
@@ -685,3 +685,11 @@ print(employee.greet())
 * [Built-in Functions](https://www.codecademy.com/resources/docs/python/built-in-functions/bin)
 * [Python Built-in Functions: All List, Advantages, Examples](https://www.wscubetech.com/resources/python/built-in-function)
 * [Python Built-In Functions](https://www.docs.inductiveautomation.com/docs/8.1/platform/scripting/python-scripting/built-in-functions)
+* [Code Smarter, Not Harder: 10 Python Efficiency Hacks](https://medium.com/@huzaifazahoor654/code-smarter-not-harder-10-python-efficiency-hacks-fff7e0da53e0)
+* [Automate Your Daily Workflow with These 19 Useful Python Scripts](https://www.index.dev/blog/python-automation-scripts)
+* [Top 25 Python Scripts To Automate Your Daily Tasks](https://medium.com/@haroldfinch01/top-25-python-scripts-to-automate-your-daily-tasks-817330847aa1)
+* [Top 10 Tasks to Automate with Python](https://www.activestate.com/blog/top-10-tasks-to-automate-with-python/)
+* [How I Automated My Life: Practical Python Scripts for Everyday Tasks](https://python.plainenglish.io/how-i-automated-my-life-practical-python-scripts-for-everyday-tasks-aca2df7e9e9b)
+* [Python Automation Scripts You Should Know](https://www.freecodecamp.org/news/python-automation-scripts/)
+* [Beginner’s Guide To Python Automation Scripts (With Code Examples)](https://zerotomastery.io/blog/python-automation-scripts-beginners-guide/)
+* [Python Automation Scripts](https://github.com/DhanushNehru/Python-Scripts)
