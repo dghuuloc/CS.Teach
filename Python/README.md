@@ -64,6 +64,7 @@ C:\Users\<user-name>\AppData\Local\Programs\Python\Launcher
 ### 2. Modules
 ### 3. Classes
 ### 4. Functions
+#### Built-in Functions
 ### 5. Statements
 Statements are individual lines of code that perform actions. They can be simple expressions, assignments, or control flow structures like loops and conditionals.
 ```python
