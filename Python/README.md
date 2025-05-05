@@ -102,8 +102,8 @@ if __name__ == "__main__":
 ## Data Types
 * **Text Type:** str
 * **Numeric Types:** `int`, `float`, `complex`
-* **Sequence Types** `list`, `tuple`, `range`
-* **Mapping Types: ** `dict`
+* **Sequence Types:** `list`, `tuple`, `range`
+* **Mapping Types:** `dict`
 * **Set Types:** `set`, `frozenset`
 * **Boolean Types:** `bool`
 * **Binary Types:** `bytes`, `bytearray`, `memoryview`
@@ -156,11 +156,14 @@ For positive integers a and b, a % b is the remainder when a is divided by b. Th
 a % b = a - (a // b) * b
 ```
 
+---
 ## Numbers and Maths
 
+---
 ## Python slice()
 The `slice()` function returns a slice object. A slice object is used to specify how to slice a sequence (**list, tuple, string or range** etc.) .
 
+---
 ## Python String
 ### What Are String Prefixes?
 String prefixes are characters placed before string literals in Python that change how the string is interpreted. Python allows several prefixes, with the most widely used being f, for string interpolation, and r, for raw strings that treat backslashes as literal characters. The most commonly used string prefixes in Python include:
@@ -205,7 +208,7 @@ In Python, a Dictionary can be created by placing a sequence of elements within 
 # empty dictionary
 my_dict = {}
 ```
-## Range 
+## Range() 
 `range()` returns an immutable sequence of numbers between the given start integer to the stop integer.
 ``` python
 print(range(0, 10)) #Output: range(0, 10)
@@ -283,6 +286,7 @@ while True:
     if condition:
         break
 ```
+
 --- 
 ## for loop
 In Python, `for` loop is used to iterate over a sequence (list, tuple. string) or other iterable objects. Iterating over a sequence is caled traversal. For example:
@@ -391,6 +395,18 @@ try:
    ...
 except CustomError:
     ...
+```
+
+For instance,
+```python
+try:
+  print("Try to print hello World!")
+except:
+  print("Something went wrong")
+else:
+    print("No Error!")
+finally:
+  print("The 'try except' is finished") 
 ```
 
 ## The `with` Statement and Context Managers
