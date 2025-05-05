@@ -24,7 +24,7 @@
 - Built-in Modules (os, sys, re, json )
 
 ########### Python as Scripting ##########
-- Python Shell Scripting
+- Python Shell Scripting	--> https://medium.com/@charlesmwaniki/python-linux-shell-scripting-best-practices-92cb04856aa7
 - Python Automation
 - Python get USERNAME, USERPROFILE, LOCALAPPDATA, APPDATA
 - Use Python with Cx_Oracle and sqlscheme
