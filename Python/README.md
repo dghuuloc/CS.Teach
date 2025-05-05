@@ -15,7 +15,7 @@
 - Libraries: Numpy, Pandas, Oracle,...
 - String Prefixes in Python: What are f-strings and r-strings in Python
 - underscores (single and double) --> reference from: https://dbader.org/blog/meaning-of-underscores-in-python
-- OO paradigm
+- OOP paradigm
 - variable scope and namespace
 - Special methods, 
 - Ternary operators
