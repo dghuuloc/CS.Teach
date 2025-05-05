@@ -344,6 +344,20 @@ def add_numbers(a, b):
 result = add_numbers(4, 5)
 print(result)
 ```
+### Built-in functions in Python
+* `items()`: It returns a view object that displays a list of a dictionary's key-value tuple pairs.
+```python
+my_dict = {"a": 1, "b": 2, "c": 3}
+
+# Iterate through key-value pairs using .items()
+for key, value in my_dict.items():
+    print(f"Key: {key}, Value: {value}")
+
+# Access key-value pairs as tuples
+items_view = my_dict.items()
+print(items_view)  # Output: dict_items([('a', 1), ('b', 2), ('c', 3)])
+```
+
 
 ---
 ### Lambda Function
@@ -409,6 +423,7 @@ finally:
   print("The 'try except' is finished") 
 ```
 
+---
 ## The `with` Statement and Context Managers
 
 ---
