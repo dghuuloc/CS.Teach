@@ -27,6 +27,7 @@
 - Python Shell Scripting
 - Python Automation
 - Python get USERNAME, USERPROFILE, LOCALAPPDATA, APPDATA
+- Use Python with Cx_Oracle and sqlscheme
 
 ## Advanced concepts
 - Comprehension
