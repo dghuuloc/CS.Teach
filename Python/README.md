@@ -444,6 +444,7 @@ finally:
 
 ---
 ## The `with` Statement and Context Managers
+The `with` statement is a handy way to manage resources like files, sockets, and database connections. It ensures that the resource is properly closed when you’re done with it, even if an error occurs.
 
 ---
 ## Python Object-Oriented-Programming
