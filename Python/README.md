@@ -65,8 +65,16 @@ C:\Users\<user-name>\AppData\Local\Programs\Python\Launcher
 ### 3. Classes
 ### 4. Functions
 ### 5. Statements
+Statements are individual lines of code that perform actions. They can be simple expressions, assignments, or control flow structures like loops and conditionals.
+```python
+if temperature > 90:
+  print("It is hot outside!!")
+
+for i in range(5):
+  print(i)
+```
 ### 6. Expressions
-Expressions are combinations of values, variables, and operatators that can be evaluated to produce a result. Thay can be as simple as a single value or as complex as a mathematical formula.
+Expressions are combinations of values, variables, and operators that can be evaluated to produce a result. They can be as simple as a single value or as complex as a mathematical formula.
 ```python
 num1 = 5
 num2 = num1 + 3
