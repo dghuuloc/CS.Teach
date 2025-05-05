@@ -67,6 +67,11 @@ C:\Users\<user-name>\AppData\Local\Programs\Python\Launcher
 ### 5. Statements
 ### 6. Expressions
 Expressions are combinations of values, variables, and operatators that can be evaluated to produce a result. Thay can be as simple as a single value or as complex as a mathematical formula.
+```python
+num1 = 5
+num2 = num1 + 3
+avg = (num1 + num2)/2
+```
 ### 7. Variables
 
 ## Entry point
