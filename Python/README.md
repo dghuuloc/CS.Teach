@@ -383,9 +383,25 @@ print(my_dict.get("country", "USA")) # Output: USA
 * `chr()`: Returns the string representing a character whose Unicode code point is the integer.
 
 #### Python's built-in functions to convert numbers between decimal, octal, and hexadecimal representation.
+* `bin()`: This function takes an integer as an argument and returns its binary representation as a string, prefixed with `0b`.
+```python
+binary_representation = bin(10)  # Output: '0b1010'
+```
 * `oct()`: This function takes an integer as an argument and returns its octal representation as a string, prefixed with `0o`.
+```python
+octal_representation = oct(10)  # Output: '0o12'
+```
 * `hex()`: This function takes an integer as an argument and returns its hexadecimal representation as a string, prefixed with `0x`.
-* `int()`: This function can be used to convert a string representation of a number in a specific base (e.g., octal or hexadecimal) to its decimal integer equivalent.
+```python
+hexadecimal_representation = hex(10)  # Output: '0xa'
+```
+* `int()`: function can convert a string representation of a number in a specific base to its decimal equivalent. The base must be specified as the second argument.
+```python
+decimal_from_binary = int('1010', 2)  # Output: 10
+decimal_from_octal = int('12', 8)  # Output: 10
+decimal_from_hexadecimal = int('a', 16)  # Output: 10
+```
+
 ```python
 # Decimal to octal
 decimal_number = 255
@@ -407,9 +423,9 @@ decimal_number = int(hexadecimal_string, 16)
 print(f"Decimal of {hexadecimal_string}: {decimal_number}") # Output: Decimal of 0xff: 255
 ```
 > [!NOTE]
-> * The `oct()` and `hex()` functions always return strings.
-> * The `int()` function takes two arguments: the string to convert and the base of the number in the string.
-> * The prefixes `0o` and `0x` are included in the output of `oct()` and `hex()` respectively. If you need to remove these prefixes, use string slicing `[2:]` or the `format()` function.
+> * The `bin()`, `oct()`, and `hex()` functions are used to convert from decimal to binary, octal, and hexadecimal, respectively.
+> * The `int()` function is used to convert from binary, octal, or hexadecimal to decimal.
+> * The prefixes `0b`, `0o` and `0x` are included in the output of `bin()`, `oct()` and `hex()` respectively. If you need to remove these prefixes, use string slicing `[2:]` or the `format()` function.
 
 ---
 ### Lambda Function
