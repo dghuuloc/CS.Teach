@@ -358,6 +358,18 @@ items_view = my_dict.items()
 print(items_view)  # Output: dict_items([('a', 1), ('b', 2), ('c', 3)])
 ```
 * `keys()`, `values()`
+* `print()`
+* `input()`
+* `len()`
+* `range()`
+* `enumerate()`
+* `abs()`
+* `any()`
+* `all()`
+* `ascii()`
+* `bin()`
+* `bool()`
+* `bytes()`
 
 ---
 ### Lambda Function
