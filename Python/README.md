@@ -81,7 +81,14 @@ num2 = num1 + 3
 avg = (num1 + num2)/2
 ```
 ### 7. Variables
+At the lowest level of the Python code hierarchy are variables. Variables are named storage locations that hold data. They can store various types of data, including numbers, strings, lists, and even complex objects.
+```python
+name = "Jphn"
+age = 25
+is_student = True
+```
 
+---
 ## Entry point
 ``` python
 def main(number: int):
