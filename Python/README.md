@@ -357,7 +357,7 @@ for key, value in my_dict.items():
 items_view = my_dict.items()
 print(items_view)  # Output: dict_items([('a', 1), ('b', 2), ('c', 3)])
 ```
-
+* `keys()`, `values()`
 
 ---
 ### Lambda Function
