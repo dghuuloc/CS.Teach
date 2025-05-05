@@ -59,6 +59,16 @@ C:\Users\<user-name>\AppData\Local\Programs\Python\Python313\Scripts
 C:\Users\<user-name>\AppData\Local\Programs\Python\Launcher
 ```
 
+## Python Code Hierarchy
+### 1. Packages
+### 2. Modules
+### 3. Classes
+### 4. Functions
+### 5. Statements
+### 6. Expressions
+Expressions are combinations of values, variables, and operatators that can be evaluated to produce a result. Thay can be as simple as a single value or as complex as a mathematical formula.
+### 7. Variables
+
 ## Entry point
 ``` python
 def main(number: int):
