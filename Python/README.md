@@ -22,6 +22,9 @@
 - Python Keywords
 - regular expressions (import re)
 - Built-in Modules (os, sys, re, json )
+- Python Shell Scripting
+- Python Automation
+- Python get USERNAME, USERPROFILE, LOCALAPPDATA, APPDATA
 
 ## Advanced concepts
 - Comprehension
