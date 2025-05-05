@@ -100,14 +100,14 @@ if __name__ == "__main__":
 ```
 
 ## Data Types
-* **Text Type:** str
+* **Text Type:** `str`
 * **Numeric Types:** `int`, `float`, `complex`
 * **Sequence Types:** `list`, `tuple`, `range`
 * **Mapping Types:** `dict`
 * **Set Types:** `set`, `frozenset`
 * **Boolean Types:** `bool`
 * **Binary Types:** `bytes`, `bytearray`, `memoryview`
-* **None Type: ** `NoneType`
+* **None Type:** `NoneType`
 
 ---
 ## Input and Output
@@ -377,7 +377,40 @@ print(my_dict["name"]) # Output: John
 my_dict["city"] = "New York"
 print(my_dict.get("age")) # Output: 30
 print(my_dict.get("country", "USA")) # Output: USA
-``` 
+```
+* `bytearray()`: Returns a new array of bytes.
+* `bytes()`: Returns a new "bytes" object.
+* `chr()`: Returns the string representing a character whose Unicode code point is the integer.
+
+#### Python's built-in functions to convert numbers between decimal, octal, and hexadecimal representation.
+* `oct()`: This function takes an integer as an argument and returns its octal representation as a string, prefixed with `0o`.
+* `hex()`: This function takes an integer as an argument and returns its hexadecimal representation as a string, prefixed with `0x`.
+* `int()`: This function can be used to convert a string representation of a number in a specific base (e.g., octal or hexadecimal) to its decimal integer equivalent.
+```python
+# Decimal to octal
+decimal_number = 255
+octal_string = oct(decimal_number)
+print(f"Octal of {decimal_number}: {octal_string}") # Output: Octal of 255: 0o377
+
+# Decimal to hexadecimal
+hexadecimal_string = hex(decimal_number)
+print(f"Hexadecimal of {decimal_number}: {hexadecimal_string}") # Output: Hexadecimal of 255: 0xff
+
+# Octal to decimal
+octal_string = '0o377'
+decimal_number = int(octal_string, 8)
+print(f"Decimal of {octal_string}: {decimal_number}") # Output: Decimal of 0o377: 255
+
+# Hexadecimal to decimal
+hexadecimal_string = '0xff'
+decimal_number = int(hexadecimal_string, 16)
+print(f"Decimal of {hexadecimal_string}: {decimal_number}") # Output: Decimal of 0xff: 255
+```
+> [!NOTE]
+> * The `oct()` and `hex()` functions always return strings.
+> * The `int()` function takes two arguments: the string to convert and the base of the number in the string.
+> * The prefixes `0o` and `0x` are included in the output of `oct()` and `hex()` respectively. If you need to remove these prefixes, use string slicing `[2:]` or the `format()` function.
+
 ---
 ### Lambda Function
 In python, you can define functions without a name. Thes functions are lambda or anonymous function. To create a lambda function, `lambda` keyword is used.
@@ -652,6 +685,7 @@ print(employee.greet())
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
+* [Exploring Python Built-In Functions: An Easy Guide](https://medium.com/@roscoe.kerby/exploring-python-built-in-functions-an-easy-guide-d1a93fe6c3a5)
 * [How to define Python special methods](https://labex.io/tutorials/python-how-to-define-python-special-methods-419764)
 * [String Prefixes in Python: What are f-strings and r-strings in Python](https://medium.com/@suryasekhar/string-prefixes-in-python-what-are-f-strings-and-r-strings-in-python-ca759810ebfa)
 * [Top 10 Advance Python Concepts That You Must Know](https://www.geeksforgeeks.org/top-10-advance-python-concepts-that-you-must-know/)
