@@ -22,6 +22,8 @@
 - Python Keywords
 - regular expressions (import re)
 - Built-in Modules (os, sys, re, json )
+
+########### Python as Scripting ##########
 - Python Shell Scripting
 - Python Automation
 - Python get USERNAME, USERPROFILE, LOCALAPPDATA, APPDATA
