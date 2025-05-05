@@ -426,6 +426,15 @@ print(f"Decimal of {hexadecimal_string}: {decimal_number}") # Output: Decimal of
 > * The `bin()`, `oct()`, and `hex()` functions are used to convert from decimal to binary, octal, and hexadecimal, respectively.
 > * The `int()` function is used to convert from binary, octal, or hexadecimal to decimal.
 > * The prefixes `0b`, `0o` and `0x` are included in the output of `bin()`, `oct()` and `hex()` respectively. If you need to remove these prefixes, use string slicing `[2:]` or the `format()` function.
+> ```python
+>   binary_string = bin(10)[2:]  # Output: '1010'
+>   octal_string = oct(10)[2:]  # Output: '12'
+>   hex_string = hex(10)[2:]  # Output: 'a'
+>   formatted_binary = format(10, 'b') # Output: '1010'
+>   formatted_octal = format(10, 'o') # Output: '12'
+>   formatted_hex = format(10, 'x') # Output: 'a'
+>   ```
+
 
 ---
 ### Lambda Function
@@ -744,3 +753,5 @@ print(employee.greet())
 * [Beginner’s Guide To Python Automation Scripts (With Code Examples)](https://zerotomastery.io/blog/python-automation-scripts-beginners-guide/)
 * [Python Automation Scripts](https://github.com/DhanushNehru/Python-Scripts)
 * [Python automation: 9 scripts to automate critical workflows](https://zapier.com/blog/python-automation/)
+* [Understanding Python’s Most Common Built-in Functions](https://medium.com/@AlexanderObregon/understanding-pythons-most-common-built-in-functions-f535b83ea397)
+* [Top 15 Python Built-in Functions](https://www.analyticsvidhya.com/blog/2021/07/15-python-built-in-functions-which-you-should-know-while-learning-data-science/)
