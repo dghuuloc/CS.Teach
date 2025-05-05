@@ -370,7 +370,14 @@ print(items_view)  # Output: dict_items([('a', 1), ('b', 2), ('c', 3)])
 * `bin()`
 * `bool()`
 * `bytes()`
-
+* `get(key)`: retrieves the value associated with the key, but returns `None` if the key donesn't exist.
+```python
+my_dict = {"name": "John", "age": 30}
+print(my_dict["name"]) # Output: John
+my_dict["city"] = "New York"
+print(my_dict.get("age")) # Output: 30
+print(my_dict.get("country", "USA")) # Output: USA
+``` 
 ---
 ### Lambda Function
 In python, you can define functions without a name. Thes functions are lambda or anonymous function. To create a lambda function, `lambda` keyword is used.
