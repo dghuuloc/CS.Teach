@@ -1,5 +1,8 @@
 # <p align="center"> Build a Large Language Model </p>
 ---
+## Something
+
+
 
 ## Reference
 * [Running Wild with LLMs: 10 Open-Source Models You Can Tame on Your Local Machine](https://dev.to/sakethkowtha/running-wild-with-llms-10-open-source-models-you-can-tame-on-your-local-machine-3glb)
@@ -18,3 +21,11 @@
 * [The Evolving Landscape of Large Language Model (LLM) Architectures](https://re-cinq.com/blog/llm-architectures)
 * [How To Use GPT-3, GPT-4, ChatGPT, GPT-J, And Other Generative Models, With Few-Shot Learning ](https://nlpcloud.com/effectively-using-gpt-j-gpt-neo-gpt-3-alternatives-few-shot-learning.html)
 * [A Brief History of LLMs](https://medium.com/@lmpo/a-brief-history-of-lmms-from-transformers-2017-to-deepseek-r1-2025-dae75dd3f59a)
+* [Top 10 Open-Source LLMs in 2025](https://www.geeksforgeeks.org/top-10-open-source-llm-models/)
+* [Comparing the Best LLMs of 2025: GPT, DeepSeek, Claude & More – Which AI Model Wins?](https://www.sokada.co.uk/blog/comparing-the-best-llms-of-2025/)
+* [Essential open source large language models to watch in 2025](https://pieces.app/blog/open-source-llms)
+* [The List of 11 Most Popular Open Source LLMs -2025](https://www.lakera.ai/blog/open-source-llms)
+* [What are Open-Source LLMs and Which are the Best Ones](https://www.chatbase.co/blog/opensource-llm)
+* [GPT-NeoX](https://huggingface.co/docs/transformers/en/model_doc/gpt_neox)
+* [GPT-J and gpt-neox: unveiling the frontiers of open-source large language models](https://www.byteplus.com/en/topic/499006?title=gpt-j-and-gpt-neox-unveiling-the-frontiers-of-open-source-large-language-models)
+* [Top 20 Open-Source LLMs to Use in 2025](https://bigdataanalyticsnews.com/top-open-source-llm-models/#google_vignette)
