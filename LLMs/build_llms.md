@@ -115,7 +115,7 @@ Monitor the model’s performance and retrain it periodically with fresh data.
 ## Reference
 ### Build LLMs from Scratch
 * [How to Build an LLM from Scratch: A Comprehensive Guide](https://pratikbarjatya.medium.com/how-to-build-an-llm-from-scratch-a-comprehensive-guide-c84e87667326)
-
+* [Building a Large Language Model (LLM) from Scratch: A Comprehensive Guide](https://medium.com/@banerjeesupriyo586/building-a-large-language-model-llm-from-scratch-a-comprehensive-guide-8cdb67b24239)
 
 ### Choose LLMs
 * [Running Wild with LLMs: 10 Open-Source Models You Can Tame on Your Local Machine](https://dev.to/sakethkowtha/running-wild-with-llms-10-open-source-models-you-can-tame-on-your-local-machine-3glb)
