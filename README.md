@@ -61,6 +61,7 @@ If you have any questions or need further resources, feel free to ask! Happy lea
 
 
 ## Reference
+* [Top 7 Publishers of Books on Computer Technologies That You Must Know](https://levelup.gitconnected.com/top-7-publishers-of-books-on-computer-technologies-that-you-must-know-b36d51e29bc1)
 * [Compressing Large Language Models (LLMs)](https://towardsdatascience.com/compressing-large-language-models-llms-9f406eea5b5e/)
 * [How to combine results from multiple retrievers](https://python.langchain.com/docs/how_to/ensemble_retriever/)
 * [Compression Techniques for Large Language Models — Learn Together — Part 5](https://medium.com/@anilguven1055/compression-techniques-for-large-language-models-learn-together-part-5-8c9ae13b0c04)
