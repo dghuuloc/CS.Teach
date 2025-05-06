@@ -1,4 +1,16 @@
 # [CS.Teach]
+---
+
+## Books
+**Top Publishers of Books on Computer Technologies That You Must Know:**
+* Manning
+* O’Reilly
+* No Starch Press
+* Packt
+* Wiley
+* Apress
+* Pearson
+
 
 ```
 >>> KEYNOTES
