@@ -37,13 +37,37 @@ Identify the purpose of your LLM. Different applications require different desig
 * **Task-Specific LLM:** Designed for tasks such as summarization, translation, or sentiment analysis.
 
 ---
-## Gether and Prepare Data
-### Data Collection
-* **Sources:** Open datasets (e.g., Common Crawl, Wikipedia), proprietary data, or domain-specific corpora.
-* **Quantity:** A typical LLM requires hundreds of gigabytes to terabytes of text data.
-### Data Cleaning
-* Remove duplicates, noise, and irrelevant content.
-* Normalize text by converting it to lowercase, fixing encoding issues, etc.
+## Data Collection and Preprocessing
+A **large dataset** is the backbone of an effective LLM. Without enough quality data, even the best architecture will fail.
+### Collecting High-Quality Data
+#### Public Datasets:
+* **Wikipedia** — Free encyclopedia with structured articles.
+* **Common Crawl** — A massive web scrape of public websites.
+* **BooksCorpus** — A collection of freely available books.
+#### Custom Data:
+* Industry-specific documents (e.g., medical papers, legal contracts).
+* Internal company data (if building a private LLM).
+#### Web Scraping:
+Using tools like BeautifulSoup or Scrapy to extract text from websites.
+
+### Data Preprocessing
+Once data is collected, it must be **cleaned and formatted** for training.
+
+**Key Preprocessing Steps:**
+* **Tokenization** — Splitting text into small units (subwords, words, or characters).
+* **Normalization** — Removing punctuation, lowercasing, fixing spelling errors.
+* **Encoding** — Converting words into numerical representations.
+
+**For Example using `transformers`:**
+```python
+from transformers import AutoTokenizer
+
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+text = "Building an LLM from scratch!"
+tokens = tokenizer(text)
+print(tokens)
+```
+
 ### Data Annotation
 For supervised learning tasks, annotated datasets (e.g., labeled sentiment data) enhance performance.
 
