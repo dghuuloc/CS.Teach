@@ -113,6 +113,11 @@ Monitor the model’s performance and retrain it periodically with fresh data.
 
 ---
 ## Reference
+### Build LLMs from Scratch
+* [How to Build an LLM from Scratch: A Comprehensive Guide](https://pratikbarjatya.medium.com/how-to-build-an-llm-from-scratch-a-comprehensive-guide-c84e87667326)
+
+
+### Choose LLMs
 * [Running Wild with LLMs: 10 Open-Source Models You Can Tame on Your Local Machine](https://dev.to/sakethkowtha/running-wild-with-llms-10-open-source-models-you-can-tame-on-your-local-machine-3glb)
 * [8 Top Open-Source LLMs for 2024 and Their Uses](https://www.datacamp.com/blog/top-open-source-llms)
 * [Top 10 Open Source LLMs and Their Benefits Standard Post with Image](https://www.inspirisys.com/blog-details/Top-10-Open-Source-LLMs-and-Their-Benefits/175)
