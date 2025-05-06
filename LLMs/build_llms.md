@@ -29,3 +29,6 @@
 * [GPT-NeoX](https://huggingface.co/docs/transformers/en/model_doc/gpt_neox)
 * [GPT-J and gpt-neox: unveiling the frontiers of open-source large language models](https://www.byteplus.com/en/topic/499006?title=gpt-j-and-gpt-neox-unveiling-the-frontiers-of-open-source-large-language-models)
 * [Top 20 Open-Source LLMs to Use in 2025](https://bigdataanalyticsnews.com/top-open-source-llm-models/#google_vignette)
+* [The 6 Best LLM Tools To Run Models Locally](https://www.linkedin.com/pulse/6-best-llm-tools-run-models-locally-amos-gyamfi-2wudf)
+* [The 6 Best LLM Tools To Run Models Locally](https://getstream.io/blog/best-local-llm-tools/)
+* [Top 5 AI Models YOU Can Run Locally on YOUR Device!](https://dev.to/best_codes/5-best-ai-models-you-can-run-locally-on-your-device-475h)
