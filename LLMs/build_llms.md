@@ -11,9 +11,17 @@ Key concepts:
 * **Activation Functions:** Functions like `ReLU` and `Softmax` that help in decision-making.
 
 ### Transformer Architecture
+Transformers are the core of modern LLMs. Introduced in the famous research paper “Attention is All You Need”, they use a mechanism called **self-attention** to understand language.
+
+Transformers **outperform traditional models** like RNNs and LSTMs because they:
+* **Process words in parallel** instead of sequentially.
+* **Understand long-range dependencies** between words.
+* **Scale efficiently** to billions of parameters.
 
 ### Programming and Frameworks
-
+* **Python** — The primary language for AI research.
+* **Deep Learning Libraries** — PyTorch (flexible, research-friendly) or TensorFlow (scalable for production).
+* **Hugging Face Transformers** — A library that simplifies working with transformer-based models.
 
 ## Core Components of an LLM
 1. **Tokenizer:** Splits text into smaller units like words, subwords, characters.
