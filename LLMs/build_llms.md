@@ -1,5 +1,20 @@
 # <p align="center"> How to Build an LLM from Scratch: A Comprehensive Guide </p>
 ---
+
+## Understanding the Basics
+### Neural Networks and Deep Learning
+A neural network is a machine learning model inspired by the human brain. It consists of layers of neurons that process information and learn patterns in data.
+
+Key concepts:
+* **Backpropagation:** How the model adjusts its weights during training.
+* **Gradient Descent:** The algorithm use to minimize error in predictions.
+* **Activation Functions:** Functions like `ReLU` and `Softmax` that help in decision-making.
+
+### Transformer Architecture
+
+### Programming and Frameworks
+
+
 ## Core Components of an LLM
 1. **Tokenizer:** Splits text into smaller units like words, subwords, characters.
 2. **Embedding Layer:** Converts tokens into dense vector representations.
