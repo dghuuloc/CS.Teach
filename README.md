@@ -88,3 +88,5 @@ If you have any questions or need further resources, feel free to ask! Happy lea
 * [Understanding Large Language Models (LLMs): A Comprehensive Overview](https://www.reddit.com/r/learnmachinelearning/comments/1h1awif/understanding_large_language_models_llms_a/)
 * [Artificial Intelligence for Beginners - A Curriculum](https://github.com/microsoft/AI-For-Beginners)
 * [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
+* [Russian Handwriting vs. Printed Letters: How to Read and Write Cursive](https://www.polyglottistlanguageacademy.com/language-culture-travelling-blog/2025/4/12/russian-handwriting-vs-printed-letters-how-to-read-and-write-cursive)
+* [Russian Alphabet](https://www.russianforeveryone.com/RufeA/Lessons/Introduction/Alphabet/Alphabet.htm)
