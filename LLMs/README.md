@@ -3,8 +3,8 @@
 
 ___<p align="center">The theory and development of computer systems able to perform tasks normally requiring human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages.</p>___
 
----
 
+---
 
 ```txt
 >>> TODO:
@@ -36,6 +36,8 @@ we assume you are comfortable programming in Python and has a basic understandin
 >>>
 ```
 
+---
+## [A Brief History of LLMs](https://medium.com/@lmpo/a-brief-history-of-lmms-from-transformers-2017-to-deepseek-r1-2025-dae75dd3f59a)
 
 ---
 ## The field of AI often visualized in layers
@@ -132,7 +134,6 @@ OpenAI’s **GPT** models focused on text generation, while Google’s **BERT** 
 * **2023: The Year of Generative AI**<br/>
 The release of **ChatGPT** by OpenAI marked a turning point, bringing LLMs into the mainstream. With millions of users in mere months, it set the stage for widespread adoption of AI chatbots.
 
-
 ---
 ## Popular Transformer Models:
 * **Encoder-Only Models:** BERT, RoBERTa
@@ -165,7 +166,6 @@ At its core, a neural network is a piece of math. It’s a mathematical function
 * **Hidden Layers:** Layers between the input and output, where the magic happens.
 * **Output Layer:** The final layer, where the predictions come out (like 0, 1, 2, …, 9 for digits).
 * **Activations:** Each neuron “lights up” with a number (activation) between 0 and 1, depending on the inputs.
-
 
 ### Transformers
 Transformer models are a type of neural network used in Natural Language Processing (NLP). They excel at understanding contextual data, where the meaning of words depends on their surrounding context, sentences, and even entire paragraphs. The Transformer architecture is adept at learning these patterns, making it ideal for language-based tasks.
