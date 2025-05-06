@@ -3,7 +3,7 @@
 
 ## Understanding the Basics
 ### Neural Networks and Deep Learning
-A neural network is a machine learning model inspired by the human brain. It consists of layers of neurons that process information and learn patterns in data.
+A **neural network** is a machine learning model inspired by the human brain. It consists of **layers of neurons** that process information and learn patterns in data.
 
 Key concepts:
 * **Backpropagation:** How the model adjusts its weights during training.
