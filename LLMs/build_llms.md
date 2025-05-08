@@ -84,9 +84,13 @@ Tokenization is the process of splitting text into smaller units, such as words,
 ---
 ## Architect the Model
 ### Key Components of a Transformer
-1. **Self-Attention:** Captures relationships between words regardless of their position in a sentence.
-2. **Positional Encoding:** Adds information about the order of words.
-3. **Feedforward Layers:** Process outputs from the attention mechanism.
+1. **Input Embeddings:** Converts words or tokens into dense vectors that represent semantic information.
+2. **Multi-Head Self-Attention:** Allows the model to focus on different parts of the input sentence at the same time, helping it capture long-range dependencies in text.
+3. **Feedforward Neural Networks:** Applies transformation ot the attention outputs, helping to add more non-linearity and learn more complex patterns.
+4. **Layer Normalization:** Stabilizes training by normalizing inputs to each layer.
+5. **Positional Encoding:** Provides information about the position of words in a sentence, which is essential since transformers do not inherently capture sequential order.
+6. **Output Layer:** A softmax layer is applied to generate the final output, which is a probability distribution over the next word or token in the sequence.
+
 ### Design Choices
 * **Depth:** Number of transformer layers.
 * **Width:** Size of hidden layers and embedding vectors.
