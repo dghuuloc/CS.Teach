@@ -98,6 +98,12 @@ Tokenization is the process of splitting text into smaller units, such as words,
 For large-scale models, consider using a prebuilt architecture like **GPT**, **BERT**, or **T5** as a blueprint.
 
 ---
+## Neurons and Layers in LLMs
+In LLMs, each layer contains a large number of neurons, with a typical architecture having several hundred layers and billions of parameters.
+* **GPT-3 (175 billion parameters):** GPT-3 has 96 layers, 12,288 hidden units per layer, and 96 attention heads. This massive architecture allows the model to generate high-quality, coherent text.
+* **BERT (110 million to 340 million parameters):** BERT has 12–24 layers, 768–1024 hidden units per layer, and 12–16 attention heads. BERT is pre-trained using a masked language model (MLM) approach, making it effective at understanding context.
+
+---
 ## Choose a Trainning Framework
 ### Popular Frameworks
 * **PyTorch:** Great for custom implementations.
@@ -156,10 +162,6 @@ Monitor the model’s performance and retrain it periodically with fresh data.
 1. **Cost:** Training large models requires significant computational resources.
 2. **Ethics:** Ensure the model doesn’t propagate biases or generate harmful content.
 3. **Regulations:** Adhere to data privacy laws like GDPR.
-
-
-
-
 
 
 ---
