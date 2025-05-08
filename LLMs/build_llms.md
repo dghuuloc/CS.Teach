@@ -110,6 +110,40 @@ In LLMs, each layer contains a large number of neurons, with a typical architect
 * **TensorFlow:** Offers robust tools for scalability.
 * **Hugging Face Transformers:** Provides prebuilt models and training utilities.
 
+### Model Design (Transformer Architecture)
+Using a framework like PyTorch or TensorFlow, you can design your own transformer model. Below is a simplified example of how you might define a basic transformer in PyTorch:
+Transformer Model Code (PyTorch):
+```python
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+class SimpleTransformer(nn.Module):
+    def __init__(self, vocab_size, d_model, nhead, num_encoder_layers, num_decoder_layers, dim_feedforward):
+        super(SimpleTransformer, self).__init__()
+        self.embedding = nn.Embedding(vocab_size, d_model)
+        self.transformer = nn.Transformer(d_model=d_model, nhead=nhead, num_encoder_layers=num_encoder_layers, 
+                                          num_decoder_layers=num_decoder_layers, dim_feedforward=dim_feedforward)
+        self.fc = nn.Linear(d_model, vocab_size)
+        
+    def forward(self, src, tgt):
+        src_emb = self.embedding(src)
+        tgt_emb = self.embedding(tgt)
+        output = self.transformer(src_emb, tgt_emb)
+        return self.fc(output)
+
+# Hyperparameters
+vocab_size = 50000  # Size of your vocabulary
+d_model = 512  # Dimension of model layers
+nhead = 8  # Number of attention heads
+num_encoder_layers = 6  # Number of encoder layers
+num_decoder_layers = 6  # Number of decoder layers
+dim_feedforward = 2048  # Feedforward layer size
+
+# Initialize and train model
+model = SimpleTransformer(vocab_size, d_model, nhead, num_encoder_layers, num_decoder_layers, dim_feedforward)
+```
+
 ---
 ## Train the Model
 ### Pretraining vs. Fine-Tuning
