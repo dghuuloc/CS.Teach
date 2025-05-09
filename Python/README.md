@@ -172,6 +172,12 @@ String prefixes are characters placed before string literals in Python that chan
 * Use Raw String Literals `r"string"` when working with regular expressions, file paths, or any string with backslashes.
 * Use Byte Strings `b"byte_string"` when handling binary data, such as reading or writing to binary files or communicating over a network.
 
+### Write a long string on multiple lines
+* Triple Quotes
+* Backslash
+* Parentheses
+* F-Strings
+* join() Method
 ---
 ## Python collection
 ### Lists
@@ -817,3 +823,4 @@ print(employee.greet())
 * [Top 15 Python Built-in Functions](https://www.analyticsvidhya.com/blog/2021/07/15-python-built-in-functions-which-you-should-know-while-learning-data-science/)
 * [Python List Comprehension Using If-Else](https://www.geeksforgeeks.org/python-list-comprehension-using-if-else/)
 * [if/else in a list comprehension](https://sparkbyexamples.com/python/if-else-in-a-list-comprehension/)
+* [Write a Long String on Multiple Lines in Python](https://blog.finxter.com/write-a-long-string-on-multiple-lines-in-python/)
