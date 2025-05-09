@@ -161,7 +161,7 @@ a % b = a - (a // b) * b
 
 ---
 ## Python slice()
-The `slice()` function returns a slice object. A slice object is used to specify how to slice a sequence (**list, tuple, string or range** etc.) .
+
 
 ---
 ## Python String
@@ -233,34 +233,13 @@ dictionary.keys()
 ```python
 dictionary.values()
 ```
-
-## Range() 
-`range()` returns an immutable sequence of numbers between the given start integer to the stop integer.
-``` python
-print(range(0, 10)) #Output: range(0, 10)
-```
-
-* The output is an iterable and you can convert it to list, tuple, set and so on. 
-``` python 
-numbers = range(1, 6)
-
-print(list(numbers)) # Output: [1, 2, 3, 4, 5]
-print(tuple(numbers)) # Output: (1, 2, 3, 4, 5)
-print(set(numbers)) # Output: {1, 2, 3, 4, 5}
-# Output: {1: 99, 2: 99, 3: 99, 4: 99, 5: 99} 
-print(dict.fromkeys(numbers, 99))
-```
-* We have omitted optional `step` parameter for `range()` in above examples. When omitted, `step` defaults to 1. Let's try few examples with `step` parameter.
-``` python
-# Equivalent to: numbers = range(1, 6)
-numbers1 = range(1, 6 , 1)
-print(list(numbers1)) # Output: [1, 2, 3, 4, 5]
-
-numbers2 = range(1, 6, 2)
-print(list(numbers2)) # Output: [1, 3, 5]
-
-numbers3 = range(5, 0, -1)
-print(list(numbers3)) # Output: [5, 4, 3, 2, 1]
+* `get(key)`method retrieves the value associated with the key, but returns `None` if the key donesn't exist. The `get()` method provides a safer alternative to square brackets, avoiding `KeyError` exceptions.
+```python
+my_dict = {"name": "John", "age": 30}
+print(my_dict["name"]) # Output: John
+my_dict["city"] = "New York"
+print(my_dict.get("age")) # Output: 30
+print(my_dict.get("country", "USA")) # Output: USA
 ```
 
 ---
@@ -370,6 +349,7 @@ def add_numbers(a, b):
 result = add_numbers(4, 5)
 print(result)
 ```
+
 ### Built-in functions in Python
 * `print()`
 * `input()`
@@ -383,18 +363,37 @@ print(result)
 * `bin()`
 * `bool()`
 * `bytes()`
-* `get(key)`: retrieves the value associated with the key, but returns `None` if the key donesn't exist. The `get()` method provides a safer alternative to square brackets, avoiding `KeyError` exceptions.
-```python
-my_dict = {"name": "John", "age": 30}
-print(my_dict["name"]) # Output: John
-my_dict["city"] = "New York"
-print(my_dict.get("age")) # Output: 30
-print(my_dict.get("country", "USA")) # Output: USA
-```
 * `bytearray()`: Returns a new array of bytes.
 * `bytes()`: Returns a new "bytes" object.
 * `chr()`: Returns the string representing a character whose Unicode code point is the integer.
+* `slice()` returns a slice object. A slice object is used to specify how to slice a sequence (**list, tuple, string or range** etc.) .
 
+#### `range()` method returns an immutable sequence of numbers between the given start integer to the stop integer.
+``` python
+print(range(0, 10)) #Output: range(0, 10)
+```
+* The output is an iterable and you can convert it to list, tuple, set and so on. 
+``` python 
+numbers = range(1, 6)
+
+print(list(numbers)) # Output: [1, 2, 3, 4, 5]
+print(tuple(numbers)) # Output: (1, 2, 3, 4, 5)
+print(set(numbers)) # Output: {1, 2, 3, 4, 5}
+# Output: {1: 99, 2: 99, 3: 99, 4: 99, 5: 99} 
+print(dict.fromkeys(numbers, 99))
+```
+* We have omitted optional `step` parameter for `range()` in above examples. When omitted, `step` defaults to 1. Let's try few examples with `step` parameter.
+``` python
+# Equivalent to: numbers = range(1, 6)
+numbers1 = range(1, 6 , 1)
+print(list(numbers1)) # Output: [1, 2, 3, 4, 5]
+
+numbers2 = range(1, 6, 2)
+print(list(numbers2)) # Output: [1, 3, 5]
+
+numbers3 = range(5, 0, -1)
+print(list(numbers3)) # Output: [5, 4, 3, 2, 1]
+```
 #### Python's built-in functions to convert numbers between decimal, octal, and hexadecimal representation.
 * `bin()`: This function takes an integer as an argument and returns its binary representation as a string, prefixed with `0b`.
 ```python
