@@ -160,10 +160,6 @@ a % b = a - (a // b) * b
 ## Numbers and Maths
 
 ---
-## Python slice()
-
-
----
 ## Python String
 ### What Are String Prefixes?
 String prefixes are characters placed before string literals in Python that change how the string is interpreted. Python allows several prefixes, with the most widely used being f, for string interpolation, and r, for raw strings that treat backslashes as literal characters. The most commonly used string prefixes in Python include:
@@ -240,6 +236,52 @@ print(my_dict["name"]) # Output: John
 my_dict["city"] = "New York"
 print(my_dict.get("age")) # Output: 30
 print(my_dict.get("country", "USA")) # Output: USA
+```
+
+---
+## Python Comprehensions
+### List Comprehension:
+**Definition:** A list comprehension creates a new list by applying an expression to each item in an iterable.
+```python
+# Syntax:
+[expression for item in iterable if condition]
+
+# Trick: Use list comprehension to flatten nested lists.
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flat = [num for row in matrix for num in row]
+# Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+### Dictionary Comprehension:
+**Definition:** A dictionary comprehension creates a new dictionary by applying an expression to each key-value pair in an iterable.
+```python
+# Syntax:
+{key_expression: value_expression for item in iterable if condition}
+
+# Trick: Inverting keys and values in a dictionary.
+original_dict = {'a': 1, 'b': 2, 'c': 3}
+inverted_dict = {v: k for k, v in original_dict.items()}
+# Output: {1: 'a', 2: 'b', 3: 'c'}
+```
+### Set Comprehension:
+**Definition:** A set comprehension creates a new set by applying an expression to each item in an iterable. Since sets automatically handle duplicates, this is a great way to ensure unique items.
+```python
+# Syntax:
+{expression for item in iterable if condition}
+
+# Trick: Extract unique vowels from a string.
+vowels = {char for char in 'pythoncomprehension' if char in 'aeiou'}
+# Output: {'e', 'o', 'i'}
+```
+### Tuple Comprehension (Generator Expression):
+**Definition:** While Python does not have tuple comprehensions, you can create a tuple by using a generator expression, which is similar in syntax to a comprehension but uses parentheses instead of square brackets. This generates items one at a time and is more memory efficient.
+```python
+# Syntax:
+(expression for item in iterable if condition)
+
+# Trick: Generate a sequence of tuples.
+pairs = ((x, x**2) for x in range(5))
+pairs_tuple = tuple(pairs)
+# Output: ((0, 0), (1, 1), (2, 4), (3, 9), (4, 16))
 ```
 
 ---
