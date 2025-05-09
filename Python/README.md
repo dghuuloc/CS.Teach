@@ -284,6 +284,12 @@ pairs_tuple = tuple(pairs)
 # Output: ((0, 0), (1, 1), (2, 4), (3, 9), (4, 16))
 ```
 
+### `if-else` nested in Comprehension
+```python
+# Syntax:
+ [result if condition else alternative_result for item in iterable]
+```
+
 ---
 ## Control Flow
 ### if...elif...else Statement
@@ -488,7 +494,6 @@ print(f"Decimal of {hexadecimal_string}: {decimal_number}") # Output: Decimal of
 >   formatted_octal = format(10, 'o') # Output: '12'
 >   formatted_hex = format(10, 'x') # Output: 'a'
 >   ```
-
 
 ---
 ### Lambda Function
