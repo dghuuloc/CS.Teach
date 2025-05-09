@@ -415,6 +415,7 @@ print(result)
 * `bytes()`: Returns a new "bytes" object.
 * `chr()`: Returns the string representing a character whose Unicode code point is the integer.
 * `slice()` returns a slice object. A slice object is used to specify how to slice a sequence (**list, tuple, string or range** etc.) .
+* `join()` method takes all items in an iterable and joins them into one string
 
 #### `range()` method returns an immutable sequence of numbers between the given start integer to the stop integer.
 ``` python
