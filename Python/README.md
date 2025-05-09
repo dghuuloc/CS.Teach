@@ -209,7 +209,7 @@ In Python, a Dictionary can be created by placing a sequence of elements within 
 my_dict = {}
 ```
 #### Dictionary Methods
-* `items()`: It returns a view object that displays a _list of dictionary's (key, value) tuple pairs_.
+* `items()` method returns a view object that displays a _list of dictionary's (key, value) tuple pairs_.
 ```python
 my_dict = {"a": 1, "b": 2, "c": 3}
 
@@ -221,7 +221,14 @@ for key, value in my_dict.items():
 items_view = my_dict.items()
 print(items_view)  # Output: dict_items([('a', 1), ('b', 2), ('c', 3)])
 ```
-* `keys()`, `values()`
+* `keys()` method extracts the keys of the dictionary and returns the list of keys as a view object.
+```python
+dictionary.keys()
+```
+* `values()` method returns a view object that displays a list of all the values in the dictionary. The syntax of values() is:
+```python
+dictionary.values()
+```
 
 ## Range() 
 `range()` returns an immutable sequence of numbers between the given start integer to the stop integer.
