@@ -209,7 +209,11 @@ In Python, a Dictionary can be created by placing a sequence of elements within 
 my_dict = {}
 ```
 #### Dictionary Methods
-* `items()` method returns a view object that displays a _list of dictionary's (key, value) tuple pairs_.
+* `items()` method returns a view object that displays a _list of dictionary's (key, value) tuple pairs_. The syntax of items() method is:
+```python
+dictionary.items()
+```
+**For example:**
 ```python
 my_dict = {"a": 1, "b": 2, "c": 3}
 
