@@ -208,6 +208,21 @@ In Python, a Dictionary can be created by placing a sequence of elements within 
 # empty dictionary
 my_dict = {}
 ```
+#### Dictionary Methods
+* `items()`: It returns a view object that displays a _list of dictionary's (key, value) tuple pairs_.
+```python
+my_dict = {"a": 1, "b": 2, "c": 3}
+
+# Iterate through key-value pairs using .items()
+for key, value in my_dict.items():
+    print(f"Key: {key}, Value: {value}")
+
+# Access key-value pairs as tuples
+items_view = my_dict.items()
+print(items_view)  # Output: dict_items([('a', 1), ('b', 2), ('c', 3)])
+```
+* `keys()`, `values()`
+
 ## Range() 
 `range()` returns an immutable sequence of numbers between the given start integer to the stop integer.
 ``` python
@@ -345,19 +360,6 @@ result = add_numbers(4, 5)
 print(result)
 ```
 ### Built-in functions in Python
-* `items()`: It returns a view object that displays a list of a dictionary's key-value tuple pairs.
-```python
-my_dict = {"a": 1, "b": 2, "c": 3}
-
-# Iterate through key-value pairs using .items()
-for key, value in my_dict.items():
-    print(f"Key: {key}, Value: {value}")
-
-# Access key-value pairs as tuples
-items_view = my_dict.items()
-print(items_view)  # Output: dict_items([('a', 1), ('b', 2), ('c', 3)])
-```
-* `keys()`, `values()`
 * `print()`
 * `input()`
 * `len()`
