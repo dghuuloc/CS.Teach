@@ -867,6 +867,14 @@ def main_generator():
 for value in main_generator():
  print(value)
 ```
+### Advanced Use Cases
+In more advanced scenarios, `yield from` can also handle the delegation of `send()`, `throw()`, and `close()` calls. This can be particularly useful for complex generator interactions.
+#### Without `yield from`
+Handling `send()` and exceptions manually can be cumbersome:
+```python
+
+```
+
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
