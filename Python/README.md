@@ -251,7 +251,7 @@ Comprehensions in Python provide a concise and efficient way to create new seque
 * Dictionary Comprehensions
 * Set Comprehensions
 * Generator Comprehensions
-* 
+
 ### List Comprehension:
 **Definition:** A list comprehension creates a new list by applying an expression to each item in an iterable.
 ```python
@@ -295,6 +295,23 @@ pairs = ((x, x**2) for x in range(5))
 pairs_tuple = tuple(pairs)
 # Output: ((0, 0), (1, 1), (2, 4), (3, 9), (4, 16))
 ```
+
+> [!NOTE]
+> * Python has four types of comprehensions: **list**, **set**, **dictionary**, and **generator expressions**.
+> * here is no direct "tuple comprehension" in Python. If you use parentheses `()` in a comprehension-like syntax, you create a generator expression, not a tuple.
+> * To create a tuple from a comprehension-like syntax, you must explicitly use the tuple constructor `tuple()` around the generator expression.
+
+### Difference between Generator expression and Tuple Comprehension
+|**Feature**|**Generator Expression**|**Tuple Comprehension**|
+|-----------|------------------------|-----------------------|
+| Syntax    | `(expression for item in iterable)` | `tuple(expression for item in iterable)` |
+| Output | Creates a generator object | Creates a tuple |
+| Memory Usage | Memory-effecient, generates values on-the-fly | Less memry-efficient than generators, creates the entire tuple in memory |
+|Immutability | Can be iterated over only once | Immutable, cannot be changed after creation |
+
+##### Why no direct Tuple Comprehension?
+* Tuples are disigned to be immutable sequences of a fixed length. They are often used to represent a record of data with a specific structure.
+* Generator expressions are designed to generate values lazily and efficiently.
 
 ### `if-else` nested in Comprehension
 ```python
