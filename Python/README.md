@@ -592,6 +592,17 @@ finally:
 ---
 ## The `with` Statement (Context Managers)
 The `with` statement is a handy way to manage resources like files, sockets, and database connections. It ensures that the resource is properly closed when you’re done with it, even if an error occurs.
+
+### Context Managers
+Context managers are objects that implement the ocntext management protocol, which consists of two method:
+* `__enter__()`: Called when the `with` statement is enterd. It can perform setup actions and return a value that will be assigned to the variable after `as` in the `with` statement.
+* `__exit__(exc_type, exc_value, traceback)`: Called when the `with` statement is exited. It performs cleanup actions, such as closing files or releasing locks. If an exception occurred within the `with` block, `exc_value`, and `traceback` will contain information about the exception. Otherwise, they will be `None`. 
+
+### How `with` Works?
+When a `with` statement is executed, it does the following:
+
+
+
 ```pyhton
 with open("file.txt", "r") as file:
     # Use the file
