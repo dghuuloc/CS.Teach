@@ -773,6 +773,10 @@ The following creates a new instance of the `Employee` class and call the `greet
 employee = Employee('John', 25, 'Python Developer')
 print(employee.greet())
 ```
+## Generator
+### Generator function
+
+### Generator expression
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
