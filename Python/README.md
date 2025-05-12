@@ -591,7 +591,13 @@ finally:
 
 ---
 ## The `with` Statement (Context Managers)
-The `with` statement is a handy way to manage resources like files, sockets, and database connections. It ensures that the resource is properly closed when you’re done with it, even if an error occurs.
+The `with` statement in Python is used for resource management, ensuring that resources are properly acquired and released. It simplifies code by handling setup and teardown options automatically.
+
+**The basic syntax is:**
+```python
+with expression as variable:
+    # code block
+```
 
 ### Context Managers
 Context managers are objects that implement the ocntext management protocol, which consists of two method:
