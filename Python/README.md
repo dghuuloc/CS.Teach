@@ -939,6 +939,15 @@ Handling `send()` and exceptions manually can be cumbersome:
 
 ```
 
+## Lambda/Anonymous Function 
+### Lambda declaration
+Use the `lambda` keyword instead of `def` to create a lambda function. Here's the syntax to declare the lambda function:
+```pytho
+lambda argument(s) : expression
+```
+Here,
+* `argument(s)` - any value passed to the lambda function
+* `expression` - expression is executed and returned
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
