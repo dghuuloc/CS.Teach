@@ -828,6 +828,12 @@ The `yield` statement is used to create a generator function. Generator function
 > **_return immediately exits the function_** when encountered, while **_yield suspends the function’s execution_** and allows it to be resumed later.
 > Functions using **_return are regular functions_**, while functions using **_yield are generator functions_**.
 
+### Generator `next()` statement
+```python
+
+```
+
+
 ### Introducing `yield from`
 The `yield from` statement is used to delegate part of a generator’s operations to another generator. **_This is particularly useful when you have a generator that needs to yield values from another generator_**.
 #### Why use `yield from`?
@@ -867,6 +873,7 @@ def main_generator():
 for value in main_generator():
  print(value)
 ```
+
 ### Advanced Use Cases
 In more advanced scenarios, `yield from` can also handle the delegation of `send()`, `throw()`, and `close()` calls. This can be particularly useful for complex generator interactions.
 #### Without `yield from`
