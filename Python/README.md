@@ -246,6 +246,12 @@ print(my_dict.get("country", "USA")) # Output: USA
 
 ---
 ## Python Comprehensions
+Comprehensions in Python provide a concise and efficient way to create new sequences from existing ones. They enhance code readability and reduce the need for lengthy loops. Python supports four types of comprehensions:
+* List Comprehensions
+* Dictionary Comprehensions
+* Set Comprehensions
+* Generator Comprehensions
+* 
 ### List Comprehension:
 **Definition:** A list comprehension creates a new list by applying an expression to each item in an iterable.
 ```python
