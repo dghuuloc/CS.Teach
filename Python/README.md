@@ -1000,7 +1000,9 @@ infinite_iterator = count(1)
 for i in range(5):
     print(next(infinite_iterator))
 ```
-
+**Explain:**
+* Create an infinite iterator that start at **1** and increments by **1** each time
+* And then print the first **5** elements of the infinite iterator using the `for` loop and the `next()` method.
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
