@@ -797,9 +797,22 @@ employee = Employee('John', 25, 'Python Developer')
 print(employee.greet())
 ```
 ## Generator
+Generators in Python are a way to create iterators. They generate values on demand, which can be more memory-efficient than creating a list of all values at once. There are two main ways to create generators:
 ### Generator function
+* Defined using the `def` keyword, like regular functions, but use the `yield` keyword instead of `return`
+* When called, they return a generator object.
+* Each time `yield` is encountered, the function pauses and returns the yielded value.
+* When the generator is iterated over (e.g., using a for `loop` or `next()`), the function resumes from where it left off.
 
 ### Generator expression
+* Similar to list comprehensions but use parentheses `()` instead of square brackets `[]`.
+* Creates a generator object without defining a separate function.
+* More concise for simple generator logic.
+```python
+my_generator = (i for i in range(5))
+for value in my_generator:
+    print(value) # Output: 0 1 2 3 4
+````
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
