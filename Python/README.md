@@ -817,6 +817,14 @@ for value in my_generator:
 > * Generator functions use `def` and `yield`, while generator expressions use parentheses `()` and a comprehension-like syntax.
 > * Generator functions are better for more complex logic, while generator expressions are suitable for simple value generation.
 
+### Exploring Python’s return vs. yield
+#### Return Statement
+The `return` statement is used to exit a function and return a value to the caller. When a function encounters a return statement, it immediately exits, and the value specified after return is passed back to the caller.
+#### Yield Statement
+The `yield` statement is used to create a generator function. Generator functions allow you to iterate over a sequence of values without storing them all in memory at once. When a generator function encounters a ‘yield’ statement, it temporarily suspends its execution and returns the value specified after yield.
+
+
+
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
 * [Exploring Python Built-In Functions: An Easy Guide](https://medium.com/@roscoe.kerby/exploring-python-built-in-functions-an-easy-guide-d1a93fe6c3a5)
