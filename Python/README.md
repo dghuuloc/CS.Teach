@@ -1013,7 +1013,17 @@ for i in range(5):
 * And then print the first **5** elements of the infinite iterator using the `for` loop and the `next()` method.
 
 ## Nested Function and Closures
+```python
+def greet(name):
+    # return a nested anonymous function
+    return lambda: "Hi " + name
 
+# call the outer function
+message = greet("John")
+
+# call the inner function
+print(message()
+```
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
