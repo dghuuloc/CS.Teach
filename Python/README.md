@@ -1012,6 +1012,9 @@ for i in range(5):
 * Create an infinite iterator that start at **1** and increments by **1** each time
 * And then print the first **5** elements of the infinite iterator using the `for` loop and the `next()` method.
 
+## Nested Function and Closures
+
+
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
 * [Exploring Python Built-In Functions: An Easy Guide](https://medium.com/@roscoe.kerby/exploring-python-built-in-functions-an-easy-guide-d1a93fe6c3a5)
