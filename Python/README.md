@@ -590,8 +590,12 @@ finally:
 ```
 
 ---
-## The `with` Statement and Context Managers
+## The `with` Statement (Context Managers)
 The `with` statement is a handy way to manage resources like files, sockets, and database connections. It ensures that the resource is properly closed when you’re done with it, even if an error occurs.
+```pyhton
+with open("file.txt", "r") as file:
+    # Use the file
+```
 
 ---
 ## Python Object-Oriented-Programming
