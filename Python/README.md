@@ -279,7 +279,7 @@ vowels = {char for char in 'pythoncomprehension' if char in 'aeiou'}
 # Output: {'e', 'o', 'i'}
 ```
 ### Tuple Comprehension (Generator Expression):
-**Definition:** While Python does not have tuple comprehensions, you can create a tuple by using a generator expression, which is similar in syntax to a comprehension but uses parentheses instead of square brackets. This generates items one at a time and is more memory efficient.
+**Definition:** _While Python does not have tuple comprehensions_, you can create a tuple by using a **generator expression**, which is similar in syntax to a comprehension but uses parentheses instead of square brackets. This generates items one at a time and is more memory efficient.
 ```python
 # Syntax:
 (expression for item in iterable if condition)
