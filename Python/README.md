@@ -598,21 +598,45 @@ The `with` statement in Python is used for resource management, ensuring that re
 with expression as variable:
     # code block
 ```
+* `expression`: This is the context manager, an object that defines the `__enter__` and `__exit__` methods.
+* `as variable`: This optional clause assigns the value returned by the `__enter__` method to the specified variable.
+* `code block`: The code to be executed within the context.
 
 ### Context Managers
-Context managers are objects that implement the ocntext management protocol, which consists of two method:
+Context managers are objects that implement the context management protocol, which consists of two method:
 * `__enter__()`: Called when the `with` statement is enterd. It can perform setup actions and return a value that will be assigned to the variable after `as` in the `with` statement.
 * `__exit__(exc_type, exc_value, traceback)`: Called when the `with` statement is exited. It performs cleanup actions, such as closing files or releasing locks. If an exception occurred within the `with` block, `exc_value`, and `traceback` will contain information about the exception. Otherwise, they will be `None`. 
 
-### How `with` Works?
-When a `with` statement is executed, it does the following:
-
-
-
-```pyhton
+### Common File Handling with Context Manager
+```python
 with open("file.txt", "r") as file:
-    # Use the file
+    data = file.read()
+    # process data
 ```
+
+In this case, the `open` function returns a file object, which acts as a context manager. The `with` statement ensures that the file automatically closed, even if an error occurs while reading or processing the data.
+
+The `with` statement can also be used with custom context manages, which are classes that implement the `__enter__` and `__exit__` methods.
+```python
+class File:
+    def __init__(self, filename, mode):
+        self.filename = filename
+        self.mode = mode
+        self.file = None
+
+    def __enter__(self):
+        self.file = open(self.filename, self.mode)
+        return self.file
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        if self.file:
+            self.file.close()
+
+with File("example.txt", "w") as f:
+    f.write("Hello, world!")
+```
+
+
 
 ---
 ## Python Object-Oriented-Programming
