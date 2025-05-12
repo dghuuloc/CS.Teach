@@ -526,15 +526,6 @@ print(f"Decimal of {hexadecimal_string}: {decimal_number}") # Output: Decimal of
 >   ```
 
 ---
-### Lambda Function
-In python, you can define functions without a name. Thes functions are lambda or anonymous function. To create a lambda function, `lambda` keyword is used.
-``` python
-square = lambda x: x**2
-print(square(5))
-```
-We use lambda functions when we require a nameless function for a short period of time. Lambda functions are used along with built-in functions like `filter()`, `map()` etc.
-
----
 ## Modules
 Modules refer to a file containing Python statements and definitions.
 
