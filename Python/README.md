@@ -823,6 +823,10 @@ The `return` statement is used to exit a function and return a value to the call
 #### Yield Statement
 The `yield` statement is used to create a generator function. Generator functions allow you to iterate over a sequence of values without storing them all in memory at once. When a generator function encounters a ‘yield’ statement, it temporarily suspends its execution and returns the value specified after yield.
 
+> [!NOTE]
+> **_Return is used to exit a function and return_** a value or just exit a function, while **_yield is used to create generator functions_** that can produce a sequence of values.
+> **_return immediately exits the function_** when encountered, while **_yield suspends the function’s execution_** and allows it to be resumed later.
+> Functions using **_return are regular functions_**, while functions using **_yield are generator functions_**.
 
 
 ## References
