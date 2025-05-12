@@ -1024,6 +1024,12 @@ message = greet("John")
 # call the inner function
 print(message()
 ```
+### When to use closures?
+* Closures can be used to avoid global values and provide data hiding, and can be an elegant solution for simple cases with one or few methods.
+* However, for larger cases with multiple attributes and methods, a class implementation may be more appropriate.
+* Python Decorators make extensive use of closures as well.
+* All function objects have a `__closure__` attribute that returns a tuple of cell objects if it is a closure function.
+
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
