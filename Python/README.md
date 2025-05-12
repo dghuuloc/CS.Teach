@@ -990,3 +990,4 @@ Handling `send()` and exceptions manually can be cumbersome:
 * [Python List Comprehension Using If-Else](https://www.geeksforgeeks.org/python-list-comprehension-using-if-else/)
 * [if/else in a list comprehension](https://sparkbyexamples.com/python/if-else-in-a-list-comprehension/)
 * [Write a Long String on Multiple Lines in Python](https://blog.finxter.com/write-a-long-string-on-multiple-lines-in-python/)
+* [An Introduction to the With Statement in Python](https://builtin.com/software-engineering-perspectives/what-is-with-statement-python)
