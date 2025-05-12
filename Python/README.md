@@ -1024,6 +1024,17 @@ message = greet("John")
 # call the inner function
 print(message()
 ```
+```python
+def outer(x):
+    def inner(y):
+        return x + y
+    return inner
+
+add_five = outer(5)
+result = add_five(6)
+print(result)  # prints 11
+```
+
 ### When to use closures?
 * Closures can be used to avoid global values and provide data hiding, and can be an elegant solution for simple cases with one or few methods.
 * However, for larger cases with multiple attributes and methods, a class implementation may be more appropriate.
