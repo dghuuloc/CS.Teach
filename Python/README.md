@@ -848,6 +848,23 @@ Generators in Python are a way to create iterators. They generate values on dema
 * When called, they return a generator object.
 * Each time `yield` is encountered, the function pauses and returns the yielded value.
 * When the generator is iterated over (e.g., using a for `loop` or `next()`), the function resumes from where it left off.
+```python
+def my_generator(n):
+    # initialize counter
+    value = 0
+
+    # loop until counter is less than n
+    while value < n:
+        # produce the current value of the counter
+        yield value
+
+        # increment the counter
+        value += 1
+# iterate over the generator object produced by my_generator
+for value in my_generator(3):
+    # print each value produced by generator
+    print(value)
+```
 
 ### Generator expression
 * Similar to list comprehensions but use parentheses `()` instead of square brackets `[]`.
