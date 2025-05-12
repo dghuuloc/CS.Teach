@@ -828,6 +828,45 @@ The `yield` statement is used to create a generator function. Generator function
 > **_return immediately exits the function_** when encountered, while **_yield suspends the function’s execution_** and allows it to be resumed later.
 > Functions using **_return are regular functions_**, while functions using **_yield are generator functions_**.
 
+### Introducing `yield from`
+The `yield from` statement is used to delegate part of a generator’s operations to another generator. **_This is particularly useful when you have a generator that needs to yield values from another generator_**.
+#### Why use `yield from`?
+While you can write generators without `yield from`, using it offers several advantages:
+1. Code Simplification: It reduces the need for explicit loops to yield values from another generator.
+2. Readability: It makes your code more expressive and easier to understand.
+3. Forwarding: It automatically forwards method calls like `send()`, `throw()`, and `close()` to the sub-generator.
+4. Efficiency: It can make your code more efficient by reducing the overhead associated with loops.
+
+* Example without `yield from`:
+```python
+def sub_generator():
+ yield 1
+ yield 2
+ yield 3
+
+def main_generator():
+ yield 'Start'
+ for value in sub_generator():
+ yield value
+ yield 'End'
+
+for value in main_generator():
+ print(value)
+```
+* Example With `yield from`:
+```python
+def sub_generator():
+ yield 1
+ yield 2
+ yield 3
+
+def main_generator():
+ yield 'Start'
+ yield from sub_generator()
+ yield 'End'
+for value in main_generator():
+ print(value)
+```
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
