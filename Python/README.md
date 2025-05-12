@@ -834,7 +834,19 @@ The `yield` statement is used to create a generator function. Generator function
 
 ### Generator `next()` statement
 ```python
+def my_generator():
+    yield "Hello world!"
+    yield "GeeksForGeeks"
 
+gen = my_generator()
+
+while True:
+    try:
+        value = next(gen)
+        print(value)
+    except StopIteration:
+        print("Generator exhausted.")
+        break
 ```
 
 
