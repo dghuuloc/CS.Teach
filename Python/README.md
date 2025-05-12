@@ -813,6 +813,9 @@ my_generator = (i for i in range(5))
 for value in my_generator:
     print(value) # Output: 0 1 2 3 4
 ````
+> [!NOTE]
+> * Generator functions use `def` and `yield`, while generator expressions use parentheses `()` and a comprehension-like syntax.
+> * Generator functions are better for more complex logic, while generator expressions are suitable for simple value generation.
 
 ## References
 * [The Ultimate Guide to Python: How to Go From Beginner to Pro](https://www.freecodecamp.org/news/the-ultimate-guide-to-python-from-beginner-to-intermediate-to-pro/)
