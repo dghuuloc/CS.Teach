@@ -431,7 +431,6 @@ print(result)
 * `print()`
 * `input()`
 * `len()`
-* `range()`
 * `enumerate()`
 * `abs()`
 * `any()`
@@ -472,6 +471,26 @@ print(list(numbers2)) # Output: [1, 3, 5]
 numbers3 = range(5, 0, -1)
 print(list(numbers3)) # Output: [5, 4, 3, 2, 1]
 ```
+
+#### `iter()` method is a built-in method that allows to create an iterator from an iterable.
+* Syntax of `iter()` method
+```python
+iterator = iter(iterable)
+```
+* **Parameters,**
+  * **iterable:** Any object capable of returning its elements one at a time. Examples include lists, tuples, dictionaries, and strings.
+  * **Return Type:** Returns an **iterator object** that can be used with the `next()` function or a `for` loop to access the elements sequentially.
+
+* **Examples of `iter()` method**
+```python
+# Convert string to iterator
+str_ = "Python"
+iterator = iter(str_)
+
+print(next(iterator))
+print(next(iterator))
+```
+
 #### Python's built-in functions to convert numbers between decimal, octal, and hexadecimal representation.
 * `bin()`: This function takes an integer as an argument and returns its binary representation as a string, prefixed with `0b`.
 ```python
