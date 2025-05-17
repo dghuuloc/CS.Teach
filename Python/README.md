@@ -568,6 +568,14 @@ Python has a ton of standard modules readily available for use.
 
 ---
 ## Exception Handling
+### Basic structure of Exception Handling in Python
+In python, exception handling is primarity done using the `try`, `except`, `else` and `finally` blocks. Let's break down each component:
+* **try:** This block contains the code that may raise an exception. If an error occurs within this block, Python will immediately stop executing the code and look for an appropriate except block to handle the error.
+* **except:** This block defines how to respond to specific exceptions. You can have multiple except blocks to handle different types of exceptions.
+* **else:** This optional block runs if the code in the _try block executes without any errors_. It’s useful for code that should only run when no exceptions occur.
+* **finally:** This block will execute _regardless of whether an exception occurred or not_. It’s typically used for cleanup actions, such as closing files or releasing resources.
+
+**Syntax:**
 ```
 try:
     # code that may cause exception
@@ -576,6 +584,26 @@ except:
 finally:
     # code always executed no matter whether there is an exception or not    
 ```
+
+* **For example of Exception Handling:**
+```python
+try:
+    numerator = 10
+    denominator = 0
+    result = numerator /denominator
+except ZeroDivisionError:
+    print("Error: You cannot divide by zero.")
+else:
+    print(f"The result is {result}")
+finally:
+    print("Execution completed")
+```
+In this example:
+* The try block attempts to divide 10 by 0, which raises a ZeroDivisionError
+* The except block catches this specific error and prints an appropriate message
+* The else block does not execute since an error occured
+* The finally block runs regardless of whether an error occurred or not
+
 ### Defining Custom Exceptions
 ```
 class CustomError(Exception):
