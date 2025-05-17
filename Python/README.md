@@ -604,27 +604,42 @@ In this example:
 * The else block does not execute since an error occured
 * The finally block runs regardless of whether an error occurred or not
 
-### Defining Custom Exceptions
-```
-class CustomError(Exception):
-    ...
-    pass
-try:
-   ...
-except CustomError:
-    ...
-```
-
-For instance,
+### Catching Multiple Exceptions
+You can also catch multiple exceptions using a single except block by specifying a tuple of exceptions:
 ```python
 try:
-  print("Try to print hello World!")
-except:
-  print("Something went wrong")
+    value = int(input('Enter a number: "))
+    result = 100 /value
+except (ValueError, ZeroDivisionError) as err:
+    print(f"Error: {err})
 else:
-  print("No Error!")
-finally:
-  print("The 'try except' is finished") 
+    print(f"The result is {result}")
+```
+### Raising Exceptions
+Sometimes you may want to raise exceptions intentionally based on certain conditions in your code. You can do this using the raise keyword:
+```python
+def check_positive(number):
+    if number < 0:
+        raise ValueError("The number must be positive")
+try:
+    check_positive(-5)
+except ValueError as err:
+    print(f"Error: {e}")
+```
+Here, if a negative number is passed to the `check_positive` function, it raises a ValueError, which is then caught in the `try-except` block
+
+### Defining Custom Exceptions
+You cna create your own custom exceptions by defining a new class that inherits from Python's built-in Exception class. This allows you to create more meaningful error messages specific to your application:
+```
+class CustomError(Exception):
+    pass
+def do_something():
+    raise CustomError("This is a custom error message")
+
+try:
+    do_something()
+except CustomError as err:
+    print(f"Caught an error: {err})
 ```
 
 ---
