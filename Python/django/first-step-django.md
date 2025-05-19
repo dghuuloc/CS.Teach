@@ -105,23 +105,54 @@ INSTALLED_APPS = [
     'myapp',
 ]
 ```
-
+---
 ## Define Models
+Django uses models to define the structure of your database tables. You can create models within your app’s `models.py` file. Here’s an example of a simple model:
+```python
+# myapp/models.py
+from django.db import models
+class Post(models.Model):
+  title = models.CharField(max_length=200)
+  content = models.TextField()
+  pub_date = models.DateTimeField('date published')
+```
 
-
+---
 ## Migrate Database
+To create database tables based on your models, run the following commands:
+```
+python manage.py makemigration
+python manage.py migrate
+```
 
+---
 ## Create Superuser
+You can creeate an admin superuser to manage your app.
+```
+python manage.py createsuperuser
+```
 
+---
 ## Create Views and Templates
+Define `views` to handle web requests and create `templates` to display app's contents.
 
+---
 ## Configure URLS
-
-
-
-
-
-
-
-
+Map URLs to views by creating a 'urls.py` file within your app and including it in the project's `urls.py`
+```python
+# myapp/urls.py
+from django.urls import path
+from . import views
+urlpatterns = [
+ path('', views.index, name='index'),
+]
+```
+```python
+# mysite/urls.py
+from django.urls import path
+from . import views
+urlpatterns = [
+ path('', views.index, name='index'),
+]
+```
 
