@@ -106,7 +106,16 @@ INSTALLED_APPS = [
 ]
 ```
 
+## Define Models
 
+
+## Migrate Database
+
+## Create Superuser
+
+## Create Views and Templates
+
+## Configure URLS
 
 
 
