@@ -76,7 +76,8 @@ Django version 5.2.1, using settings 'myproject.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
-
+4. **Open your browser and go to `http://127.0.0.1:8000/**
+You should see the default Django welcome page
 
 
 
