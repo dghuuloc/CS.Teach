@@ -85,11 +85,26 @@ Django version 5.2.1, using settings 'myproject.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
-4. **Open your browser and go to `http://127.0.0.1:8000/**
+4. **Open your browser and go to `http://127.0.0.1:8000/`**
 You should see the default Django welcome page
 
+---
+## Create Django Apps
+Django projects are composed of apps. To create your first app, run the following command:
+```
+python manage.py startapp myapp
+```
+This will create a directory and files for your app.
 
-
+### Register apps
+To use your app in the project, add it to the `INSTALLED_APPS` list in the `settings.py` file within project directory:
+```python
+# mysite/settings.py
+INSTALLED_APPS = [
+    # ...
+    'myapp',
+]
+```
 
 
 
