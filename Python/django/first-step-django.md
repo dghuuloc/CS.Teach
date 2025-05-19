@@ -27,30 +27,36 @@ If Django is installed correctly, this command will return the version number
 Now that Django is installed, you can create a new Django project.
 * **Run the following command to create a new project**
 ```
-django-admin startproject myproject
+django-admin startproject mysite .
 ```
-Replace `myproject` with your desired project name.
+Replace `mysite` with your desired project name.
+
+> [!NOTE]
+> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 
 ### Understanding the Directory Structure
 Once the project is created, you’ll notice that Django generates a directory structure that includes several important files and folders. Here’s a quick overview of the default structure:
 ```
-myproject/
-│
+myproject
 ├── manage.py
-├── myproject/
+├── mysite
+│   ├── asgi.py
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
-│   ├── asgi.py
 │   └── wsgi.py
+├── djenv
+│   └── ...
+└── requirements.txt
+
 ```
 * **manage.py:** A command-line utility that lets you interact with this Django project in various ways.
-* **myproject/:** The inner directory with the same name as your project.
-* **init.py:** An empty file that tells Python that this directory should be considered a package.
-* **settings.py:** Contains settings/configuration for this Django project.
-* **urls.py:** The URL declarations for this Django project; a “table of contents” of your Django-powered site.
-* **asgi.py:** An entry-point for ASGI-compatible web servers to serve your project.
-* **wsgi.py:** An entry-point for WSGI-compatible web servers to serve your project.
+* **mysite/:** The inner directory as root
+  * **init.py:** An empty file that tells Python that this directory should be considered a package.
+  * **settings.py:** Contains settings/configuration for this Django project.
+  * **urls.py:** The URL declarations for this Django project; a “table of contents” of your Django-powered site.
+  * **asgi.py:** An entry-point for ASGI-compatible web servers to serve your project.
+  * **wsgi.py:** An entry-point for WSGI-compatible web servers to serve your project.
 
 ### Run the Application
 After creating the project and understanding the directory structure, you can now run your Django application to see it in action.
@@ -62,6 +68,9 @@ cd .\myproject
 ```
 python manage.py runserver
 ```
+> [!NOTE]
+> The `python manage.py` will be frequently used in your Django project, so get used to it. Also, running just python manage.py in the terminal, without any other argument, will show you the list of all its available options.
+
 3. **If everythong is set up correctly, you should see output similar to:**
 ```
 Watching for file changes with StatReloader
