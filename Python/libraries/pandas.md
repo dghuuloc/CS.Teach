@@ -4,8 +4,16 @@
 ## Pandas Getting Started
 
 ## Pandas Series
+```python
+import pandas as pd
+series = pd.Series(data=None, index=None, dtype=None, name=None)
+```
 
 ## Pandas DataFrames
+```python
+import pandas as pd
+df = pd.DataFrame(data=None, index=None, columns=None, dtype=None)
+```
 
 ## Differences Between Pandas Series and DataFrame
 ### Series:
