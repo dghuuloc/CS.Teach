@@ -3,13 +3,13 @@
 
 ## Pandas Getting Started
 
-## Pandas Series
+## Pandas Series (list)
 ```python
 import pandas as pd
 series = pd.Series(data=None, index=None, dtype=None, name=None)
 ```
 
-## Pandas DataFrames
+## Pandas DataFrames (object of list)
 ```python
 import pandas as pd
 df = pd.DataFrame(data=None, index=None, columns=None, dtype=None)
