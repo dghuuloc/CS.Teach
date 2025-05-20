@@ -3,6 +3,12 @@
 
 ## Pandas Getting Started
 
+## Data Input
+Both DataFrame and Series accept a variety of data inputs including:
+* **ndarray**  — a NumPy array, which can be heterogeneous (different data types allowed) or homogeneous (all elements have the same data type).
+* **ndarray**  — a NumPy array, which can be heterogeneous (different data types allowed) or homogeneous (all elements have the same data type).
+* **dict**   — a Python dictionary. Just like in a dictionary where you look up words to find their meanings, in a Python dictionary, you look up 'keys' to find their 'values'.The values in the dictionary can be Series, arrays, constants, dataclass instances, or list-like objects.
+
 ## Pandas Series (list)
 ```python
 import pandas as pd
@@ -31,7 +37,7 @@ df = pd.DataFrame(data=None, index=None, columns=None, dtype=None)
 
 In essence, a DataFrame can be thought of as a collection of Series, where each column is a Series. They are both essential for data analysis and manipulation using the pandas library. 
 
-## Pandas Read Data
+## Data loading
 ### Read CSV
 
 ### Read JSON
