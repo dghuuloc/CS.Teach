@@ -61,6 +61,20 @@ pd.options.display.max_rows = 9999
 ```
 In my system the number is 60, which means that if the DataFrame contains more than 60 rows, the print(df) statement will return only the headers and the first and last 5 rows.
 
+### `.head()`
+The `head()` method returns the headers and a specified number of rows, starting from the top
+
+> [!NOTE]
+> If the number of rows is not specified, the head() method will return the top 5 rows.
+
+### `.tail()`
+The  `tail()` method returns the headers and a specified number of rows, starting from the bottom.
+> [!NOTE]
+> If the number of rows is not specified, the tai() method will return the 5 rows from the bottom.
+
+### `.info()`
+
+
 ## Data loading
 ### Load the CSV file into a DataFrame
 A simple way to strore big data sets us to use CSV files (comma separated files).
