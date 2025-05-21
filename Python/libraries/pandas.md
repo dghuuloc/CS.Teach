@@ -38,7 +38,7 @@ df = pd.DataFrame(data=None, index=None, columns=None, dtype=None)
 In essence, a DataFrame can be thought of as a collection of Series, where each column is a Series. They are both essential for data analysis and manipulation using the pandas library. 
 
 ## Data loading
-### Read CSV files
+### Load the CSV file into a DataFrame
 #### to_string() method
 A simple way to strore big data sets us to use CSV files (comma separated files).
 ```python
@@ -61,5 +61,5 @@ print(pd.options.display.max_rows)
 pd.options.display.max_rows = 9999 
 ```
 In my system the number is 60, which means that if the DataFrame contains more than 60 rows, the print(df) statement will return only the headers and the first and last 5 rows.
-
+### Load the JSON file into a DataFrame
 
