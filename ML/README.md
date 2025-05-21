@@ -13,3 +13,10 @@ Data + Algorithms = Results
 Data + Result = Algorithms
 ```
 ## Type of Machine Learning
+* **Supervised Learning:** This involves training models on labeled data, where the input data comes with predefined output labels. The main tasks include:
+  * **Classification:** Predicting discrete labels, such as determining whether an email is spam or not.
+  * **Regression:** Predicting continuous values, such as forecasting house prices based on various features.
+* **Unsupervised Learning:** This type deals with unlabeled data and seeks to uncover hidden patterns or intrinsic structures within the data. Key tasks include:
+  * **Clustering:** Grouping similar data points together, like segmenting customers into different categories based on purchasing behavior.
+  * **Dimensionality Reduction:** Reducing the number of features in a dataset while preserving essential information, such as using Principal Component Analysis (PCA) to simplify datasets.
+* **Reinforcement Learning:** This approach involves training models to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties. It is often used in areas like game playing and robotics.
