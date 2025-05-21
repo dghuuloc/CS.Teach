@@ -40,6 +40,10 @@ In essence, a DataFrame can be thought of as a collection of Series, where each 
 ## Pandas' Methods
 ### .loc[]
 
+> [!NOTE]
+> `df.loc[0]` or `df.loc['label]`, the result is a Pandas Series
+> `df.loc[0, 2]` or `df.loc['label1', 'label2']`, the result is a Pandas DataFrame
+
 ### .to_string()
 
 ## Data loading
