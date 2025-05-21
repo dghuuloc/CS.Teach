@@ -37,6 +37,11 @@ df = pd.DataFrame(data=None, index=None, columns=None, dtype=None)
 
 In essence, a DataFrame can be thought of as a collection of Series, where each column is a Series. They are both essential for data analysis and manipulation using the pandas library. 
 
+## Pandas' Methods
+### .loc[]
+
+### .to_string()
+
 ## Data loading
 ### Load the CSV file into a DataFrame
 #### to_string() method
