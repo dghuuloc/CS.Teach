@@ -47,7 +47,7 @@ scalar_float = 3.14
 scalar_np = np.int32(10)
 ```
 
-## Vetor
+## Vectors
 * A vector is a 1-dimensional array of numbers. It has both magnitude and direction.
 * In Python, vectors are commonly represented using lists or NumPy arrays.
 * Vectors can represent features, data points, or weights in machine learning models.
@@ -99,6 +99,21 @@ import numpy as np
 matrix_list = [[1, 2], [3, 4]]
 matrix_np = np.array([[5, 6], [8, 9]])
 ```
+### Create Matrices using `np.mt()` method and `np.matrix()` method
+```python
+import numpy as np
+
+# Creating a matrix using numpy.matrix() function
+inputMatrix = np.matrix([[5, 3, 9, 11],
+   [4, 5, 6, 23],
+   [7, 8, 9, 84]])
+
+# Creating a matrix using numpy.mat() function
+inputMat = np.mat([[1, 2, 3],
+   [4, 5, 6],
+   [7, 8, 9]])
+```
+
 
 ## Tensors
 * A tensor is a generalization of scalars, vectors, and matrices to n-dimensions.
