@@ -27,3 +27,6 @@ Machine learning has broad applications across various domains:
 * **Finance:** Fraud detection, algorithmic trading, and risk management.
 * **Marketing:** Customer segmentation, recommendation systems, and sentiment analysis.
 * **Autonomous Vehicles:** Object detection, navigation, and decision-making.
+
+## Referece
+* [Best Python Libraries for Machine Learning](https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/)
