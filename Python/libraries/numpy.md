@@ -1,6 +1,14 @@
 # <p align="center"> NumPy </p>
 ---
 
+## NumPy's Data Types
+NumPy offers a wider range of numerical data types than what is available in Python. Here's the list of most commonly used numeric data types in NumPy:
+* `int8`, `int16`, `int32`, `int64` - signed integer types with different bit sizes
+* `uint8`, `uint16`, `uint32`, `uint64` - unsigned integer types with different bit sizes
+* `float32`, `float64` - floating-point types with different precision levels
+* `complex64`, `complex128` - complex number types with different precision levels
+* `int_`, `float_`
+
 ## Scalars
 * A scalar is a single numerical value. It's a 0-dimensional entity.
 * In Python, scalars are typically represented using basic numeric types like `int`, `float`, or NumpPy's scalar types(e.g., `np.int32`, `np.float64`)
