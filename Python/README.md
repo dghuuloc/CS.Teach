@@ -693,7 +693,20 @@ with File("example.txt", "w") as f:
 
 ---
 ## Python Object-Oriented-Programming
-Everything in Python is an Object. An Object has a state and behaviors. To create an object, you can define a class first. And then, from the class, you can create one or more objects. The objects are instances of a class.
+### Everything in Python is an Object. 
+Object-Oriented Programming (OOP) in Python revolves around the concepts of classes and objects. Classes are blueprints for creating objects, encapsulating data (fields) and behaviors (methods).
+* **Fields (Attributes):** These are variables that store data within an object. There are two types:
+  * **Instance Variables:** Unique to each object, defined within the **__init__** method.
+  * **Class Variables:** Shared among all objects of a class, defined outside any method. 
+* **Methods:** These are functions defined within a class that operate on the object's data. They define the actions an object can perform.
+  * The **self** parameter refers to the instance of the object, allowing access to its attributes.
+  * Methods can be used to modify the object's state, perform calculations, or interact with other objects
+
+### Key OOP Principles:
+* **Encapsulation**: Bundling data and methods within a class, controlling access to internal data.
+* **Abstraction:** Hiding complex implementation details and exposing only essential information.
+* **Inheritance:** Creating new classes (child classes) based on existing ones (parent classes), inheriting their attributes and methods.
+* **Polymorphism:** Allowing objects of different classes to respond to the same method call in their own way.
 
 ### Define a class
 To define a class, you use the `class` keyword followed by the class name. This is a general syntax to define a class:
