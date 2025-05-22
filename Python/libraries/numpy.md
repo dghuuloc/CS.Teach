@@ -7,7 +7,7 @@ NumPy offers a wider range of numerical data types than what is available in Pyt
 * `uint8`, `uint16`, `uint32`, `uint64` - unsigned integer types with different bit sizes
 * `float32`, `float64` - floating-point types with different precision levels
 * `complex64`, `complex128` - complex number types with different precision levels
-* `int_`, `float_`
+* `int_`, `float_`, `complex_`
 
 ## Scalars
 * A scalar is a single numerical value. It's a 0-dimensional entity.
