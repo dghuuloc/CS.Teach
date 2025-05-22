@@ -1200,3 +1200,5 @@ print(result)  # prints 11
 * [An Introduction to the With Statement in Python](https://builtin.com/software-engineering-perspectives/what-is-with-statement-python)
 * [Python Special Methods](https://codeots.com/2023/03/21/python-special-methods-map-reduce-filter-apply-zip-lambda/)
 * [Invoking Functions with and without Parentheses](https://www.geeksforgeeks.org/python-invoking-functions-with-and-without-parentheses/)
+* [Python: Lambda,Map,Filter,Reduce and Zip function](https://medium.com/@lokeshsharma596/python-lambda-map-filter-reduce-and-zip-function-c59d8946a3ce)
+* [Invoking Function with and without Parenthesis in Python](https://www.tutorialspoint.com/invoking-function-with-and-without-parenthesis-in-python)
