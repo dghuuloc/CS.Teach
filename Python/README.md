@@ -689,8 +689,6 @@ with File("example.txt", "w") as f:
     f.write("Hello, world!")
 ```
 
-
-
 ---
 ## Python Object-Oriented-Programming
 ### Everything in Python is an Object. 
@@ -907,6 +905,38 @@ The following creates a new instance of the `Employee` class and call the `greet
 employee = Employee('John', 25, 'Python Developer')
 print(employee.greet())
 ```
+
+* **For examples:**
+```python
+class Dog:
+    species = "Canis familiaris"  # Class variable
+
+    def __init__(self, name, age):
+        self.name = name  # Instance variable
+        self.age = age
+
+    def bark(self):  # Instance method
+        return "Woof!"
+
+    @classmethod
+    def get_species(cls):  # Class method
+        return cls.species
+
+    @staticmethod
+    def is_mammal():  # Static method
+        return True
+
+# Creating objects
+dog1 = Dog("Buddy", 3)
+dog2 = Dog("Lucy", 5)
+
+# Accessing attributes and methods
+print(dog1.name)
+print(dog2.bark())
+print(Dog.get_species())
+print(Dog.is_mammal())
+```
+
 ## Generator
 Generators in Python are a way to create iterators. They generate values on demand, which can be more memory-efficient than creating a list of all values at once. There are two main ways to create generators:
 ### Generator function
