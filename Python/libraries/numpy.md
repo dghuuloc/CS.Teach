@@ -1,4 +1,4 @@
-# <p> NumPy </p>
+# <p align="center"> NumPy </p>
 ---
 
 ## Creating a Vertical Vector
