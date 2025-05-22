@@ -1169,3 +1169,4 @@ print(result)  # prints 11
 * [Write a Long String on Multiple Lines in Python](https://blog.finxter.com/write-a-long-string-on-multiple-lines-in-python/)
 * [An Introduction to the With Statement in Python](https://builtin.com/software-engineering-perspectives/what-is-with-statement-python)
 * [Python Special Methods](https://codeots.com/2023/03/21/python-special-methods-map-reduce-filter-apply-zip-lambda/)
+* [Invoking Functions with and without Parentheses](https://www.geeksforgeeks.org/python-invoking-functions-with-and-without-parentheses/)
