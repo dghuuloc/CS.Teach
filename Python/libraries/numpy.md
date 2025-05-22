@@ -9,6 +9,32 @@ NumPy offers a wider range of numerical data types than what is available in Pyt
 * `complex64`, `complex128` - complex number types with different precision levels
 * `int_`, `float_`, `complex_`
 
+### Create Arrays With a Defined Data Type
+We can create an array with a defined data type by specifying `dtype` attribute in `numpy.array()` method while initializing an array.
+```python
+import numpy as np
+
+arr1 = np.array([1, 3, 5, 6], dtype=np.float64)
+
+# Creating a 3x3 int32 array of zeros
+arr2 = np.zeros((3, 3), dtype=np.int32)  
+
+# Creating a 2x2 complex128 array of ones
+arr3 = np.ones((2, 2), dtype=np.complex128)  
+
+# Creating a 1D bool array
+arr4 = np.empty((4,), dtype=np.bool_)  
+```
+### Convert Dat Type of NumPy Arrays
+We can convert data type of an arrays from one type to another using `astype()` function.
+```python
+import numpy as np
+
+arr1 = np.array([1.2, 2.5, 3.7])
+# Converting to int32
+arr2 = arr1.astype(np.int32)
+```
+
 ## Scalars
 * A scalar is a single numerical value. It's a 0-dimensional entity.
 * In Python, scalars are typically represented using basic numeric types like `int`, `float`, or NumpPy's scalar types(e.g., `np.int32`, `np.float64`)
