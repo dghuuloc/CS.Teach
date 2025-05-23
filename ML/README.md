@@ -4,11 +4,6 @@
 ## What is Machine Learning
 Machine learning is a branch of artificial intelligence focused on building systems that can learn from data and improve their performance over time without being explicitly programmed. The primary aim is to develop algorithms that can recognize patterns and make decisions based on data inputs.
 
-Machine Learning (ML) and Artificial Intelligence (AI) are transforming the way we process data, make predictions, and automate decision-making. At the heart of ML, three fundamental techniques drive most applications:
-* **Regression** → Used for predicting continuous values (e.g., house prices, stock trends).
-* **Classification** → Assigns predefined labels to data (e.g., spam detection, medical diagnosis).
-* **Clustering** → Groups similar data points together (e.g., customer segmentation, fraud detection).
-
 * Traditional programming **uses algorithms** to produce results from data:
 ```
 Data + Algorithms = Results
@@ -17,6 +12,13 @@ Data + Algorithms = Results
 ```
 Data + Result = Algorithms
 ```
+
+Machine Learning (ML) and Artificial Intelligence (AI) are transforming the way we process data, make predictions, and automate decision-making. At the heart of ML, three fundamental techniques drive most applications:
+* **Regression** → Used for predicting continuous values (e.g., house prices, stock trends).
+* **Classification** → Assigns predefined labels to data (e.g., spam detection, medical diagnosis).
+* **Clustering** → Groups similar data points together (e.g., customer segmentation, fraud detection).
+
+
 ## Type of Machine Learning
 * **Supervised Learning:** This involves training models on labeled data, where the input data comes with predefined output labels. The main tasks include:
   * **Classification:** Classification is employed when your task involves sorting data into predefined categories or classes. It’s used when you need to make decisions based on distinct categories, providing a clear yes/no or class label for each input instance. Typical applications include spam email detection, fraud detection in financial transactions, tumor classification in medical imaging, or sentiment analysis in text data.
