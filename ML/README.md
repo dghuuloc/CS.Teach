@@ -1,4 +1,4 @@
-# <p> Machine Learning</p>
+# <p align="center"> Machine Learning</p>
 ---
 
 ## What is Machine Learning
@@ -60,6 +60,7 @@ Machine learning has broad applications across various domains:
 
 ## Referece
 * [AML Machine Learning](https://sumsub.com/blog/aml-machine-learning/)
+* [The Role of Machine Learning in Anti-Money Laundering](https://financialcrimeacademy.org/machine-learning-algorithms-for-aml/)
 * [Machine Learning Complete](https://github.com/Nyandwi/machine_learning_complete)
 * [Best Python Libraries for Machine Learning](https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/)
 * [Difference Between Supervised And Unsupervised Learning](https://talent500.com/blog/supervised-vs-unsupervised-learning-differences/#:~:text=Data%20Labeling%20and%20Input%20Supervised%20Learning:%20Requires,predict%20specific%20outcomes%20based%20on%20historical%20data.)
