@@ -14,10 +14,10 @@ Data + Result = Algorithms
 ```
 ## Type of Machine Learning
 * **Supervised Learning:** This involves training models on labeled data, where the input data comes with predefined output labels. The main tasks include:
-  * **Classification:** Predicting discrete labels, such as determining whether an email is spam or not.
-  * **Regression:** Predicting continuous values, such as forecasting house prices based on various features.
+  * **Classification:** Classification is employed when your task involves sorting data into predefined categories or classes. It’s used when you need to make decisions based on distinct categories, providing a clear yes/no or class label for each input instance. Typical applications include spam email detection, fraud detection in financial transactions, tumor classification in medical imaging, or sentiment analysis in text data.
+  * **Regression:** Regression is used when the output you’re trying to predict is a continuous numerical value. It’s suitable for tasks where you want to understand the relationship between input variables and the continuous outcome, allowing for prediction and estimation of future values. Common applications include predicting sales figures, stock prices, temperature, or any other variable that can vary along a continuous scale.
 * **Unsupervised Learning:** This type deals with unlabeled data and seeks to uncover hidden patterns or intrinsic structures within the data. Key tasks include:
-  * **Clustering:** Grouping similar data points together, like segmenting customers into different categories based on purchasing behavior.
+  * **Clustering:** Clustering is utilized when you want to discover inherent structures or natural groupings within your data. It’s beneficial for tasks where you want to find similarities between data points without knowing the specific groups in advance. Clustering is commonly used for customer segmentation, identifying similar documents or articles, anomaly detection, or exploratory data analysis to reveal patterns and relationships.
   * **Dimensionality Reduction:** Reducing the number of features in a dataset while preserving essential information, such as using Principal Component Analysis (PCA) to simplify datasets.
 * **Reinforcement Learning:** This approach involves training models to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties. It is often used in areas like game playing and robotics.
 
