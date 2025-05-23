@@ -60,3 +60,8 @@ Machine learning has broad applications across various domains:
 
 ## Referece
 * [Best Python Libraries for Machine Learning](https://www.geeksforgeeks.org/best-python-libraries-for-machine-learning/)
+* [Difference Between Supervised And Unsupervised Learning](https://talent500.com/blog/supervised-vs-unsupervised-learning-differences/#:~:text=Data%20Labeling%20and%20Input%20Supervised%20Learning:%20Requires,predict%20specific%20outcomes%20based%20on%20historical%20data.)
+* [Classic Machine Learning: Part 2/4 Regression](https://medium.com/@a.r.amouzad.m/classic-machine-learning-part-2-4-regression-24086d7cc374)
+* [Classification vs. Clustering: Key Differences Explained](https://www.simplilearn.com/tutorials/data-analytics-tutorial/classification-vs-clustering#:~:text=Clustering%20is%20an%20example%20of%20an%20unsupervised,consistent%2C%20then%20we%20have%20a%20regression%20problem.)
+* [Clustering vs Classification: Difference Between Clustering & Classification](https://www.upgrad.com/blog/clustering-vs-classification/)
+* [What’s the Difference Between Classification and Clustering, and What About Regression?](https://pg-p.ctme.caltech.edu/blog/data-analytics/difference-between-classification-clustering-regression)
