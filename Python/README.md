@@ -8,20 +8,14 @@
 - Benchmark
 - Logging
 - Testing
-- with-as statement
 - Hint Type
 - Docstring
 - Zen of Python and PEP-8
-- Libraries: Numpy, Pandas, Oracle,...
-- String Prefixes in Python: What are f-strings and r-strings in Python
 - underscores (single and double) --> reference from: https://dbader.org/blog/meaning-of-underscores-in-python
-- OOP paradigm
-- variable scope and namespace
 - Special methods, 
 - Ternary operators
 - Python Keywords
 - regular expressions (import re)
-- Built-in Modules (os, sys, re, json )
 
 ########### Python as Scripting ##########
 - Python Shell Scripting	--> https://medium.com/@charlesmwaniki/python-linux-shell-scripting-best-practices-92cb04856aa7
@@ -31,8 +25,6 @@
 - Use Python with csv, excel, sql-script, json,...
 
 ## Advanced concepts
-- Comprehension
-- Lambda
 - Decorators
 - Files Handling
 - Map, Reduce and Filter Function
