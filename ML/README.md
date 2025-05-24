@@ -31,6 +31,8 @@ In broad, there are 5 main types of machine learning systems that are:
 
 Let's review all of these types to get a high level understanding of what's they really mean.
 ### Supervised Learning
+Most machine learning tasks fall into supervised learning type. As the name implies, a supervised learning model is trained with input data along with some form of guidance that we can call labels. In other words, a supervised learning model maps the input data (or X in many textbooks) to output labels (y). Labels are also known as targets and they act as a description of the input data.
+
 ### Unsupervised learning
 ### Semi-supervised learning
 ### Self-supervised learning
