@@ -2,12 +2,7 @@
 ---
 
 ## What is Machine Learning
-Machine learning is a branch of artificial intelligence focused on building systems that can learn from data and improve their performance over time without being explicitly programmed. The primary aim is to develop algorithms that can recognize patterns and make decisions based on data inputs.
-
-Machine Learning (ML) and Artificial Intelligence (AI) are transforming the way we process data, make predictions, and automate decision-making. At the heart of ML, three fundamental techniques drive most applications:
-* **Regression** → Used for predicting continuous values (e.g., house prices, stock trends).
-* **Classification** → Assigns predefined labels to data (e.g., spam detection, medical diagnosis).
-* **Clustering** → Groups similar data points together (e.g., customer segmentation, fraud detection).
+Machine learning is a branch of artificial intelligence focused on building systems that can learn from data and improve their performance over time without being explicitly programmed. The primary aim is to develop algorithms that can recognize patterns and make decisions based on data inputs. Machine Learning (ML) and Artificial Intelligence (AI) are transforming the way we process data, make predictions, and automate decision-making.
 
 ### Ordinary Programming Vs Machine Learning
 In ordinary programming, the job of the programmers is to clearly write every single rule that makes up the task they are trying to accomplish. In order to get the results, they must write all rules that acts up on the data.
@@ -28,13 +23,19 @@ Data + Results = Algorithms
 ---
 ## Type of Machine Learning
 In broad, there are 5 main types of machine learning systems that are:
-* Supervised learning
-* Unsupervised learning
-* Semi-supervised learning
-* Self-supervised learning
-* Reinforcement learning
+* **Supervised learning**
+* **Unsupervised learning**
+* **Semi-supervised learning**
+* **Self-supervised learning**
+* **Reinforcement learning**
 
 Let's review all of these types to get a high level understanding of what's they really mean.
+### Supervised Learning
+### Unsupervised learning
+### Semi-supervised learning
+### Self-supervised learning
+### Reinforcement learning
+
 * **Supervised Learning:** This involves training models on labeled data, where the input data comes with predefined output labels. The main tasks include:
   * **Classification:** Classification is employed when your task involves sorting data into predefined categories or classes. It’s used when you need to make decisions based on distinct categories, providing a clear yes/no or class label for each input instance. Typical applications include spam email detection, fraud detection in financial transactions, tumor classification in medical imaging, or sentiment analysis in text data.
   * **Regression:** Regression is used when the output you’re trying to predict is a continuous numerical value. It’s suitable for tasks where you want to understand the relationship between input variables and the continuous outcome, allowing for prediction and estimation of future values. Common applications include predicting sales figures, stock prices, temperature, or any other variable that can vary along a continuous scale.
