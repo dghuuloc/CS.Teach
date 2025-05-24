@@ -27,6 +27,7 @@ Machine Learning (ML) and Artificial Intelligence (AI) are transforming the way 
   * **Clustering:** Clustering is utilized when you want to discover inherent structures or natural groupings within your data. It’s beneficial for tasks where you want to find similarities between data points without knowing the specific groups in advance. Clustering is commonly used for customer segmentation, identifying similar documents or articles, anomaly detection, or exploratory data analysis to reveal patterns and relationships.
   * **Dimensionality Reduction:** Reducing the number of features in a dataset while preserving essential information, such as using Principal Component Analysis (PCA) to simplify datasets.
 * **Reinforcement Learning:** This approach involves training models to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties. It is often used in areas like game playing and robotics.
+* **Semi-supervised Learning:** Training data includes a few desired outputs.
 
 ### Difference between Types of Machine Learning
 Regression, classification, and clustering are core machine learning techniques, each serving distinct purposes. Regression predicts continuous values like house prices, classification assigns data to predefined categories like spam detection, and clustering groups similar data points together without labels, like customer segmentation.
