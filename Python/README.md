@@ -123,13 +123,13 @@ print('Te inputted string is:', inputString)
 
 ## Python operators
 Python divides the operators in the following groups:
-* **Arithmetic operators**
-* **Assignment operators**
-* **Comparison operators**
-* **Logical operators**
-* **Identity operators**
-* **Membership operators**
-* **Bitwise operators**
+* **Arithmetic Operators:** `+`, `-`, `*`, `/`, `%`, `**` (exponentiation)
+* **Comparison Operators:** `==`, `!=`, `>`, `<`, `>=`, `<=`
+* **Logical Operators:** `and`, `or`,`not`
+* **Assignment Operators:** `=`, `+=`, `-=`, `*=`, `/=`
+* **Membership Operators:** `in`, `not in`
+* **Identity Operators:** `is`, `is not`
+* **Bitwise operators:** `&`, `|`, `^`, `~`, `<<`, `>>`
 
 ### Floor devision operators (`//`)
 In Python, perform **floor devision** (also sometimes known as **integer devision**) using the `//` operator. This operator will divide the first argument by the second and round the result down to the nearest whole number, making it equivalent to the `math.floor()` function.
