@@ -27,6 +27,14 @@ Let's take a real world example. If you wanted to build an application that give
 
 ---
 ## Type of Machine Learning
+In broad, there are 5 main types of machine learning systems that are:
+* Supervised learning
+* Unsupervised learning
+* Semi-supervised learning
+* Self-supervised learning
+* Reinforcement learning
+
+Let's review all of these types to get a high level understanding of what's they really mean.
 * **Supervised Learning:** This involves training models on labeled data, where the input data comes with predefined output labels. The main tasks include:
   * **Classification:** Classification is employed when your task involves sorting data into predefined categories or classes. It’s used when you need to make decisions based on distinct categories, providing a clear yes/no or class label for each input instance. Typical applications include spam email detection, fraud detection in financial transactions, tumor classification in medical imaging, or sentiment analysis in text data.
   * **Regression:** Regression is used when the output you’re trying to predict is a continuous numerical value. It’s suitable for tasks where you want to understand the relationship between input variables and the continuous outcome, allowing for prediction and estimation of future values. Common applications include predicting sales figures, stock prices, temperature, or any other variable that can vary along a continuous scale.
