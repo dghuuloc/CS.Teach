@@ -1,4 +1,4 @@
-# <p align="center"> Machine Learning</p>
+# <p align="center"> Machine Learning Fundamentals </p>
 ---
 
 ## What is Machine Learning
@@ -17,6 +17,14 @@ Machine Learning (ML) and Artificial Intelligence (AI) are transforming the way 
 * **Regression** → Used for predicting continuous values (e.g., house prices, stock trends).
 * **Classification** → Assigns predefined labels to data (e.g., spam detection, medical diagnosis).
 * **Clustering** → Groups similar data points together (e.g., customer segmentation, fraud detection).
+
+### Ordinary Programming Vs Machine Learning
+In ordinary programming, the job of the programmers is to clearly write every single rule that makes up the task they are trying to accomplish. In order to get the results, they must write all rules that acts up on the data.
+
+Machine learning flips that. Instead of having to write the rules that makes up a particular application, we can feed data and results(or labels) to the machine learning model, and its job can be to determine the set of rules that map the data and labels.
+
+Let's take a real world example. If you wanted to build an application that given a picture of person can determine if he/she is wearing or not wearing a facemask, you can just feed a bunch of images of people with and without facemasks to the machine learning model, and the model can learn the rules or patterns that map the images to whether they have a facemask or not.
+
 ---
 ## Type of Machine Learning
 * **Supervised Learning:** This involves training models on labeled data, where the input data comes with predefined output labels. The main tasks include:
