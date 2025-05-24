@@ -158,12 +158,20 @@ Association Rule Learning algorithms enforces ‘if-then’ rules, which are com
 **Use Cases:** Cross-selling in e-commerce, catalog design, loss-leader analysis in sales, detecting adverse drug reactions in healthcare, recommendations in online services like Netflix, Amazon or Google. 
 
 ---
-## Key Applications and Use Cases
+## Applications of Machine Learning
 Machine learning has broad applications across various domains:
 * **Healthcare:** Disease diagnosis, personalized treatment plans, and drug discovery.
 * **Finance:** Fraud detection, algorithmic trading, and risk management.
 * **Marketing:** Customer segmentation, recommendation systems, and sentiment analysis.
 * **Autonomous Vehicles:** Object detection, navigation, and decision-making.
+
+## Machine learning libraries
+### Scikit-learn:
+This is a comprehensive library for machine learning algorithms. It excels in tasks like classification, regression, clustering, and dimensionality reduction. Scikit-learn is known for its ease of use and is suitable for smaller datasets and simpler models. It primarily operates on CPUs.
+### TensorFlow:
+It is a powerful framework mainly used for deep learning, but it can also handle traditional machine learning tasks. TensorFlow is designed for building and training complex neural networks and supports GPU and TPU acceleration, making it suitable for large-scale, computationally intensive projects. It offers both high-level APIs (like Keras) and low-level control for advanced customization.
+### PyTorch:
+Similar to TensorFlow, PyTorch is a deep learning framework favored for its flexibility and dynamic computation graph. It is widely used in research and prototyping due to its Python-friendly interface and strong GPU acceleration. PyTorch is also suitable for complex neural networks and large datasets.
 
 ---
 ## Referece
