@@ -4,15 +4,6 @@
 ## What is Machine Learning
 Machine learning is a branch of artificial intelligence focused on building systems that can learn from data and improve their performance over time without being explicitly programmed. The primary aim is to develop algorithms that can recognize patterns and make decisions based on data inputs.
 
-* Traditional programming **uses algorithms** to produce results from data:
-```
-Data + Algorithms = Results
-```
-* Machine learning **creates algorithms** from data and resutls:
-```
-Data + Result = Algorithms
-```
-
 Machine Learning (ML) and Artificial Intelligence (AI) are transforming the way we process data, make predictions, and automate decision-making. At the heart of ML, three fundamental techniques drive most applications:
 * **Regression** → Used for predicting continuous values (e.g., house prices, stock trends).
 * **Classification** → Assigns predefined labels to data (e.g., spam detection, medical diagnosis).
@@ -24,6 +15,15 @@ In ordinary programming, the job of the programmers is to clearly write every si
 Machine learning flips that. Instead of having to write the rules that makes up a particular application, we can feed data and results(or labels) to the machine learning model, and its job can be to determine the set of rules that map the data and labels.
 
 Let's take a real world example. If you wanted to build an application that given a picture of person can determine if he/she is wearing or not wearing a facemask, you can just feed a bunch of images of people with and without facemasks to the machine learning model, and the model can learn the rules or patterns that map the images to whether they have a facemask or not.
+
+* Traditional programming **uses algorithms** to produce results from data:
+```
+Data + Algorithms = Results
+```
+* Machine learning **creates algorithms** from data and resutls:
+```
+Data + Results = Algorithms
+```
 
 ---
 ## Type of Machine Learning
