@@ -45,7 +45,6 @@ The key objects of study in linear algebra include:
 ## Set Theory
 ### [Exploring Set Theory in Python](https://python.plainenglish.io/exploring-set-theory-in-python-ff17a4eae2a8)
 
-
 ## Reference
 * [Mathematics for Machine Learning and Data Science Specialization](https://github.com/IAMIQBAL/Mathematics-for-Machine-Learning-and-Data-Science/tree/main)
 * [Review — Is Mathematics for Machine Learning and Data Science Specialization on Coursera worth it?](https://medium.com/javarevisited/is-mathematics-for-machine-learning-and-data-science-specialization-by-deeplearning-ai-f60aa31867b6)
