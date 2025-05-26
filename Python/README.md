@@ -172,6 +172,15 @@ String prefixes are characters placed before string literals in Python that chan
 * join() Method
 ---
 ## Python collection
+**when to use lists, dictionaries, sets, and tuples in Python:**
+
+|**Collection**|**Use**|
+|--------------|-------|
+| **List** | Use when you need an ordered sequence of items that may need to be modified. Lists are mutable, allowing you to add, remove, or change elements|
+| **Dictionary** | Use when you need to store data in key-value pairs for efficient lookup. Dictionaries are mutable, and keys must be unique and immutable|
+| **Set**| Use when you need to store a collection of unique elements, and order doesn't matter. Sets are mutable and useful for operations like checking membership and removing duplicates.|
+| **Tuple** | Use when you need an ordered sequence of items that should not be changed. Tuples are immutable, meaning their elements cannot be modified after creation.|
+
 ### Lists
 A list is created by placing all the items(elements) inside a square bracket `[]` seperated by commas. You can also use `list()` function to create lists.
 ```python
