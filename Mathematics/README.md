@@ -43,6 +43,7 @@ The key objects of study in linear algebra include:
 
 ```
 ## Set Theory
+### [Exploring Set Theory in Python](https://python.plainenglish.io/exploring-set-theory-in-python-ff17a4eae2a8)
 
 
 ## Reference
