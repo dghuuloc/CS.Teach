@@ -63,3 +63,4 @@ The key objects of study in linear algebra include:
 * [How To Learn AI (Roadmap](https://towardsdatascience.com/how-id-learn-ai-if-i-could-start-over-b220872bc118/)
 * [Mathematics for Machine Learning and Data Science Specialization](https://github.com/Ryota-Kawamura/Mathematics-for-Machine-Learning-and-Data-Science-Specialization?tab=readme-ov-file)
 * [Mathematical Foundations of Artificial Intelligence: A Comprehensive Analysis](https://www.linkedin.com/pulse/mathematical-foundations-artificial-intelligence-analysis-maths-7jecc/)
+* [Set Theory](https://mathmonks.com/sets)
