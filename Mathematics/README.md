@@ -19,9 +19,6 @@
   + What is about equations?
   + What is about functions?
 
-
-
-
 ------------
 - **Linear Algebra:** Linear algebra is crucial for representing and manipulating data in AI. Matrices and vectors are used to represent data, and operations such as matrix multiplication are essential for tasks like neural network training.
 - **Calculus:** Calculus, including differentiation and integration, is used in optimization algorithms to find optimal solutions to AI problems. Gradient descent, a common optimization technique in machine learning, relies on calculus.
@@ -43,7 +40,11 @@ The key objects of study in linear algebra include:
 - **Tensors:** multi-dimensional generalizaions of matrices. AI uses **tensers** (higher-dimensional arrays) to represent complex data like images, videos, and #D objects.
 - **Matrix Multiplication:** (Core of Neural Networkds)
 
+
 ```
+## Set Theory
+
+
 ## Reference
 * [Mathematics for Machine Learning and Data Science Specialization](https://github.com/IAMIQBAL/Mathematics-for-Machine-Learning-and-Data-Science/tree/main)
 * [Review — Is Mathematics for Machine Learning and Data Science Specialization on Coursera worth it?](https://medium.com/javarevisited/is-mathematics-for-machine-learning-and-data-science-specialization-by-deeplearning-ai-f60aa31867b6)
