@@ -31,6 +31,12 @@ source env/bin/activate
 ```
 .\env\Scripts\activate
 ```
+
+* **If you created a virtualenv, you need to register it to Jupyter and give it a name (Optional for Jupyter Notebook)**
+```
+$ python3 -m ipykernel install --user --name=python3
+```
+
 ### 4. Deactivating the Virtual Environment
 ```
 deactivate
