@@ -62,6 +62,10 @@ Some standard sets used in set theory:
 * Set of Irrational Numbers is denoted by **𝕋**
 * Set of Real Numbers is denoted by **ℝ**
 
+---
+## Statistics
+## Percentiles
+
 
 ### [Exploring Set Theory in Python](https://python.plainenglish.io/exploring-set-theory-in-python-ff17a4eae2a8)
 
