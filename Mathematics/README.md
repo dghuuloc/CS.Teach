@@ -43,6 +43,17 @@ The key objects of study in linear algebra include:
 
 ```
 ## Set Theory
+
+### Types of Sets:
+1. Finite Set: A set with a defined, limited number of elements.
+Example: {1, 2, 3, 4, 5}
+2. Infinite Set: A set with an unbounded number of elements.
+Example: {1, 2, 3, …}
+3. Empty Set (Null Set): A set devoid of elements.
+Example: ∅ or { }
+4. Singleton Set: A set with a single element.
+Example: {7}
+
 Some standard sets used in set theory:
 * Set of Natural Numbers is denoted by **ℕ**
 * Set of Whole Numbers is denoted by **𝕎**
