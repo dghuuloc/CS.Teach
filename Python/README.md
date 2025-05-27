@@ -30,6 +30,10 @@
 - Map, Reduce and Filter Function
 - Inner Function
 
+## Python number
+- BitManipulation
+- Number theory's Hex, Dec,...
+
 # ------------------------------------------------
 # Try
 import logging
