@@ -43,6 +43,15 @@ The key objects of study in linear algebra include:
 
 ```
 ## Set Theory
+Some standard sets used in set theory:
+* Set of Natural Numbers is denoted by **ℕ**
+* Set of Whole Numbers is denoted by **𝕎**
+* Set of Integers is denoted by **ℤ**
+* Set of Rational Numbers is denoted by **ℚ**
+* Set of Irrational Numbers is denoted by **𝕋**
+* Set of Real Numbers is denoted by **ℝ**
+
+
 ### [Exploring Set Theory in Python](https://python.plainenglish.io/exploring-set-theory-in-python-ff17a4eae2a8)
 
 ## Reference
