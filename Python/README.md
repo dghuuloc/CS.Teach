@@ -151,6 +151,13 @@ For positive integers a and b, a % b is the remainder when a is divided by b. Th
 ```
 a % b = a - (a // b) * b
 ```
+---
+## Python Boolean
+### Values are True
+* Almost any value is evaluated to `Tru` if it has some sort of content.
+* Any string is `True`, except empty strings.
+* Any number is `True`, except `0`.
+* Any list, tuple, set, and dictionary are `True`, except empty ones.
 
 ---
 ## Numbers and Maths
