@@ -390,6 +390,15 @@ match expression:
         # Execute if no pattern fits (default case)
 ```
 
+---
+## Python's conditional expressions (a.k.a. inline if)
+Python doesn't support a **ternary operator**. Instead, we have something called a **conditional expression**.
+
+Python's conditional expression looks like this:
+```
+noun = "item" if amount == 1 else "items"
+```
+
 ## while loop
 Like most programming languages, `while` loop is used to iterate over a block of code as long as the test expression (condition) is `True`. For example:
 ``` python 
