@@ -430,6 +430,27 @@ Notice the use of `in` operator in the above example. the `in` operator eturns `
 
 In Python, `for` loop can have optional `else` block. The else part is executed if the items in the sequence used in `for` loop exhausts. However, if the loop i terminated with `break` statement, Python interpreter ignores the `else` block.
 
+--
+## `else` keyword with loops (`for` and `while`)
+* The `else` block is executed when a loop completes normally (without encountering a break statement).
+* It's often used to perform actions that should only happen if the loop finishes all iterations.
+
+**For example with `for`**
+```python
+for i in range(5):
+    print(i)
+else:
+    print("Loop finished successfully")
+```
+**For example with `while`**
+```python
+i = 0
+while i < 5:
+    print(i)
+else:
+    print("Loop finished successfully")
+```
+
 ## break and continue Statement
 The `break` statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop.
 The `continue` statement is used to skip the rest of the code inside loop for the current iteration only. Loop does not terminate but continues on the with the next iteration.
