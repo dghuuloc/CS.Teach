@@ -200,6 +200,19 @@ new_list = []
 # another way
 another_list = list()
 ```
+#### List's methods
+* `append(element)`: Adds an element to the end of the list.
+* `extend(iterable)`: Appends elements from an iterable to the end of the list.
+* `insert(index, element)`: Inserts an element at a specific index.
+* `remove(element)`: Removes the first occurrence of an element.
+* `pop(index)`: Removes and returns the element at a specified index.
+* `clear()`: Removes all elements from the list.
+* `index(element)`: Returns the index of the first occurrence of an element.
+* `count(element)`: Returns the number of times an element appears in the list.
+* `sort()`: Sorts the list in ascending order.
+* `reverse()`: Reverses the elements of the list.
+* `copy()`: Returns a shallow copy of the list.
+
 ### Tuple
 A tuple is created by placing all the items (elements) inside parentheses `()`, separated by commas. You can also use `tuple()` function to create tuples.
 ```python
@@ -208,6 +221,10 @@ new_list = ()
 # another way
 another_list = tuple()
 ```
+#### Tuple's methods
+* `count(element)`: Returns the number of times an element appears in the tuple.
+* `index(element)`: Returns the index of the first occurrence of an element.
+
 ### Set
 Sets represent the mathematical notion of sets. Sets are mutable, iterable and don’t have any duplicate value. Python provides us, along with ‘set’ datatype, the mathematical functions associated with the sets such as **intersection**, **union**, **difference**, etc.
 ```python
@@ -216,13 +233,30 @@ new_set = set()
 # another way
 another_set = set()
 ```
+#### Set's methods
+* `add(element)`: Adds an element to the set.
+* `remove(element)`: Removes an element from the set. Raises an error if the element is not present.
+* `discard(element)`: Removes an element from the set if it is present.
+* `pop()`: Removes and returns an arbitrary element from the set.
+* `clear()`: Removes all elements from the set.
+* `union(set2)`: Returns a new set with elements from both sets.
+* `intersection(set2)`: Returns a new set with common elements of both sets.
+* `difference(set2)`: Returns a new set with elements from the first set that are not in the second set.
+* `isdisjoint(set2)`: Returns True if two sets have no common elements.
+* `issubset(set2)`: Returns True if all elements of the first set are present in the second set.
+* `issuperset(set2)`: Returns True if the second set is a subset of the first set.
+    
 ### Dictionary
 In Python, a Dictionary can be created by placing a sequence of elements within curly `{}` braces, separated by ‘comma’. Dictionary holds a pair of values, one being the Key and the other corresponding pair element being its **Key-value**. Values in a dictionary can be of any datatype and can be duplicated, whereas keys can’t be repeated and must be immutable.
 ``` python
 # empty dictionary
 my_dict = {}
 ```
-#### Dictionary Methods
+#### Dictionary's methods
+* `pop(key):` Removes and returns the value associated with a key. Raises an error if the key is not found.
+* `popitem():` Removes and returns the last inserted key-value pair as a tuple.
+* `clear():` Removes all items from the dictionary.
+* `update(dict2):` Updates the dictionary with key-value pairs from another dictionary. 
 * `items()` method returns a view object that displays a _list of dictionary's (key, value) tuple pairs_. The syntax of items() method is:
 ```python
 dictionary.items()
