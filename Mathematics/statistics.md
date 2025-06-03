@@ -36,6 +36,7 @@ Data is a collection of observations, it can be in the form of numbers, words, m
 * **Continuous Data:** It is not fixed but has a range of data and can be measured.
 
 ## Reference
+* [Statistics For Machine Learning](https://www.geeksforgeeks.org/statistics-for-machine-learning/)
 * [Statistics for Data Science](https://www.geeksforgeeks.org/statistics-for-data-science/)
 * [Learn basic Statistics with Python](https://medium.com/@skhans/learn-basic-statistics-with-python-cc0f45275929)
 * [Statistics with Python](https://kelvincheng-ds.medium.com/statistics-with-python-739f46f4d71e)
