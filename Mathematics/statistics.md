@@ -14,11 +14,9 @@ Data is a collection of observations, it can be in the form of numbers, words, m
 ### Types of Data
 * **Qualitative Data:** This data is descriptive. For example - She is beautiful, He is tall, etc.
 * **Quantitative Data:** This is numerical information. For example- A horse has four legs.
-
-Types of Quantitative Data
-
-    Discrete Data: It has a particular fixed value and can be counted.
-    Continuous Data: It is not fixed but has a range of data and can be measured.
+### Types of Quantitative Data
+* **Discrete Data:** It has a particular fixed value and can be counted.
+* **Continuous Data:** It is not fixed but has a range of data and can be measured.
 
 ## Reference
 * [Statistics for Data Science](https://www.geeksforgeeks.org/statistics-for-data-science/)
