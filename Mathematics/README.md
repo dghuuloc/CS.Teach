@@ -62,6 +62,15 @@ Some standard sets used in set theory:
 * Set of Irrational Numbers is denoted by **𝕋**
 * Set of Real Numbers is denoted by **ℝ**
 
+### Operations on Sets
+Set operations involve combining or modifying sets to create new sets. Common notations include:
+* **Union** (\(\cup \)): Combines all elements from both sets, represented as \(A\cup B\).
+* **Intersection** (\(\cap \)): Contains only the elements that are in both sets, represented as \(A\cap B\).
+* **Difference** (\(-\)): Contains elements in the first set but not in the second, represented as \(A-B\).
+* **Complement** (\({}^{\prime }\) or \(A^{c}\)): Contains all elements in the universal set that are not in the given set, represented as \(A^{\prime }\) or \(A^{c}\).
+* **Subset** (\(\subseteq \)): Indicates that all elements of one set are also in another, represented as \(A\subseteq B\).
+These notations are used to express relationships and operations between sets, allowing for concise and precise mathematical representation of collections of objects, numbers, or other elements.
+
 ---
 ## Statistics
 ## Percentiles
