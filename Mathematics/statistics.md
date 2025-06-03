@@ -4,8 +4,21 @@
 Statistics is the branch of mathematics that deals with **collecting**, **analyzing**, **interpreting**, **presenting**, and **organizing** data. It involves the study of methods for gathering, summarizing, and interpreting data to make informed decisions and draw meaningful conclusions.
 
 ### Types of Statistics
-* **Descriptive Statistics** involves methods for summarizing and organizing data. It provides simple summaries about the sample and the measures. These summaries may include measures of central tendency (like mean, median, and mode), measures of variability (like range, variance, and standard deviation), and graphical representations (like histograms, box plots, and scatter plots).
-* **Inferential Statistics**, on the other hand, goes a step further and allows us to make **predictions** or **inferences** about a population based on a sample of data taken from that population. It involves using data from a sample to draw conclusions about a population, making it possible to estimate population parameters, test hypotheses, and make predictions. Inferential statistics relies on probability theory to gauge the reliability of the inferences made.
+#### Descriptive Statistics
+Involves methods for summarizing and organizing data. It provides simple summaries about the sample and the measures. These summaries may include measures of central tendency (like mean, median, and mode), measures of variability (like range, variance, and standard deviation), and graphical representations (like histograms, box plots, and scatter plots).
+
+  It commonly uses a measure of central tendencies such as mean, median, and mode and measures of variability or dispersion such as standard deviation or variance, the minimum and maximum values of the variables, kurtosis, and skewness of the data to give you an idea about the distribution of your data.
+
+  Characteristics of data can be represented in graphical format using histograms. Descriptive statistics may also be used to understand the relationships between the two variables using a contingency table or by using graphical representations such as box plots, or scatterplots.
+
+#### Inferential Statistics
+On the other hand, goes a step further and allows us to make **predictions** or **inferences** about a population based on a sample of data taken from that population. It involves using data from a sample to draw conclusions about a population, making it possible to estimate population parameters, test hypotheses, and make predictions. Inferential statistics relies on probability theory to gauge the reliability of the inferences made.
+
+However, the sample might not provide a perfect estimation of the population all of the time. To measure this uncertainty, we can create a **confidence interval**.
+
+A confidence interval is a range of values that is likely to contain a population parameter with a certain level of confidence. For example, we might produce a 95% confidence interval of [61.5, 64.5] which says that we are 95% confident that the average weight of students from a certain school is between 61.5 kg and 64.5 kg.
+
+In Machine Learning, the term inference is sometimes meant to make a prediction using previously trained models. Inferring the properties of the model is referred to as training or learning. Even though machine learning and statistics are closely related fields in terms of methods, their principal goals are different. Machine learning finds generalizable predictive functions based on historical data that can be utilized to predict future outcomes using model functions.
 
 ## Population and Sample
 
