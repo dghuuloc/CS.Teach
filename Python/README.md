@@ -55,6 +55,14 @@ C:\Users\<user-name>\AppData\Local\Programs\Python\Python313\Scripts
 C:\Users\<user-name>\AppData\Local\Programs\Python\Launcher
 ```
 
+---
+## Overview of Python Keywords
+There are 39 keywords, which include **35 standard keywords** and **4 soft keywords**. The addition of the `case`, `match`, and `type` keywords in recent versions highlights the evolving nature of Python. Let's dive into each keyword.
+
+* **Standard Keywords:** `False`, `True`, `None`, `and`, `as`, `assert`, `async`, `await`, `break`, `class`, `continue`, `def`, `del`, `elif`, `else`, `except`,  `final`, `for`, `from`, `global`, `if`, `import`, `in`, `is`, `lambda`, `nonlocal`, `not`, `or`, `pass`, `raise`, `return`, `try`, `while`, `with`, `yield`
+
+* **Soft Keywords:** `_` (underscore), `match`, `case`, `type`
+
 ## Python Code Hierarchy
 ### 1. Packages
 #### Built-in Packages: `os`, `sys`,`datatime`, `math`, `random`, `json`, `re`, `collections`, `csv`, `urllib`
