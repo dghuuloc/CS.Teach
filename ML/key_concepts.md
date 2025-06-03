@@ -3,8 +3,9 @@
 
 ## Building effective machine learning systems
 ### Data Preparation
-* Data Cleaning: Handling missing data, outliers, and inconsistencies.
-* Data Transformation: Scaling, normalization, and encoding data to prepare it for model training.
+* **Data Collection:** Gathering relevant data from various sources.
+* **Data Cleaning:** Handling missing data, outliers, and inconsistencies.
+* **Data Transformation:** Scaling, normalization, and encoding data to prepare it for model training.
 
 ### Feature Engineering 
 * Creating New Features: Combining existing features or creating new ones to improve model performance.
@@ -12,9 +13,11 @@
 
 ### Selection: 
 * **Choosing the Right Algorithm:**
-  Selecting the appropriate algorithm based on the problem and data characteristics.
+  Selecting the appropriate machine learning algorithm for the task at hand (e.g., regression, classification, clustering, etc.).
 * **Understanding Algorithm Trade-offs:**
-  Considering computational cost, scalability, and interpretability when selecting an algorithm. 
+  Considering computational cost, scalability, and interpretability when selecting an algorithm.
+* **Model Architecture:**
+  Choosing the specific architecture of the chosen algorithm (e.g., the number of layers in a neural network).
 
 ### Training:
 * Supervised Learning: Training models with labeled data to predict outputs. 
