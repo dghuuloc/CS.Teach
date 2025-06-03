@@ -11,6 +11,10 @@ It commonly uses a measure of central tendencies such as mean, median, and mode 
 
 Characteristics of data can be represented in graphical format using histograms. Descriptive statistics may also be used to understand the relationships between the two variables using a contingency table or by using graphical representations such as box plots, or scatterplots.
 
+We commonly use two statistical methods for analysis while doing exploratory data analysis in Machine Learning.
+* Univariate Analysis
+* Bivariate Analysis
+
 #### Inferential Statistics
 On the other hand, goes a step further and allows us to make **predictions** or **inferences** about a population based on a sample of data taken from that population. It involves using data from a sample to draw conclusions about a population, making it possible to estimate population parameters, test hypotheses, and make predictions. Inferential statistics relies on probability theory to gauge the reliability of the inferences made.
 
