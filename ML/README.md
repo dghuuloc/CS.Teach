@@ -195,6 +195,7 @@ Similar to TensorFlow, PyTorch is a deep learning framework favored for its flex
 ---
 ## Referece
 * [Machine learning series](https://medium.com/@ebimsv/list/machine-learning-series-44ed1c921467)
+* [Data Science vs. ML vs. Deep Learning vs. Artificial Intelligence](https://intellipaat.com/blog/data-science-vs-deep-learning-vs-machine-learning-vs-artificial-intelligence/)
 * [AML Machine Learning](https://sumsub.com/blog/aml-machine-learning/)
 * [The Role of Machine Learning in Anti-Money Laundering](https://financialcrimeacademy.org/machine-learning-algorithms-for-aml/)
 * [Machine Learning Complete](https://github.com/Nyandwi/machine_learning_complete)
