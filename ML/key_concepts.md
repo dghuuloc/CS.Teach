@@ -56,3 +56,5 @@ Integrate the trained model into applications or systems where it can be used to
 
 ## Reference
 * [Machine Learning: Concepts, Algorithms, and Real-World Applications](https://coralogix.com/ai-blog/machine-learning-concepts-algorithms-and-real-world-applications/)
+* [A guide to the types of machine learning algorithms and their applications](https://www.sas.com/en_gb/insights/articles/analytics/machine-learning-algorithms.html#:~:text=There%20are%20four%20types%20of,%2Dsupervised%2C%20unsupervised%20and%20reinforcement.)
+* [What is Machine Learning](https://ischool.syracuse.edu/what-is-machine-learning/)
