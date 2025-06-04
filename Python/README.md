@@ -71,6 +71,11 @@ When the Python interpreter starts, it loads builtins.py and makes it universall
 import builtins
 print(dir(builtins))
 ```
+### Python Re-scoping Statements
+#### Python global Statement
+In any namespace, declaring a variable with the `global` statement will store and retrieve that variable immediately **from the module scope**.
+#### Python nonlocal Statement
+Where the `global` statement serves to declare a variable within the module scope, the `nonlocal` statement declares that the variable is **within the scope of the next enclosing namespace**.
 
 ## Python Code Hierarchy
 ### 1. Packages
@@ -1298,3 +1303,4 @@ print(result)  # prints 11
 * [Asyncio Vs Threading In Python](https://www.geeksforgeeks.org/asyncio-vs-threading-in-python/)
 * [Use of nonlocal vs global](https://www.geeksforgeeks.org/use-of-nonlocal-vs-use-of-global-keyword-in-python/)
 * [Understanding Python Namespaces Through Recursion](https://medium.com/@gough.cory/understanding-python-namespaces-through-recursion-c921cbd4e522)
+* [Python Variable Scopes](https://www.pythontutorial.net/advanced-python/python-variable-scopes/)
