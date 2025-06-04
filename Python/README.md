@@ -64,6 +64,8 @@ There are 39 keywords, which include **35 standard keywords** and **4 soft keywo
 * **Soft Keywords:** `_` (underscore), `match`, `case`, `type`
 
 ## Python Namespaces
+A **Namespace** is a collection of names along with the information of the object it refers to. It maps names to the objects.
+
 When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes from **Local Scope -> Enclosing Scopes (Nonlocal) -> Module Scope (Global) -> Builtin Scope**.
 
 When the Python interpreter starts, it loads builtins.py and makes it universally available. Here are a few that you are probably familiar with: [‘sorted’, ‘staticmethod’, ‘str’, ‘sum’, ‘super’, ‘tuple’, ‘type’, ‘vars’, ‘zip’]. Run the following code to see the full list.
@@ -74,8 +76,12 @@ print(dir(builtins))
 ### Python Re-scoping Statements
 #### Python global Statement
 In any namespace, declaring a variable with the `global` statement will store and retrieve that variable immediately **from the module scope**.
+
 #### Python nonlocal Statement
 Where the `global` statement serves to declare a variable within the module scope, the `nonlocal` statement declares that the variable is **within the scope of the next enclosing namespace**.
+
+#### Exploring the Namespace's Information
+The built-in functions globals() and locals() returns the global and local symbols table respectively. Python interpreter maintains a data structure containing information about each identifier appearing in the program's source code. This information is about the type, value, scope level, and location of an identifier (also called symbol).
 
 ## Python Code Hierarchy
 ### 1. Packages
