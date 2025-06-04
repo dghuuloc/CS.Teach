@@ -99,6 +99,7 @@ Integrate the trained model into applications or systems where it can be used to
 
 
 ## Reference
+* [Types of Machine Learning Algorithms](https://www.geeksforgeeks.org/types-of-machine-learning-algorithms/)
 * [Machine Learning: Concepts, Algorithms, and Real-World Applications](https://coralogix.com/ai-blog/machine-learning-concepts-algorithms-and-real-world-applications/)
 * [A guide to the types of machine learning algorithms and their applications](https://www.sas.com/en_gb/insights/articles/analytics/machine-learning-algorithms.html#:~:text=There%20are%20four%20types%20of,%2Dsupervised%2C%20unsupervised%20and%20reinforcement.)
 * [What is Machine Learning](https://ischool.syracuse.edu/what-is-machine-learning/)
@@ -114,3 +115,8 @@ Integrate the trained model into applications or systems where it can be used to
 * [Machine Learning is Fun!](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471)
 * [Getting started in machine learning](https://medium.com/unruly-engineering/getting-started-in-machine-learning-b51b3b1917ad)
 * [Entering the world of Machine Learning](https://medium.com/getting-better-together/entering-the-world-of-machine-learning-82b84c9113ec)
+* [How machine learning algorithms work](https://www.ibm.com/think/topics/machine-learning-algorithms#:~:text=There%20are%20four%20types%20of,both%20unsupervised%20and%20supervised%20learning.&text=The%20following%20are%20the%20most%20popular%20and%20commonly%20used%20algorithms.)
+* [Five machine learning types to know](https://www.ibm.com/think/topics/machine-learning-types)
+* [A guide to the types of machine learning algorithms and their applications](https://www.sas.com/en_gb/insights/articles/analytics/machine-learning-algorithms.html#:~:text=There%20are%20four%20types%20of,%2Dsupervised%2C%20unsupervised%20and%20reinforcement.)
+* [Machine Learning Algorithms](https://www.geeksforgeeks.org/machine-learning-algorithms/)
+* [Data Mining and Machine Learning](https://www.tdktech.com/tech-talks/data-mining-and-machine-learning/#:~:text=Data%20Mining%20and%20Machine%20Learning%20Machine%20learning,model%20appropriate%20for%20the%20environment%20being%20studied.)
