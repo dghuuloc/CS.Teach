@@ -64,7 +64,7 @@ There are 39 keywords, which include **35 standard keywords** and **4 soft keywo
 * **Soft Keywords:** `_` (underscore), `match`, `case`, `type`
 
 ## Python Namespaces
-When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes from **local -> enclosing -> global -> builtins**.
+When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes from **Local Scope -> Enclosing Scopes (Nonlocal) -> Module Scope (Global) -> Builtin Scope**.
 
 When the Python interpreter starts, it loads builtins.py and makes it universally available. Here are a few that you are probably familiar with: [‘sorted’, ‘staticmethod’, ‘str’, ‘sum’, ‘super’, ‘tuple’, ‘type’, ‘vars’, ‘zip’]. Run the following code to see the full list.
 ```python 
@@ -1297,3 +1297,4 @@ print(result)  # prints 11
 * [Invoking Function with and without Parenthesis in Python](https://www.tutorialspoint.com/invoking-function-with-and-without-parenthesis-in-python)
 * [Asyncio Vs Threading In Python](https://www.geeksforgeeks.org/asyncio-vs-threading-in-python/)
 * [Use of nonlocal vs global](https://www.geeksforgeeks.org/use-of-nonlocal-vs-use-of-global-keyword-in-python/)
+* [Understanding Python Namespaces Through Recursion](https://medium.com/@gough.cory/understanding-python-namespaces-through-recursion-c921cbd4e522)
