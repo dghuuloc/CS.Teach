@@ -66,7 +66,7 @@ There are 39 keywords, which include **35 standard keywords** and **4 soft keywo
 ## Python Namespaces
 A **Namespace** is a collection of names along with the information of the object it refers to. It maps names to the objects.
 
-When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes from **Local Scope -> Enclosing Scopes (Nonlocal) -> Module Scope (Global) -> Builtin Scope** (LEGB rule).
+When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes with ```LEGB Scoping Rule =  Local Scope -> Enclosing Scopes (Nonlocal) -> Module Scope (Global) -> Builtin Scope -> NameError```
 
 When the Python interpreter starts, it loads builtins.py and makes it universally available. Here are a few that you are probably familiar with: [‘sorted’, ‘staticmethod’, ‘str’, ‘sum’, ‘super’, ‘tuple’, ‘type’, ‘vars’, ‘zip’]. Run the following code to see the full list.
 ```python 
@@ -1344,3 +1344,5 @@ print(result)  # prints 11
 * [Use of nonlocal vs global](https://www.geeksforgeeks.org/use-of-nonlocal-vs-use-of-global-keyword-in-python/)
 * [Understanding Python Namespaces Through Recursion](https://medium.com/@gough.cory/understanding-python-namespaces-through-recursion-c921cbd4e522)
 * [Python Variable Scopes](https://www.pythontutorial.net/advanced-python/python-variable-scopes/)
+* [What is Closure? How to Implement it in Python?](https://anazimzada2020.medium.com/what-is-closure-how-to-implement-it-in-python-7f12ca54bdf7)
+* [Closures and Decorators in Python](https://medium.com/data-science/closures-and-decorators-in-python-2551abbc6eb6)
