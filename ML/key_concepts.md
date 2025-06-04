@@ -54,7 +54,20 @@ Integrate the trained model into applications or systems where it can be used to
 * **Making Predictions:** Once trained and fine-tuned, the model is ready to make predictions or decisions when presented with new, unseen data.
 * **Monitoring and Maintenance:** Regularly monitor the model’s performance in real-world scenarios, and update or retrain it as needed to adapt to changes in the data distribution.
 
+## Most Important Machine Learning Algorithms
+* **Linear Regression:**
+* **Logistic Regression:**
+* **Decision Trees:**
+* **Random Forest:**
+* **Support Vector Machines:**
+* **K Nearest Neighbours(KNN):**
+* **K-Means Clustering:**
+* **Naive Bayes:**
+* **Principal Component Analysis (PCA):**
+* **Gradient boosting Machines:**
+
 ## Reference
 * [Machine Learning: Concepts, Algorithms, and Real-World Applications](https://coralogix.com/ai-blog/machine-learning-concepts-algorithms-and-real-world-applications/)
 * [A guide to the types of machine learning algorithms and their applications](https://www.sas.com/en_gb/insights/articles/analytics/machine-learning-algorithms.html#:~:text=There%20are%20four%20types%20of,%2Dsupervised%2C%20unsupervised%20and%20reinforcement.)
 * [What is Machine Learning](https://ischool.syracuse.edu/what-is-machine-learning/)
+* [Most Important Machine Learning Algorithms](https://bayramblog.medium.com/most-important-machine-learning-algorithms-00e97ab5a035)
