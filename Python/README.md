@@ -66,7 +66,7 @@ There are 39 keywords, which include **35 standard keywords** and **4 soft keywo
 ## Python Namespaces
 A **Namespace** is a collection of names along with the information of the object it refers to. It maps names to the objects.
 
-When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes from **Local Scope -> Enclosing Scopes (Nonlocal) -> Module Scope (Global) -> Builtin Scope**.
+When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes from **Local Scope -> Enclosing Scopes (Nonlocal) -> Module Scope (Global) -> Builtin Scope** (LEGB rule).
 
 When the Python interpreter starts, it loads builtins.py and makes it universally available. Here are a few that you are probably familiar with: [‘sorted’, ‘staticmethod’, ‘str’, ‘sum’, ‘super’, ‘tuple’, ‘type’, ‘vars’, ‘zip’]. Run the following code to see the full list.
 ```python 
