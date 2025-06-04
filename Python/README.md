@@ -1287,3 +1287,4 @@ print(result)  # prints 11
 * [Python: Lambda,Map,Filter,Reduce and Zip function](https://medium.com/@lokeshsharma596/python-lambda-map-filter-reduce-and-zip-function-c59d8946a3ce)
 * [Invoking Function with and without Parenthesis in Python](https://www.tutorialspoint.com/invoking-function-with-and-without-parenthesis-in-python)
 * [Asyncio Vs Threading In Python](https://www.geeksforgeeks.org/asyncio-vs-threading-in-python/)
+* [Use of nonlocal vs global](https://www.geeksforgeeks.org/use-of-nonlocal-vs-use-of-global-keyword-in-python/)
