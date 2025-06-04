@@ -67,6 +67,31 @@ Integrate the trained model into applications or systems where it can be used to
 * **Gradient boosting Machines:**
 * **Dimensionality Reduction**
 
+## Algorithms with it's Types of Machine Learning 
+### Supervised Learning:
+* Definition: Algorithms learn from labeled data to make predictions or classifications on new, unseen data. 
+* Examples:
+  * Regression: Linear Regression, Logistic Regression 
+  * Classification: Support Vector Machines (SVM), k-Nearest Neighbors (k-NN), Decision Trees, Naive Bayes 
+* Applications: Spam detection, image recognition, predicting stock prices.
+
+### Unsupervised Learning:
+* Definition: Algorithms learn from unlabeled data to discover patterns, group similar data, or reduce dimensions. 
+* Examples:
+  * Clustering: k-Means, Hierarchical Clustering 
+  * Dimensionality Reduction: PCA, t-SNE. 
+* Applications: Customer segmentation, anomaly detection, image compression. 
+
+### Semi-Supervised Learning:
+* Definition: Algorithms learn from a combination of labeled and unlabeled data.
+* Examples: Self-training, co-training.
+* Applications: When labeled data is scarce but unlabeled data is abundant. 
+
+### Reinforcement Learning:
+* Definition: Algorithms learn by interacting with an environment to maximize rewards through trial and error.
+* Examples: Q-learning, Deep Q-Network (DQN).
+* Applications: Game playing, robotics, resource management. 
+
 ## Reference
 * [Machine Learning: Concepts, Algorithms, and Real-World Applications](https://coralogix.com/ai-blog/machine-learning-concepts-algorithms-and-real-world-applications/)
 * [A guide to the types of machine learning algorithms and their applications](https://www.sas.com/en_gb/insights/articles/analytics/machine-learning-algorithms.html#:~:text=There%20are%20four%20types%20of,%2Dsupervised%2C%20unsupervised%20and%20reinforcement.)
