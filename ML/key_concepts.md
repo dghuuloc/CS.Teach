@@ -65,6 +65,7 @@ Integrate the trained model into applications or systems where it can be used to
 * **Naive Bayes:**
 * **Principal Component Analysis (PCA):**
 * **Gradient boosting Machines:**
+* **Dimensionality Reduction**
 
 ## Reference
 * [Machine Learning: Concepts, Algorithms, and Real-World Applications](https://coralogix.com/ai-blog/machine-learning-concepts-algorithms-and-real-world-applications/)
