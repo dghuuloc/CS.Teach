@@ -66,6 +66,12 @@ There are 39 keywords, which include **35 standard keywords** and **4 soft keywo
 ## Python Namespaces
 When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes from **local -> enclosing -> global -> builtins**.
 
+When the Python interpreter starts, it loads builtins.py and makes it universally available. Here are a few that you are probably familiar with: [‘sorted’, ‘staticmethod’, ‘str’, ‘sum’, ‘super’, ‘tuple’, ‘type’, ‘vars’, ‘zip’]. Run the following code to see the full list.
+```python 
+import builtins
+print(dir(builtins))
+```
+
 ## Python Code Hierarchy
 ### 1. Packages
 #### Built-in Packages: `os`, `sys`,`datatime`, `math`, `random`, `json`, `re`, `collections`, `csv`, `urllib`
