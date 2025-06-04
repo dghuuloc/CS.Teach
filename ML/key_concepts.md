@@ -72,3 +72,7 @@ Integrate the trained model into applications or systems where it can be used to
 * [A guide to the types of machine learning algorithms and their applications](https://www.sas.com/en_gb/insights/articles/analytics/machine-learning-algorithms.html#:~:text=There%20are%20four%20types%20of,%2Dsupervised%2C%20unsupervised%20and%20reinforcement.)
 * [What is Machine Learning](https://ischool.syracuse.edu/what-is-machine-learning/)
 * [Most Important Machine Learning Algorithms](https://bayramblog.medium.com/most-important-machine-learning-algorithms-00e97ab5a035)
+* [Top 15 Machine Learning Algorithms Every Data Scientist Should Know in 2025](https://www.geeksforgeeks.org/top-10-algorithms-every-machine-learning-engineer-should-know/)
+* [10 Top Machine Learning Algorithms & Their Use-Cases](https://www.datacamp.com/blog/top-machine-learning-use-cases-and-algorithms)
+* [Top 10 Deep Learning Algorithms You Should Know in 2025](https://www.hyperstack.cloud/blog/thought-leadership/top-deep-learning-algorithms-you-should-know)
+* [10 Machine Learning Algorithms to Know in 2025](https://www.coursera.org/articles/machine-learning-algorithms)
