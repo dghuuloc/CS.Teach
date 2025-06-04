@@ -89,8 +89,14 @@ Integrate the trained model into applications or systems where it can be used to
 
 ### Reinforcement Learning:
 * Definition: Algorithms learn by interacting with an environment to maximize rewards through trial and error.
+* Types:
+  * Model-based: Builds a model of the environment to make decisions. 
+  * Model-free: Learns directly from experience without building a model (e.g., Q-learning, deep Q-network). 
 * Examples: Q-learning, Deep Q-Network (DQN).
 * Applications: Game playing, robotics, resource management. 
+
+
+
 
 ## Reference
 * [Machine Learning: Concepts, Algorithms, and Real-World Applications](https://coralogix.com/ai-blog/machine-learning-concepts-algorithms-and-real-world-applications/)
