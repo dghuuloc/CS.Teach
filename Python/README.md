@@ -87,6 +87,40 @@ The built-in functions globals() and locals() returns the global and local symbo
 ### 1. Packages
 #### Built-in Packages: `os`, `sys`,`datatime`, `math`, `random`, `json`, `re`, `collections`, `csv`, `urllib`
 ### 2. Modules
+* **Importing Modules:**
+  * **import module_name:** Imports the entire module. You access its contents using module_name.item.
+  * **from module_name import item:** Imports specific items from a module directly into the current namespace. You can use them without the module prefix.
+  * **from module_name import item as alias:** Imports an item and assigns it an alias, allowing you to use a shorter name.
+  * **from module_name import *:** Imports all items from a module. However, this is generally discouraged as it can lead to namespace conflicts and make code harder to understand.
+  
+* **Module Export Control:**
+By default, Python exports all names defined in a module. However, you can control which names are exported using the `__all__` variable. This variable is a list of strings containing the names of the items that should be exported when using **from module import ***
+
+* For Examples,
+```python
+# my_module.py
+__all__ = ["my_function", "MyClass"]
+
+def my_function():
+    print("Hello from my_function")
+
+class MyClass:
+    def __init__(self):
+        print("Hello from MyClass")
+
+def _internal_function():
+    print("This is an internal function")
+
+# main.py
+from my_module import *
+
+my_function()
+my_class = MyClass()
+
+# _internal_function() # This would cause an error, not exported
+
+```
+
 ### 3. Classes
 ### 4. Functions
 #### Built-in Functions
