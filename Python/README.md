@@ -63,6 +63,9 @@ There are 39 keywords, which include **35 standard keywords** and **4 soft keywo
 
 * **Soft Keywords:** `_` (underscore), `match`, `case`, `type`
 
+## Python Namespaces
+When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes from **local -> enclosing -> global -> builtins**.
+
 ## Python Code Hierarchy
 ### 1. Packages
 #### Built-in Packages: `os`, `sys`,`datatime`, `math`, `random`, `json`, `re`, `collections`, `csv`, `urllib`
