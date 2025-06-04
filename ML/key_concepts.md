@@ -82,3 +82,4 @@ Integrate the trained model into applications or systems where it can be used to
 * [An Introduction to the World of Machine Learning](https://medium.com/@rithesh18.k/an-introduction-to-the-world-of-machine-learning-5b182dde7b92)
 * [Machine Learning is Fun!](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471)
 * [Getting started in machine learning](https://medium.com/unruly-engineering/getting-started-in-machine-learning-b51b3b1917ad)
+* [Entering the world of Machine Learning](https://medium.com/getting-better-together/entering-the-world-of-machine-learning-82b84c9113ec)
