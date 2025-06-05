@@ -99,7 +99,28 @@
   
   print(student_grade_pairs)
   ```
-
+* Merging lists in one line
+  ```python
+  list1= [1, 2, 3]
+  list2 = [4, 5]
+  list3 = [*list1, *list2]
+  print(list3) # 1, 2, 3, 4, 5
+  
+  # You can also use this
+  list1.extend(list2)
+  print(list1) # 1, 2, 3, 4, 5
+  ```
+* Merging dictionaries in one line
+  ```python
+  d1 = { 'A': 1, 'B': 2 }   
+  d2 = { 'C': 3, 'D': 4 } 
+  d3 = {**d1, **d2}   
+  print(d3) # {'A': 1, 'B': 2, 'C': 3, 'D': 4}
+  
+  # You can also use this
+  d1.update(d2)
+  print(d1) # {'A': 1, 'B': 2, 'C': 3, 'D': 4}
+  ```
 ---
 ## References
 * [Python Tips](https://www.youtube.com/watch?v=4s7ueX659DE)
