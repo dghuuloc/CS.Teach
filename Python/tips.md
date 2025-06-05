@@ -38,6 +38,61 @@
   with open('file.txt', 'a') as f: f.write('hello world')
   # print(list(open('file.txt'))) >> ['test1\n', 'test2\n', 'test3\n', 'test4\n', 'hello world']
   ```
+* Map, Filter and Reduce
+  ```python
+  # Traditional way
+  fruits = ['apple', 'banana', 'cherry']
+  upper_cased_fruits = []
+  a_contained_fruits = []
+  total_length = 0
+  
+  for fruit in fruits:
+    upper_cased_fruits.append(fruit.upper())
+  print(upper_cased_fruits)
+  
+  for fruit in fruits:
+    if 'a' in fruit:
+      a_contained_fruits.append(fruit)
+  print(a_contained_fruits)
+  
+  for fruit in fruits:
+    total_length += len(fruit)
+  print(total_length)
+  
+  # Using Map
+  upper_cased_fruits = list(map(lambda x: x.upper(), fruits))
+  print(upper_cased_fruits)
+  
+  # Using Filter
+  a_contained_fruits = list(filter(lambda x: 'a' in x, fruits))
+  print(a_contained_fruits)
+  
+  # Using Map
+  from functools import reduce
+  
+  total_length = reduce(lambda acc, fruit: acc + len(fruit), fruits, 0)
+  print(total_length)
+  ```
+* Zip Function
+  ```python
+  # Traditional way
+  students = ['Dilli', 'Vikram', 'Rolex', 'Leo']
+  grades = [85, 92, 78, 88]
+  
+  student_grade_pairs = []
+  for i in range(len(students)):
+      student_grade_pairs.append((students[i], grades[i]))
+  
+  print(student_grade_pairs)
+  
+  # Using Zip function
+  students = ['Dilli', 'Vikram', 'Rolex', 'Leo']
+  grades = [85, 92, 78, 88]
+  
+  student_grade_pairs = list(zip(students, grades))
+  
+  print(student_grade_pairs)
+  ```
 
 ---
 ## References
