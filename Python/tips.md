@@ -8,6 +8,12 @@
 * Returned from another function
 
 ## Python Tips
+* **Use f-strings for String Formatting**
+  ```python
+  name = "Alice"
+  age = 25
+  print(f"My name is {name} and I am {age} years old.")
+  ```
 * **Use Enumerate to Get Index and Value:** Instead of using a counter variable, use enumerate to iterate with an index.
   ```python
   fruits = ["apple", "banana", "cherry"]
@@ -224,6 +230,11 @@
   
   sentence = ' '.join(words)
   print(sentence)
+  ```
+* **Generate a Random Password:**
+  ```python
+  import random
+  print(''.join(random.choices('abcdefghijklmnopqrstuvwxyz0123456789', k=8)))
   ```
 
 ---
