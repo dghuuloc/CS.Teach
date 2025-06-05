@@ -14,11 +14,6 @@
 - Sampling and Sampling Distributions
 - Discrete Mathematics
 
-
-- Mathematical terminology:
-  + What is about equations?
-  + What is about functions?
-
 ------------
 - **Linear Algebra:** Linear algebra is crucial for representing and manipulating data in AI. Matrices and vectors are used to represent data, and operations such as matrix multiplication are essential for tasks like neural network training.
 - **Calculus:** Calculus, including differentiation and integration, is used in optimization algorithms to find optimal solutions to AI problems. Gradient descent, a common optimization technique in machine learning, relies on calculus.
