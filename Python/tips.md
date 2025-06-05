@@ -8,8 +8,7 @@
 * Returned from another function
 
 ## Python Tips
-* Walrus Operator (:=)
-  The walrus operator (:=) allows the user to create a variable as well as assign a value to it in the middle of an expression.
+* **Walrus Operator (:=):** The walrus operator (:=) allows the user to create a variable as well as assign a value to it in the middle of an expression.
   ```python
   # Traditional way
   review = 'good'
@@ -22,29 +21,58 @@
   if (n:= len(review)) < 10:
     print('Minimum 10 characters required')
   ```
-* Flatten a Nested List
+* **Flatten a Nested List**
   ```python
-  flat_list = [item for sublist in nested_list for item in sublist]
-  ````
-* Unpacking a list
+  main_list = [[1, 2, 3], [4, 5]]
+  single_list = [item for sublist in main_list for item in sublist]
+  print(single_list) # [1, 2, 3, 4, 5]
+  ```
+* **Unpacking a list**
   ```python
   mylist = [1, 2, 3, 4, 5]
   a, b, *c, d = mylist 
   print(a, b, d) # 1, 2, 5
   print(c) # [3, 4]
   ```
-* Use any() and all() for Logical Operations
-* Inline If-Else (Ternary):
-* Read a File into a List of Lines
+* **Iterable or Value Unpacking**
+  ```python
+  # Traditional way
+  numbers = [1, 2, 3]
+  a = numbers[0]
+  b = numbers[1]
+  c = numbers[2]
+  print(a, b, c)
+  
+  # Using Unpacking
+  numbers = [1, 2, 3]
+  a, b, c = numbers
+  print(a, b, c)
+  ```
+* **Use any() and all() for Logical Operations:**
+* **Inline If-Else (Ternary):**
+  ```python
+  # Traditional way
+  result = None
+  num = 5
+  if num % 2 == 0:
+    result = 'Even'
+  else:
+    result = 'Odd'
+  
+  # Using Ternary Operator
+  num = 5
+  result = 'Even' if num % 2 == 0 else 'Odd'
+  ```
+* **Read a File into a List of Lines:**
   ```python
   lines = [line.strip() for line in open('file.txt')]
   ```
-* Write String to file
+* **Write String to file**
   ```python
   with open('file.txt', 'a') as f: f.write('hello world')
   # print(list(open('file.txt'))) >> ['test1\n', 'test2\n', 'test3\n', 'test4\n', 'hello world']
   ```
-* Map, Filter and Reduce
+* **Map, Filter and Reduce**
   ```python
   # Traditional way
   fruits = ['apple', 'banana', 'cherry']
@@ -79,7 +107,7 @@
   total_length = reduce(lambda acc, fruit: acc + len(fruit), fruits, 0)
   print(total_length)
   ```
-* Zip Function
+* **Zip Function**
   ```python
   # Traditional way
   students = ['Dilli', 'Vikram', 'Rolex', 'Leo']
@@ -99,7 +127,7 @@
   
   print(student_grade_pairs)
   ```
-* Merging lists in one line
+* **Merging lists in one line**
   ```python
   list1= [1, 2, 3]
   list2 = [4, 5]
@@ -110,7 +138,7 @@
   list1.extend(list2)
   print(list1) # 1, 2, 3, 4, 5
   ```
-* Merging dictionaries in one line
+* **Merging dictionaries in one line**
   ```python
   d1 = { 'A': 1, 'B': 2 }   
   d2 = { 'C': 3, 'D': 4 } 
@@ -121,6 +149,66 @@
   d1.update(d2)
   print(d1) # {'A': 1, 'B': 2, 'C': 3, 'D': 4}
   ```
+* **Remove duplicate elements from a list**
+  ```python
+  list1 = [4, 4, 5, 5, 6]
+  print(list(set(list1))) # [4, 5, 6]
+  ```
+* **Longest string from a list**
+  ```python
+  words = ['This', 'is', 'a', 'list', 'of', 'words']
+  print(max(words, key=len)) # words
+  ```
+* **Sort a list**
+  ```python
+  mylist = [7, 4, 9, 1]
+
+  # sort in ascending order
+  print(sorted(mylist)) # [1, 4, 7, 9]
+  
+  # sort in descending order
+  print(sorted(mylist, reverse=True)) # [9, 7, 4, 1]    
+  ```
+* **Sort a dictionary**
+  ```python
+  # sort with keys
+  d = { 'four': 4, 'eight': 8, 'six': 6 }
+  print({key:d[key] for key in sorted(d.keys())}) # {'eight': 8, 'four': 4, 'six': 6}
+  
+  # sort with values
+  d = { 'four': 4, 'eight': 8, 'six': 6 }
+  print({key:value for key, value in sorted(d.items(), key=lambda item: item[1])}) # {'four': 4, 'six': 6, 'eight': 8}
+  ```
+* **Convert a list of strings to integers**
+  ```python
+  print(list(map(int, ['1', '2', '3']))) # [1, 2, 3]
+  ```
+* **One-line print:** It can be useful sometimes when you don’t need to use a loop to perform a task.
+  ```python
+  print(*range(1, 5)) # 1 2 3 4
+
+  # Traditional way
+  for x in range(1, 5):  
+      print(x, end=' ') # 1 2 3 4
+  ```
+* **String Join:** The join method is a clean way to concatenate strings from an iterable into a single string.
+  ```python
+  # Traditional way
+  words = ['Python', 'is', 'awesome', 'and', 'powerful']
+  
+  sentence = ''
+  for word in words:
+      sentence += word + ' '
+  
+  print(sentence.strip())  # Strip to remove the trailing space
+  
+  # Using String join
+  words = ['Python', 'is', 'awesome', 'and', 'powerful']
+  
+  sentence = ' '.join(words)
+  print(sentence)
+  ```
+
 ---
 ## References
 * [Python Tips](https://www.youtube.com/watch?v=4s7ueX659DE)
