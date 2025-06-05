@@ -39,9 +39,20 @@ The key objects of study in linear algebra include:
 - **Matrices:** rectangular arrays of numbers
 - **Tensors:** multi-dimensional generalizaions of matrices. AI uses **tensers** (higher-dimensional arrays) to represent complex data like images, videos, and #D objects.
 - **Matrix Multiplication:** (Core of Neural Networkds)
-
-
 ```
+## Role of Mathematics in Machine Learning
+Mathematics plays a fundamental role in Machine Learning, providing the tools and frameworks for developing and understanding algorithms. It is essential for data manipulation, model optimization, and prediction. Specially, **linear algebra**, **calculus**, **probability theory**, and **statistics** are crucial for various Machine Learning tasks.
+### Key Roles of Mathematics in Machine Learning:
+* **Linear Algebra:** Enables the manipulation and transformation of data, including high dimensional data, which is crucial for techniques like Principal Component Analysis (PCA) and Singular Value Decomposition (SVD). 
+* **Calculus:** Form the basics for optimizing machine learning algorithms through gradient based optimization methods. Differentiation and integration are essential in backpropagation and minimizing loss functions.
+* **Probability Theory:** Handles uncertainty and makes predictions, with applications in Bayesian networks, Markov decision processes, and other probabilistic models.
+* **Statistics:** Provides tools for analyzing data, drawing inferences, and evaluating model performance.
+* **Optimization:** Helps find the optimal parameters of models, minimizing errors or loss functions, which is crucial for training and refining models.
+* **Graph Theory:** Used in the analysis of structured data represented as graphs or networks, particularly in tasks like social network analysis and recommendation systems.
+* **Information Theory:** Helps understand and quantify information content in data, which is important for tasks like data compression and noise reduction. 
+* **Data Preprocessing and Feature Engineering:** Mathematical concepts like polynomial features, interaction terms, and logarithmic transformations can be used to create new features from existing ones, improving model performance.
+
+---
 ## Set Theory
 
 ### Types of Sets:
