@@ -69,6 +69,9 @@ These notations are used to express relationships and operations between sets, a
 ### [Exploring Set Theory in Python](https://python.plainenglish.io/exploring-set-theory-in-python-ff17a4eae2a8)
 
 ## Reference
+* [The Mathematics of Machine Learning](https://medium.com/data-science/the-mathematics-of-machine-learning-894f046c568)
+* [Role of Mathematics in Machine Learning](https://wasifekbal.medium.com/role-of-mathematics-in-machine-learning-5c62e85e2fb3)
+* [Maths for Machine Learning](https://www.geeksforgeeks.org/machine-learning-mathematics/)
 * [Mathematics for Machine Learning and Data Science Specialization](https://github.com/IAMIQBAL/Mathematics-for-Machine-Learning-and-Data-Science/tree/main)
 * [Review — Is Mathematics for Machine Learning and Data Science Specialization on Coursera worth it?](https://medium.com/javarevisited/is-mathematics-for-machine-learning-and-data-science-specialization-by-deeplearning-ai-f60aa31867b6)
 * [Linear Algebra for ML | Matrix, Vector and Data Representation](https://towardsdatascience.com/how-is-linear-algebra-applied-for-machine-learning-d193bdeed268/)
