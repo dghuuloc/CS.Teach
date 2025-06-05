@@ -17,3 +17,4 @@
 * [Python Variable Scopes](https://www.pythontutorial.net/advanced-python/python-variable-scopes/)
 * [Memory Management in Python](https://www.scientecheasy.com/2022/09/memory-management-in-python.html/)
 * [Python Data & Heap Structures: Heaps of Fun](https://python.plainenglish.io/python-data-heap-structures-heaps-of-fun-8d9a97de8ba4)
+* [How to Handle Python Function References](https://labex.io/tutorials/python-how-to-handle-python-function-references-438502)
