@@ -14,6 +14,11 @@
   age = 25
   print(f"My name is {name} and I am {age} years old.")
   ```
+* **Take multiple user inputs in a string**
+```python
+x, y, z = input("Full name: ").split()
+print(f"Name {x} {y} {z}")
+```
 * **Use Enumerate to Get Index and Value:** Instead of using a counter variable, use enumerate to iterate with an index.
   ```python
   fruits = ["apple", "banana", "cherry"]
@@ -44,6 +49,9 @@
   main_list = [[1, 2, 3], [4, 5]]
   single_list = [item for sublist in main_list for item in sublist]
   print(single_list) # [1, 2, 3, 4, 5]
+
+  # Another example
+  print([item for sublist in [[1,2], [3,4]] for item in sublist])
   ```
 * **Unpacking a list**
   ```python
