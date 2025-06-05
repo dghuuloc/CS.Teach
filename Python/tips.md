@@ -7,6 +7,38 @@
 * Passed as an argument to another function
 * Returned from another function
 
+## Python Tips
+* Walrus Operator (:=)
+  The walrus operator (:=) allows the user to create a variable as well as assign a value to it in the middle of an expression.
+  ```python
+  # Traditional way
+  review = 'good'
+  n = len(review)
+  if n < 10:
+    print('Minimum 10 characters required')
+  
+  # Using Walrus operator
+  review = 'good'
+  if (n:= len(review)) < 10:
+    print('Minimum 10 characters required')
+  ```
+* Flatten a Nested List
+  ```python
+  flat_list = [item for sublist in nested_list for item in sublist]
+  ````
+* Unpacking a list
+* Use any() and all() for Logical Operations
+* Inline If-Else (Ternary):
+* Read a File into a List of Lines
+  ```python
+  lines = [line.strip() for line in open('file.txt')]
+  ```
+* Write String to file
+  ```python
+  with open('file.txt', 'a') as f: f.write('hello world')
+  # print(list(open('file.txt'))) >> ['test1\n', 'test2\n', 'test3\n', 'test4\n', 'hello world']
+  ```
+
 ---
 ## References
 * [Python Tips](https://www.youtube.com/watch?v=4s7ueX659DE)
