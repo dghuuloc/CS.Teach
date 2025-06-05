@@ -8,6 +8,18 @@
 * Returned from another function
 
 ## Python Tips
+* **Use Enumerate to Get Index and Value:** Instead of using a counter variable, use enumerate to iterate with an index.
+  ```python
+  fruits = ["apple", "banana", "cherry"]
+  for index, fruit in enumerate(fruits):
+      print(index, fruit)
+  ```
+* **Use `get()` to Handle Missing Dictionary Keys:** Instead of checking if a key exists in a dictionary, use `get()`
+  ```python
+  my_dict = {"name": "Alice", "age": 25}
+  print(my_dict.get("name"))  # Output: Alice
+  print(my_dict.get("address", "Not Found"))  # Output: Not Found
+  ```
 * **Walrus Operator (:=):** The walrus operator (:=) allows the user to create a variable as well as assign a value to it in the middle of an expression.
   ```python
   # Traditional way
@@ -48,7 +60,12 @@
   a, b, c = numbers
   print(a, b, c)
   ```
-* **Use any() and all() for Logical Operations:**
+* **Use any() and all() for Logical Operations:** These functions make it easy to check conditions in a list
+  ```python
+  nums = [0, 1, 2, 3]
+  print(any(nums))  # Output: True (since at least one element is non-zero)
+  print(all(nums))  # Output: False (since 0 is in the l
+  ```
 * **Inline If-Else (Ternary):**
   ```python
   # Traditional way
