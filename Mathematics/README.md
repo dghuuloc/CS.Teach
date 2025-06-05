@@ -25,15 +25,6 @@
 - **Differential Equations:** Differential equations are used in areas like control theory and robotics to model and analyze the behavior of dynamic systems, such as autonomous vehicles or robotic arms.
 - **Numerical Methods:** Numerical methods, including techniques for solving equations, interpolation, and numerical integration, are essential for solving AI problems that require approximations or simulations.
 - **Complexity Theory:** Complexity theory helps analyze the computational complexity of AI algorithms and problems. Concepts like P vs. NP and NP-hardness are relevant for understanding the efficiency of algorithms.
-- **Game Theory:** Game theory is used in areas like multi-agent systems and decision-making. It helps model strategic interactions among rational agents and find optimal strategies.
-
-----------------------------------------------------------
-The key objects of study in linear algebra include:
-- **Scalars:** single numbers
-- **Vectors:** ordered lists of numbers representating points in space
-- **Matrices:** rectangular arrays of numbers
-- **Tensors:** multi-dimensional generalizaions of matrices. AI uses **tensers** (higher-dimensional arrays) to represent complex data like images, videos, and #D objects.
-- **Matrix Multiplication:** (Core of Neural Networkds)
 ```
 ## Role of Mathematics in Machine Learning
 Mathematics plays a fundamental role in Machine Learning, providing the tools and frameworks for developing and understanding algorithms. It is essential for data manipulation, model optimization, and prediction. Specially, **linear algebra**, **calculus**, **probability theory**, and **statistics** are crucial for various Machine Learning tasks.
