@@ -27,6 +27,12 @@
   flat_list = [item for sublist in nested_list for item in sublist]
   ````
 * Unpacking a list
+  ```python
+  mylist = [1, 2, 3, 4, 5]
+  a, b, *c, d = mylist 
+  print(a, b, d) # 1, 2, 5
+  print(c) # [3, 4]
+  ```
 * Use any() and all() for Logical Operations
 * Inline If-Else (Ternary):
 * Read a File into a List of Lines
