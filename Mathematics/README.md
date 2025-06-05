@@ -69,6 +69,7 @@ These notations are used to express relationships and operations between sets, a
 ### [Exploring Set Theory in Python](https://python.plainenglish.io/exploring-set-theory-in-python-ff17a4eae2a8)
 
 ## Reference
+* [Notation](https://dominhhai.github.io/vi/2017/10/math-notation/)
 * [The Mathematics of Machine Learning](https://medium.com/data-science/the-mathematics-of-machine-learning-894f046c568)
 * [Role of Mathematics in Machine Learning](https://wasifekbal.medium.com/role-of-mathematics-in-machine-learning-5c62e85e2fb3)
 * [Maths for Machine Learning](https://www.geeksforgeeks.org/machine-learning-mathematics/)
