@@ -15,12 +15,6 @@
 - Discrete Mathematics
 
 ------------
-- **Linear Algebra:** Linear algebra is crucial for representing and manipulating data in AI. Matrices and vectors are used to represent data, and operations such as matrix multiplication are essential for tasks like neural network training.
-- **Calculus:** Calculus, including differentiation and integration, is used in optimization algorithms to find optimal solutions to AI problems. Gradient descent, a common optimization technique in machine learning, relies on calculus.
-- **Probability and Statistics:** Probability theory is used to model uncertainty and randomness in AI. Concepts like probability distributions, Bayes' theorem, and statistical inference are fundamental for tasks like probabilistic reasoning, Bayesian networks, and statistical machine learning.
-- **Information Theory:** Information theory, particularly concepts like entropy, mutual information, and the Kullback-Leibler divergence, is used to measure and quantify information and uncertainty in AI systems. It's relevant in areas like data compression and information retrieval.
-- **Graph Theory:** Graph theory is employed to model and analyze relationships and structures in data. Graphs are used in various AI applications, including social network analysis, recommendation systems, and knowledge representation.
-- **Optimization:** Optimization techniques, such as linear programming, integer programming, and nonlinear optimization, are used to find the best solutions to AI problems. They are essential for tasks like feature selection, parameter tuning, and model training.
 - **Set Theory and Logic:** Set theory and mathematical logic provide the foundation for formal reasoning in AI. Predicate logic and formal languages are used in knowledge representation, automated reasoning, and rule-based systems.
 - **Differential Equations:** Differential equations are used in areas like control theory and robotics to model and analyze the behavior of dynamic systems, such as autonomous vehicles or robotic arms.
 - **Numerical Methods:** Numerical methods, including techniques for solving equations, interpolation, and numerical integration, are essential for solving AI problems that require approximations or simulations.
@@ -40,7 +34,6 @@ Mathematics plays a fundamental role in Machine Learning, providing the tools an
 
 ---
 ## Set Theory
-
 ### Types of Sets:
 1. Finite Set: A set with a defined, limited number of elements.
 Example: {1, 2, 3, 4, 5}
