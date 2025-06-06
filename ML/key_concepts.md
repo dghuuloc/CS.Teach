@@ -60,7 +60,7 @@ Integrate the trained model into applications or systems where it can be used to
 * **Decision Trees:**
 * **Random Forest:**
 * **Support Vector Machines:**
-* **K Nearest Neighbours(KNN):**
+* **K-Nearest Neighbors (KNN):**
 * **K-Means Clustering:**
 * **Naive Bayes:**
 * **Principal Component Analysis (PCA):**
