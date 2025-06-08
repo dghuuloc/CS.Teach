@@ -9,10 +9,17 @@ Machine learning works through the following key steps:
 * Understand the business or research context to guide the feature engineering process.
 
 ### Data Collection and Preparation
+The goal of Prepering Data: 
 * **Data Collection:** Gathering relevant data from various sources.
 * **Data Cleaning:** Handling missing data, removing duplicates, outliers, and correct inconsistencies.
 * **Data Exploring:** the data using techniques like histograms, scatter plots, and heatmaps to understand relationships and patterns.
 * **Data Transformation:** Scaling, normalization, and encoding data to prepare it for model training.
+
+> [!NOTE]
+> The primary goals are:
+> * **Quality:** Data must be accurate, complete, and relevant.
+> * **Quantity:** AI requires large datasets to build reliable and scalable models.
+> * **Completeness:** Missing data points must be handled to avoid inaccurate outcomes.
 
 ### Feature Engineering
 * This is where you transform and select the most useful features for your model.
