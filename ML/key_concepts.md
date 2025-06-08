@@ -14,17 +14,17 @@ Machine learning works through the following key steps:
 * **Data Exploring:** the data using techniques like histograms, scatter plots, and heatmaps to understand relationships and patterns.
 * **Data Transformation:** Scaling, normalization, and encoding data to prepare it for model training.
 
-### Feature Engineering 
-* Creating New Features: Combining existing features or creating new ones to improve model performance.
-* Feature Selection: Identifying the most relevant features to use in the model. 
+### Feature Engineering
+* This is where you transform and select the most useful features for your model.
+* **Feature Creation:** Create new features from existing ones, combining them or applying mathematical transformations.
+* **Feature Selection:** Choose the most relevant features to improve model performance and reduce complexity.
+* **Encoding Categorical Variables:** Convert categorical variables into numerical representations that algorithms can handle (e.g., one-hot encoding).
+* **Feature Scaling:** Scale numerical features to a consistent range (e.g., standardization, normalization) to prevent features with larger scales from dominating the learning process.
+* **Handling Outliers:** Identify and handle outliers (e.g., through removal or transformation) as they can negatively impact model accuracy.
 
 ### Model Selection: 
-* **Choosing the Right Algorithm:**
-  Selecting the appropriate machine learning algorithm for the task at hand (e.g., regression, classification, clustering, etc.).
-* **Understanding Algorithm Trade-offs:**
-  Considering computational cost, scalability, and interpretability when selecting an algorithm.
-* **Model Architecture:**
-  Choosing the specific architecture of the chosen algorithm (e.g., the number of layers in a neural network).
+* Choose an appropriate machine learning algorithm based on the problem type and data characteristics.
+* Train the model on a portion of the data (training set) to learn the relationships between features and the target variable.
 
 ### Training the Model:
 Feed the algorithm with the prepared data to train the model. During training, the model learns patterns and relationships within the data.
@@ -35,8 +35,8 @@ Feed the algorithm with the prepared data to train the model. During training, t
 * **Overfitting and Underfitting:**
   Identifying and addressing situations where the model learns the training data too well (overfitting) or not well enough (underfitting)
 
-### Evaluation:
-Assess the model’s performance using a separate set of data not used during training. This step helps ensure the model can generalize well to new, unseen data.
+### Model Evaluation and Validation:
+Assess the model’s performance using a separate set of data not used during training (test dataset, validation dataset). This step helps ensure the model can generalize well to new, unseen data.
 * **Performance Metrics:**
   Using metrics like accuracy, precision, recall, F1-score, and AUC to assess the model's performance.
 * **Overfitting and Underfitting:**
