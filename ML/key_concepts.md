@@ -3,9 +3,15 @@
 
 ## How does machine learning work?
 Machine learning works through the following key steps:
-### Data Preparation
+
+### Problem Definition and Goal Setting
+* Clearly define the machine learning problem (e.g., classification, regression, clustering) and the desired outcome.
+* Understand the business or research context to guide the feature engineering process.
+
+### Data Collection and Preparation
 * **Data Collection:** Gathering relevant data from various sources.
-* **Data Cleaning:** Handling missing data, outliers, and inconsistencies.
+* **Data Cleaning:** Handling missing data, removing duplicates, outliers, and correct inconsistencies.
+* **Data Exploring:** the data using techniques like histograms, scatter plots, and heatmaps to understand relationships and patterns.
 * **Data Transformation:** Scaling, normalization, and encoding data to prepare it for model training.
 
 ### Feature Engineering 
