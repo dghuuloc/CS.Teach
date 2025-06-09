@@ -111,8 +111,20 @@ Integrate the trained model into applications or systems where it can be used to
 ---
 ## Model Performance Matrics (Evaluation Matrics for Machine Learning)
 ### *Performance Metrics for Classification Problems*
+* Accuracy
+* Logarithmic Loss
+* Area Under Curve (AUC)
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
 
 ### *Performance Metrics for Regression Problems*
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* Root Mean Square Error (RMSE)
+* Root Mean Squared Logarithmic Error (RMSLE)
+* R2 - Score
 
 
 ## Reference
