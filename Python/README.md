@@ -68,7 +68,7 @@ A **Namespace** is a collection of names along with the information of the objec
 
 When you access this variable later in your program Python will refer to the namespace to retrieve it. There are multiple levels to this lookup process. The order goes with ```LEGB Scoping Rule =  Local Scope -> Enclosing Scopes (Nonlocal) -> Module Scope (Global) -> Builtin Scope -> NameError```
 
-When the Python interpreter starts, it loads builtins.py and makes it universally available. Here are a few that you are probably familiar with: [‘sorted’, ‘staticmethod’, ‘str’, ‘sum’, ‘super’, ‘tuple’, ‘type’, ‘vars’, ‘zip’]. Run the following code to see the full list.
+When the Python interpreter starts, it loads builtins.py and makes it universally available. Here are a few that you are probably familiar with: [`sorted`, `staticmethod`, `str`, `sum`, `super`, `tuple`, `type`, `vars`, `zip`]. Run the following code to see the full list.
 ```python 
 import builtins
 print(dir(builtins))
