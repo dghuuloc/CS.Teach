@@ -1,5 +1,7 @@
 # <p align="center"> A Deep Dive into Spring Boot </p>
 ---
+## Bean in Spring framework
+In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
 
 ## Introduction: The Early Java Era
 In the early era of programming, writing Java code was a bit frustrating. Developers had to set up long configurations, deal with verbose XML files, and manually manage dependencies that were rapidly updated. This era made it harder for developers to thrive and write efficient code.
