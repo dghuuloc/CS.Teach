@@ -23,6 +23,11 @@ public class Car {
     }
 }
 ```
+**In this case:**
+* The `Car` class **directly creates** the `Engine` object.
+* The `Car` class is responsible for both creating and managing the `Engine` object, which creates a **tight coupling** between the two.
+* If we want to change the `Engine` class (for example, to use a `HybridEngine`), we’d need to modify the `Car` class. This violates the **Open/Closed Principle**: classes should be **open for extension** but **closed for modification**
+
 
 ## What happens when Spring Boot runs:
 * **Application Context Creation:**
