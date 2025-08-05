@@ -1,6 +1,29 @@
 # <p align="center"> A Deep Dive into Spring Boot </p>
 ---
 
+## Introduction: The Early Java Era
+In the early era of programming, writing Java code was a bit frustrating. Developers had to set up long configurations, deal with verbose XML files, and manually manage dependencies that were rapidly updated. This era made it harder for developers to thrive and write efficient code.
+
+In 2003, **Spring Framework** revolutionized the Java ecosystem by introducing **Dependency Injection (DI)** and **Inversion of Control (IoC)**. These features significantly reduced developers' headaches by eliminating tightly coupled code and making it easier to write clean, modular code.
+
+<p align="center"><img src="./images/ioc_container.png"/>
+  
+**IoC** is a design principle where the control of object creation and dependency management is transferred to a container (like the Spring IoC container). Instead of objects managing their own dependencies, the container does this work for you!
+
+### Normal (Without IoC) Behavior
+Without IoC, developers are responsible for creating and managing their object dependencies.
+
+For example, let’s consider a `Car` class that depends on an `Engine` class. In this scenario, the `Car` class manages the `Engine` object by itself:
+```java
+public class Car {
+    private Engine engine = new Engine();  // Car directly creates an Engine
+
+    public void start() {
+        engine.run();
+    }
+}
+```
+
 ## What happens when Spring Boot runs:
 * **Application Context Creation:**
 `SpringApplication.run()` begins by creating an instance of the Spring `ApplicationContext`, which serves as the central container for managing beans and their lifecycle.
