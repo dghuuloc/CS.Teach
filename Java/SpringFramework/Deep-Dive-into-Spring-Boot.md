@@ -1,2 +1,35 @@
 # <p align="center"> A Deep Dive into Spring Boot </p>
 ---
+
+## What happens when Spring Boot runs:
+* **Application Context Creation:**
+`SpringApplication.run()` begins by creating an instance of the Spring `ApplicationContext`, which serves as the central container for managing beans and their lifecycle.
+* **Environment Preparation:**
+The application's environment is prepared, including loading configuration properties from sources like `application.properties` or `application.yml`.
+* **Component Scanning:**
+Spring Boot performs a component scan, typically starting from the package of the main application class, to discover and register Spring components (e.g., `@Component`, `@Service`, `@Repository`, `@Controller`, `@Configuration`).
+* **Auto-configuration:**
+Based on the classpath and defined dependencies, Spring Boot's auto-configuration mechanism automatically configures various aspects of the application, such as setting up a data source if a database driver is present or configuring an embedded web server (e.g., Tomcat, Jetty).
+* **Bean Definition Registration:**
+Discovered components are registered as `BeanDefinition` objects within the `ApplicationContext`, outlining how each bean should be created and managed.
+* **BeanFactoryPostProcessors:**
+Any `BeanFactoryPostProcessor` beans are invoked to modify bean definitions before actual bean instantiation.
+* **Bean Instantiation and Dependency Injection:**
+Beans are instantiated, and their dependencies are injected by the Spring container, following the principles of Inversion of Control (IoC) and Dependency Injection (DI).
+* **Embedded Server Startup (for web applications):**
+If it's a web application, an embedded web server (like Tomcat by default) is started, listening on a configured port (default 8080).
+* **Runners Execution:**
+If `ApplicationRunner` or `CommandLineRunner` beans are defined, their `run` methods are executed, allowing for custom logic to be performed after the application context is fully initialized.
+
+## How Spring Boot works behind the scenes
+Spring Boot leverages several key mechanisms to achieve its ease of use and rapid development:
+* **Convention over Configuration:**
+Spring Boot provides sensible defaults and conventions, reducing the need for explicit configuration. For example, by simply adding `spring-boot-starter-web` to the classpath, an embedded Tomcat server is automatically configured.
+* **Auto-configuration:**
+This core feature analyzes the classpath and existing configurations to automatically configure common components and functionalities, such as database connections, web servers, and security settings. This eliminates much of the boilerplate XML or Java configuration.
+* **Starters:**
+Spring Boot Starters are pre-packaged dependency descriptors that bundle related dependencies for specific functionalities (e.g., web development, data access, testing), simplifying dependency management.
+* **Embedded Servers:**
+For web applications, Spring Boot directly embeds a web server within the executable JAR, eliminating the need for external server deployments.
+* **Actuators:**
+These provide production-ready features like monitoring, metrics, and health checks, offering insights into the running application.
