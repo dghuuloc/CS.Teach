@@ -1,4 +1,4 @@
-# <p align="center> Spring Data JPA </p>
+# <p align="center"> Spring Data JPA </p>
 ---
 
 ### Quick recap:
