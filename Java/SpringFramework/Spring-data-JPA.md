@@ -39,3 +39,5 @@ public class Course {
 | `@ManyToMany`     | Either side | Other side mappedBy     | LAZY               | On the side where the collection is declared |
 | `@OneToOne`       | Owning side | MappedBy side           | EAGER              | On the owning or inverse side field          |
 
+
+### Java Persistence Query Language (JPQL)
