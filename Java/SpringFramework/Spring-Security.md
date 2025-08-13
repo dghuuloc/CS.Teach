@@ -72,6 +72,135 @@ public class SecurityConfig {
 * **Security events** like login failure, logout, etc.
 
 ---
+1. `UserDetailsService` bean tells Spring Security how to **load users**.
+2. `PasswordEncoder` bean is needed to encode and verify passwords.
+3. `SecurityFilterChain` bean defines **which endpoints need which roles**.
+
+---
+
+## Difference: `UserDetailsService` vs `UserDetailsManager`
+
+| Feature  | `UserDetailsService`                  | `UserDetailsManager`                                                                          |
+| -------- | ------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Purpose  | Loads a user by username (read-only)  | Loads **and manages** users (create, update, delete)                                          |
+| Methods  | `loadUserByUsername(String username)` | All `UserDetailsService` methods **+** `createUser`, `updateUser`, `deleteUser`, `userExists` |
+| Use case | Typical authentication                | Admin panels, registration APIs, dynamic user management                                      |
+### InMemoryUserDetailsManager
+* InMemoryUserDetailsManager is one of Spring Security’s **built-in implementations** of the `UserDetailsManager` interface.
+* It’s super handy for beginners, demos, or small apps where you don’t need a database yet, because it stores user accounts in memory (Java objects) instead of persisting them.
+
+### Where it fits in Spring Security
+Spring Security has three closely related interfaces/classes:
+
+| Type                         | Purpose                                                      |
+| ---------------------------- | ------------------------------------------------------------ |
+| `UserDetailsService`         | Loads user data by username (read-only).                     |
+| `UserDetailsManager`         | Extends `UserDetailsService` with **create/update/delete**.  |
+| `InMemoryUserDetailsManager` | An in-memory implementation of `UserDetailsManager` (no DB). |
+
+### When to use
+* Quick prototypes / learning Spring Security.
+* Unit tests or integration tests.
+* Simple apps where persistence isn’t required.
+* Predefined admin or test users.
+
+### How it works
+* Users are stored in memory as a `Map<String, UserDetails>`.
+* The data is lost when the application restarts.
+* Supports:
+ * Creating users (`createUser`)
+ * Updating users (`updateUser`)
+ * Deleting users (`deleteUser`)
+ * Checking existence (`userExists`)
+
+### Basic Configuration's `SecurityConfig`
+```java
+@Configuration
+public class SecurityConfig {
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public InMemoryUserDetailsManager userDetailsManager(PasswordEncoder encoder) {
+        UserDetails user = User.builder()
+                .username("user")
+                .password(encoder.encode("password"))
+                .roles("USER")
+                .build();
+
+        UserDetails admin = User.builder()
+                .username("admin")
+                .password(encoder.encode("admin123"))
+                .roles("ADMIN")
+                .build();
+
+        return new InMemoryUserDetailsManager(user, admin);
+    }
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+            .csrf(csrf -> csrf.disable())
+            .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/admin/**").hasRole("ADMIN")
+                .anyRequest().authenticated()
+            )
+            .httpBasic();
+        return http.build();
+    }
+}
+```
+**Here:**
+* We create an `InMemoryUserDetailsManager` with two users: `user` and `admin`.
+* `PasswordEncoder` is used to hash passwords.
+* Security rules: `/admin/**` requires `ADMIN` role, everything else just needs authentication.
+
+### Runtime User Management Example
+Because `InMemoryUserDetailsManager` implements `UserDetailsManager`, we can dynamically create users:
+```java
+@RestController
+public class UserController {
+
+    private final InMemoryUserDetailsManager userDetailsManager;
+    private final PasswordEncoder encoder;
+
+    public UserController(InMemoryUserDetailsManager userDetailsManager, PasswordEncoder encoder) {
+        this.userDetailsManager = userDetailsManager;
+        this.encoder = encoder;
+    }
+
+    @PostMapping("/register")
+    public String register(@RequestParam String username, @RequestParam String password) {
+        if (userDetailsManager.userExists(username)) {
+            return "User already exists";
+        }
+
+        UserDetails newUser = User.builder()
+                .username(username)
+                .password(encoder.encode(password))
+                .roles("USER")
+                .build();
+
+        userDetailsManager.createUser(newUser);
+        return "User registered successfully";
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+---
 ## How a request is processed in a Spring Security-enabled application:
 * **Request hits the SecurityFilterChain:** Filters handle various security tasks.
 * **AuthenticationManager delegates to ProviderManager:** Authentication providers are consulted to authenticate the user.
