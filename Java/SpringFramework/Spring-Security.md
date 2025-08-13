@@ -213,8 +213,17 @@ spring.security.user.password=test123
 | PUT         | /api/uers          | Update      | MANAGER  |
 | DELETE      | /api/uers/{userId} | Delete user | ADMIN    |
 
-
-
+* **Test**
+```
+| Role: MANAGER           |
+| Test user: mary/test123 |
+| ------------------------+
+| Pass: Get all users     |
+| Pass: Get single user   |
+| Pass: Add user          |
+| Pass: Update user       |
+| Fail: Delete user       |
+```
 
 
 
