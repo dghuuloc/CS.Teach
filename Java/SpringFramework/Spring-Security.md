@@ -190,10 +190,15 @@ public class UserController {
 }
 ```
 
+## Restrict Access Based on Roles
 
-
-
-
+| HTTP Method | ENDPOINT           | CRUD Action | Role
+| ----------- | -------------------| ----------- | ------- | 
+| GET         | /api/uers          | Read all    | USER    |
+| GET         | /api/uers/{userId} | Read single | USER    |
+| POST        | /api/uers          | Create      | MANAGER |
+| PUT         | /api/uers          | Update      | MANAGER |
+| DELETE      | /api/uers/{userId} | Delete user | ADMIN   |
 
 
 
