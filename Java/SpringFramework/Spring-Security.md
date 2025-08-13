@@ -225,7 +225,8 @@ spring.security.user.password=test123
 | Fail: Delete user       |
 ```
 
-
+## Generate BCrypt Passwords
+* Access [link](https://www.bcryptcalculator.com/) to generate plain text to BCrypt 
 
 ---
 ## How a request is processed in a Spring Security-enabled application:
