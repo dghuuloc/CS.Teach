@@ -190,7 +190,20 @@ public class UserController {
 }
 ```
 
-## Restrict Access Based on Roles
+## Authentication and Authorization
+* Spring Security Configuration
+```
+spring.security.user.name=user1
+spring.security.user.password=test123
+```
+
+* **User Roles**
+| User Id | Password | Roles |
+| john  | test123 | EMPLOYEE |
+| mary  | test123 | EMPLOYEE, MANAGER |
+| susan | test123 | EMPLOYEE, MANAGER, ADMIN |
+
+* **Restrict Access Based on Roles**
 
 | HTTP Method | ENDPOINT           | CRUD Action | Role
 | ----------- | -------------------| ----------- | -------- | 
