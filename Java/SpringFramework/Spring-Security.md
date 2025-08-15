@@ -228,6 +228,77 @@ spring.security.user.password=test123
 ## Generate BCrypt Passwords
 * Access [link](https://www.bcryptcalculator.com/) to generate plain text to BCrypt 
 
+## 
+
+```pgsql
+             ┌─────────────────────────────┐
+             │        Client App           │
+             │ (Browser, Mobile, Postman)  │
+             └─────────────┬───────────────┘
+                           │
+   ┌───────────────────────┼───────────────────────────┐
+   │ 1. Register/Login Request (username/password)     │
+   └───────────────────────┼───────────────────────────┘
+                           │
+                    ┌──────▼──────┐
+                    │ /auth/login │  <-- Public endpoint
+                    └──────┬──────┘
+                           │
+                ┌──────────▼─────────────┐
+                │ AuthenticationManager  │
+                │   + UserDetailsService |
+                └──────────┬─────────────┘
+                           │
+                  [Verify credentials]
+                           │
+                           ▼
+                 ┌─────────────────┐
+                 │   JwtService    │
+                 │ (generateToken) │
+                 └───────┬─────────┘
+                         │
+          ┌──────────────▼──────────────┐
+          │  Response with JWT Token    │
+          │  { "token": "<jwt-token>" } │
+          └──────────────┬──────────────┘
+                         │
+            ┌────────────▼─────────────┐
+            │ Client stores the token  │
+            │ (localStorage, cookie)   │
+            └────────────┬─────────────┘
+                         │
+   ┌─────────────────────▼─────────────────────┐
+   │ 2. Request to protected endpoint (/hello) │
+   │    with: Authorization: Bearer <token>    │
+   └─────────────────────┬─────────────────────┘
+                         │
+                ┌────────▼────────┐
+                │  JwtAuthFilter  │  <-- Intercepts request
+                └────────┬────────┘
+                         │
+           [Extract token from header]
+                         │
+           [Validate token with JwtService]
+                         │
+           [Load user details from DB]
+                         │
+                         ▼
+      ┌───────────────────────────────────────┐
+      │ Set Authentication in SecurityContext │
+      │  (UsernamePasswordAuthenticationToken)│
+      └───────────────────────────────────────┘
+                         │
+                  ┌──────▼──────┐
+                  │ Controller  │
+                  │  /hello     │
+                  └──────┬──────┘
+                         │
+           ┌─────────────▼─────────────┐
+           │ Return secured resource   │
+           │ "Hello, secured world!"   │
+           └───────────────────────────┘
+```
+
 ---
 ## How a request is processed in a Spring Security-enabled application:
 * **Request hits the SecurityFilterChain:** Filters handle various security tasks.
