@@ -228,8 +228,29 @@ spring.security.user.password=test123
 ## Generate BCrypt Passwords
 * Access [link](https://www.bcryptcalculator.com/) to generate plain text to BCrypt 
 
-## 
+## Introduction to JWT (JSON Web Token)
+JWT (JSON Web Token) is very common in Spring Security for stateless authentication. In a Spring Boot + Spring Security app, JWT is typically used to:
+* **Authenticate** users without keeping session state on the server (no `HttpSession`).
+* Store user identity and roles directly in the token payload.
+* Let the client send the token in the `Authorization: Bearer <token> header` for each request.
 
+#### Typical Spring Security + JWT flow:
+1. **User logs** in with username/password to `/login` or `/auth`.
+2. **Server authenticates** using `AuthenticationManager`.
+3. **Server generates JWT** with user details and roles.
+4. JWT is returned to the client.
+5. **Client stores token** (usually in localStorage or an HTTP-only cookie).
+6. For each request, the **client sends token** in the `Authorization` header.
+7. A **JWT filter** in Spring Security extracts and validates the token, sets authentication in the `SecurityContext`.
+
+#### Key Components in Spring Security JWT setup:
+* **JWT Utility** (to generate/validate tokens).
+* **AuthenticationController** (for login & token issuance).
+* **CustomUserDetailsService** (to load users from DB).
+* **JWT Authentication Filter** (to intercept and validate tokens).
+* **SecurityConfig** (to register filter and disable session).
+
+### JWT Flow in Spring Security
 ```pgsql
              ┌─────────────────────────────┐
              │        Client App           │
