@@ -1346,3 +1346,4 @@ print(result)  # prints 11
 * [Python Variable Scopes](https://www.pythontutorial.net/advanced-python/python-variable-scopes/)
 * [What is Closure? How to Implement it in Python?](https://anazimzada2020.medium.com/what-is-closure-how-to-implement-it-in-python-7f12ca54bdf7)
 * [Closures and Decorators in Python](https://medium.com/data-science/closures-and-decorators-in-python-2551abbc6eb6)
+* [First Class Functions and Closures in Python](https://www.freecodecamp.org/news/first-class-functions-and-closures-in-python/)
