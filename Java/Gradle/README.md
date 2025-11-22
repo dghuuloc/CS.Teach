@@ -48,6 +48,11 @@ dependencies {
     }
 }
 ```
+```groovy
+implementation files('libs/joda-time-2.2.jar', 'libs/junit-4.12.jar')
+implementation fileTree(dir: 'libs', include: '*.jar')
+```
+
 To add dependencies to any local files, we can use something like this:
 ```groovy
 implementation files('libs/joda-time-2.2.jar', 'libs/junit-4.12.jar')
