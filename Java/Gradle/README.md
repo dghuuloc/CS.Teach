@@ -29,4 +29,4 @@ tasks.named('test') {
 * (3) We define dependency contraints as well as standard dependencies that are shared by all subprojects and set JUnit 5 as testing framework (4)
 
 ## Referrence
-* [Building Java Applications with libraries Sample]https://docs.gradle.org/current/samples/sample_building_java_applications_multi_project.html)
+* [Building Java Applications with libraries Sample](https://docs.gradle.org/current/samples/sample_building_java_applications_multi_project.html)
