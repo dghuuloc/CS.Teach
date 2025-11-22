@@ -1,6 +1,22 @@
 # <p align="center"> Introduction to Gradle </p>
 ---
 
+* **Structuring and Organizing Gradle Projects**
+```
+root-project/     
+├── settings.gradle
+├── build.gradle 
+├── app/                
+│   ├── build.gradle        
+│   └── src/
+├── core/               
+│   ├── build.gradle        
+│   └── src/
+└── util/               
+    ├── build.gradle        
+    └── src/
+```
+
 * `settings.gradle` file
 ```groovy
 rootProject.name = 'my-project'
@@ -66,5 +82,12 @@ To add dependencies to any local files, we can use something like this:
 implementation files('libs/joda-time-2.2.jar', 'libs/junit-4.12.jar')
 implementation fileTree(dir: 'libs', include: '*.jar')
 ```
+
+*You can run the application by executing the run task from the Application plugin in the project root:
+```sh
+gradle -q run
+```
+
+
 ## Referrence
 * [Building Java Applications with libraries Sample](https://docs.gradle.org/current/samples/sample_building_java_applications_multi_project.html)
