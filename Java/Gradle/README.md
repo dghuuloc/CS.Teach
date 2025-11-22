@@ -1,7 +1,15 @@
 # <p align="center"> Introduction to Gradle </p>
 ---
 
+* `settings.gradle` file
 ```groovy
+rootProject.name = 'my-project'
+include('app', 'core', 'util')
+```
+
+* `build.gradle` file
+```groovy
+// build.gradle
 plugins {
     id 'java' 
 }
