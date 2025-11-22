@@ -1,6 +1,7 @@
 # <p align="center"> Introduction to Gradle </p>
 ---
 
+## **Java Application with Gradle**
 * **Structuring and Organizing Gradle Projects**
 ```
 root-project/     
@@ -110,6 +111,11 @@ implementation fileTree(dir: 'libs', include: '*.jar')
 gradle -q run
 ```
 
+---
+## **Spring Boot with Gradle**
 
+
+
+---
 ## Referrence
 * [Building Java Applications with libraries Sample](https://docs.gradle.org/current/samples/sample_building_java_applications_multi_project.html)
