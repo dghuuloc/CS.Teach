@@ -62,6 +62,18 @@ tasks.named('test') {
 * (2) We declare a repository - `mavenCentral()` as source for external dependencies
 * (3) We define dependency contraints as well as standard dependencies that are shared by all subprojects and set JUnit 5 as testing framework (4)
 
+* Libraries your project needs to compile, run, or test. Types of dependencies:
+    * `implementation` → runtime + compile
+    * `compileOnly` → compile only
+    * `runtimeOnly` → runtime only
+    * `testImplementation` → test dependencies
+
+* Plugins add extra capabilities to the project. Common plugins:
+    * `java` → standard Java compilation tasks
+    * `application` → adds run task for Java apps
+    * `org.springframework.boot` → adds bootRun, packaging, and Spring Boot conventions
+    * `maven-publish` → enables publishing artifacts to repositories
+
 ### Declaring Dependencies
 Let’s look at an example of adding some dependencies (Spring and Hibernate) using several different ways:
 ```groovy
