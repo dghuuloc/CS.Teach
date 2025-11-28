@@ -231,11 +231,30 @@ task hello {
 }
 ```
 
+### **Gradle Testing**
+#### **Display test result in the console**
+We add the `testLogging` events to tell Gradle what kind of test events should display in the console.
+```groovy
+// File: build.gradle
+test {
+	testLogging {
+		events "PASSED", "SKIPPED", "FAILED", "STANDARD_OUT", "STANDARD_ERROR"
+	}
+}
+```
+Review the TestLogEvent, it consist of 6 events:
+* `FAILED` – A test has failed.
+* `PASSED` – A test has passed.
+* `SKIPPED` – A test has been skipped.
+* `STANDARD_ERROR` – A test has written a message to standard error.
+* `STANDARD_OUT` – A test has written a message to standard out.
+* `STARTED` – A test has started.
+Generally, the following 3 events should be enough for most use cases: ```events "PASSED", "SKIPPED", "FAILED"```
 
-
-
-
-
+* Run tests from a single unit test class
+```
+gradle cleanTes test --tests com.demo.AppTest.
+```
 
 
 
