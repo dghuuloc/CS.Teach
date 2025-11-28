@@ -186,6 +186,10 @@ Now, let’s run the wrapper task in our project directory:
 ```sh
 gradle wrapper
 ```
+Let's have a look at:
+* `gradle-wrapper.jar` contains code for downloading the Gradle distribution specified in the `gradle-wrapper.properties` file
+* `gradle-wrapper.properties` contains Wrapper runtime properties — most importantly, the version of the Gradle distribution that is compatible with the current project
+
 
 ---
 ## Referrence
