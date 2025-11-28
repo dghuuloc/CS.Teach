@@ -201,6 +201,55 @@ Always checking the Wrapper files inside the source control system like GitHub. 
 > ```sh
 > git add -f gradle/wrapper/gradle-wrapper.jar
 > ```
+
+### **Gradle cache and deleting the cache**
+You can refresh dependencies in your cache with the command line option `--refresh-dependencies`. You can also delete the cached files under _~/.gradle/caches_. With the next build Gradle attempts to download the dependencies again.
+
+### **Creating custom Gradle tasks**
+A first minimalistic task in a `build.gradle` file has been created.
+```groovy
+task hello {
+	doLast {
+		println 'Hello Gradle'
+	}
+}
+```
+When running the `gradle -q task` task with this `build.gradle` file, the `hello` task will be listed under "**Other tasks**"
+
+Groups can be applied with the `group` property and a description can be applied by using the `description` property. In case the group already exists the `hello` task is added to it. If the group does not exist, it is created.
+```groovy
+task hello {
+     group 'groupCustom'
+     description 'The hello task greets Gradle by saying "Hello Gradle"'
+
+     doFirst {
+        println 'Hello Gradle'
+     }
+     doLast {
+        println 'Bye bye Gradle'
+     }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 ## Referrence
 * [Building Java Applications with libraries Sample](https://docs.gradle.org/current/samples/sample_building_java_applications_multi_project.html)
