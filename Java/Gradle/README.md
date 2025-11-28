@@ -255,8 +255,10 @@ Generally, the following 3 events should be enough for most use cases: ```events
 ```
 gradle cleanTes test --tests com.demo.AppTest.
 ```
-
-
+* `gradle test` generates the following HTML test report by default:
+```
+{project}\build\reports\tests\test\index.html
+```
 
 
 
