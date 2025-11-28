@@ -253,8 +253,11 @@ Generally, the following 3 events should be enough for most use cases: ```events
 
 * Run tests from a single unit test class
 ```
-gradle cleanTes test --tests com.demo.AppTest.
+gradle cleanTest test --tests com.demo.AppTest.
 ```
+> [!NOTE]
+> We can use `cleanTest` to force Gradle always to run the previously passed tests, even the tests are unmodified.
+
 * `gradle test` generates the following HTML test report by default:
 ```
 {project}\build\reports\tests\test\index.html
