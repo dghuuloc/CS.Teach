@@ -193,7 +193,14 @@ By default, the _wrapper_ task generates Wrapper files with the Gradle version c
 ```sh
 gradle wrapper --gradle-version 6.3
 ```
+
 Always checking the Wrapper files inside the source control system like GitHub. **This way ensure that other developers can run the project without the need to install Gradle**.
+
+> [!NOTE]
+> Global `.gitignore` that ignores all `.jar` files. We need to add the _gradle-wrapper.jar_ file to git forcefully:
+> ```sh
+> git add -f gradle/wrapper/gradle-wrapper.jar
+> ```
 ---
 ## Referrence
 * [Building Java Applications with libraries Sample](https://docs.gradle.org/current/samples/sample_building_java_applications_multi_project.html)
