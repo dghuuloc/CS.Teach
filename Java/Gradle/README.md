@@ -111,7 +111,31 @@ implementation fileTree(dir: 'libs', include: '*.jar')
 gradle -q run
 ```
 
----
+### Build and run an executable JAR 
+This approach creates a self-contained, executable JAR file that can be run on any system with a compatible JDK installed, even without Gradle. 
+1. **Configure the `jar` task** in your `build.gradle` to add the `Main-Class` attribute to the JAR's manifest:
+
+```groovy
+jar {
+    manifest {
+        attributes 'Main-Class': 'your.package.name.MainClassName'
+    }
+}
+```
+> [!NOTE]
+> **Note on dependencies:** The standard `jar` task only includes your project's compiled classes, not external libraries (dependencies). To include all dependencies in a single `fat JAR` or `uber JAR` you typically need a specialized plugin like the Gradle Shadow Plugin.
+
+2. **Build the JAR file** by running the `build` or `assemble` task:
+```bash
+gradle clean build
+```
+The generated JAR file will be located in the `build/libs` directory, typically named `your-project-name.jar`.
+
+3. **Run the JAR file** from your command line using the `java --jar` command:
+```bash
+java -jar build/libs/your-project-name.jar
+```
+
 ## **Spring Boot with Gradle**
 
 * **settings.gradle**
