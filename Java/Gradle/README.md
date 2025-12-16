@@ -105,8 +105,14 @@ To add dependencies to any local files, we can use something like this:
 implementation files('libs/joda-time-2.2.jar', 'libs/junit-4.12.jar')
 implementation fileTree(dir: 'libs', include: '*.jar')
 ```
+* You can build and run the application by executing the run task from the Application plugin in the project root:
 
-*You can run the application by executing the run task from the Application plugin in the project root:
+```bash
+gradle build --refresh-dependencies
+```
+> [!NOTE]
+> The above command forces Gradles to **ignore all cached entries for resolved modules and artifacts** and re-check the remote repositories for updates during the build process.
+
 ```sh
 gradle -q run
 ```
