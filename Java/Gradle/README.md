@@ -25,7 +25,7 @@ mkdir -p src/main/java,src/test/java,src/main/resources,src/test/resources
 > [!TIP]
 > Use gradle init for creating gradle project from terminal
 > ```
-> gradle init --type java-application --dsl groovy --test-framework junit-jupiter --package grd.fs --project-name grd-basic --no-split-project --java-version 17
+> gradle init --type java-application --dsl groovy --test-framework junit-jupiter --package com.demo --project-name demo-app-with-gradle --no-split-project --java-version 21
 > ```
 
 * `settings.gradle` file
