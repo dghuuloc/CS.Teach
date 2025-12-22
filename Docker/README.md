@@ -28,6 +28,36 @@ Docker is an open-source software that runs on Linux and Windows. With Docker, y
 
 The company started as a platform as a service that was built on LInux containers. to help make and manage the containers, they built an in-house tool that they nicknamed `"Docker"`.
 
+## Docker Architecture
+Docker architecture consists of several components that work together to facilitate the creation, deployment, and management of containers. These key components include:
+1. Docker Engine
+2. Docker Images
+3. Docker Containers
+4. Docker Registries
+
+### Docker Engine
+The Docker engine is the most important component of Docker, also responsible for running the containers. A Docker engine consists of:
+* **Docker Daemon**: Manages objects like images, containers, networks, and volumes.
+* **Docker Client**: The Command line interface (CLI) that helps the user to interact with Docker and its components. Commands like `docker run`, `docker build`, `docker pull`, and `docker push` are sent from the Docker Client to the Docker Daemon.
+* **REST API**: Provides a way to communicate with Docker Daemon.
+
+### Docker Images
+Docker images are templates used to create containers. These images contain the application along with all the necessary dependencies and packages required for it to run. A Docker image packages everything the application needs into a single, portable unit, ensuring consistency across different environments.
+
+### Docker Containers
+Docker containers are instances of a Docker image. They contain the application and its dependencies, providing a constant environment for running the application across different systems. It’s also important to understand the cycle of a Docker container:
+* **Create**: A container is created from a Docker image.
+* **Start**: The container is started, running the specified command or application.
+* **Stop**: The container is stopped, pausing the application.
+* **Restart**: The container is restarted.
+* **Pause/Unpause**: The container’s processes are paused or resumed.
+* **Destroy**: The container is removed from the system.
+
+### Docker Registries
+Docker Registries are repositories for storing and distributing Docker images. They allow users to share images within an organization or publicly. The Docker registry is divided into two parts:
+* **Docker Hub**: Docker Hub is the default public registry provided by Docker. It hosts a vast collection of official and community-contributed images.
+* **Private repositories**: Users can also set up private repositories which can only be accessed by people who have permission to access the repository. Usually, organizations choose this repository to keep their data safe.
+
 ## How Does Docker Works?
 
 First, there's the _Docker CLI_, which is what you interact with in your terminal. The CLI sends commands to a _Docker daemon_. This can run locally or on a remote host. The daemon is responsible for managing containers and the images they're created from.
