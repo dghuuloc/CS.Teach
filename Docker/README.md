@@ -213,7 +213,14 @@ Refer to the following topics for further documentation on all CLI commands used
 - docker container
 
 ## Useful commands for Docker
-
+- Check the available network by running the `docker network ls` command
+```
+$ docker network ls           
+NETWORK ID     NAME      DRIVER    SCOPE
+5077a7b25ae6   bridge    bridge    local
+7e25f334b07f   host      host      local
+475e50be0fe0   none      null      local
+```
 - List your images
 ``` 
 $ docker image ls
