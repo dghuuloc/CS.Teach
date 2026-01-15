@@ -14,3 +14,4 @@ Java offers two primary ways to create threads: **extending the Thread class** o
 - [Java Concurrency 101: Understanding Multithreading Fundamentals](https://dip-mazumder.medium.com/java-concurrency-101-understanding-multithreading-fundamentals-e5ed48b04ca5)
 - [Java Concurrency: Advanced Features](https://www.j-labs.pl/en/tech-blog/java-concurrency-advanced-features/)
 - [Java Concurrency (part 1): Thread](https://viblo.asia/p/java-concurrency-phan-1-thread-GAWVpevY405)
+- [List Mastering Java Concurrency](https://medium.com/@junfeng0828/list/mastering-java-concurrency-and-multithreading-0b92c92f397b)
