@@ -1,5 +1,15 @@
 # <p align="center"> Java Concurrency <p/>
 ---
+### Introduction to Concurrency
+Concurrency allows multiple tasks to run simultaneously, improving application performance and responsiveness. Java provides robust support for concurrency through its threading model, enabling developers to execute tasks in parallel, manage shared resources, and handle synchronization.
+
+Key concepts:
+* **Thread:** The smallest unit of execution in a Java program.
+* **Concurrency:** Running multiple threads simultaneously, either on a single CPU (via time-slicing) or multiple CPU cores.
+Thread Safety: Ensuring shared resources are accessed safely by multiple threads.
+This tutorial demonstrates how to create and manage threads, synchronize access to shared resources, and use high-level concurrency utilities.
+### Creating Threads in Java
+Java offers two primary ways to create threads: **extending the Thread class** or **implementing the Runnable interface**.
 
 ### Creating Threads in Java
 Java offers two primary ways to create threads: **extending the Thread class** or **implementing the Runnable interface**.
