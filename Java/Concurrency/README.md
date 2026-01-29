@@ -9,7 +9,25 @@ Key concepts:
 * **Concurrency:** Running multiple threads simultaneously, either on a single CPU (via time-slicing) or multiple CPU cores.
 * **Thread Safety:** Ensuring shared resources are accessed safely by multiple threads.
 
+#### Threads and Processes
+A **process** is a running instance of a program with its own memory space.
+A **thread** lives inside a process and shares the same memory and resources with other threads in that process.
+* A **process** is like a house.
+* A **thread** is like a person inside the house working on something.
+All threads in a process share the same environment — so they can communicate easily, but they also need to coordinate to avoid interfering with each other.
 
+#### **Concurrency vs. Parallelism**
+These two words often cause confusion, but they describe different ideas:
+* **Concurrency** = multiple tasks _in progress_ (not necessarily at the same time).
+* **Parallelism** = multiple tasks _running at the same time_ on multiple cores.
+A single-core CPU can achieve concurrency by quickly switching between threads, while a multi-core CPU can achieve parallelism by running multiple threads truly simultaneously.
+
+#### Race Conditions and Data Races
+A **race condition** happens when two or more threads try to access and modify shared data at the same time, and the final result depends on the timing of their execution.
+
+A **data race** is a specific type of race condition where at least one thread writes to shared data without proper synchronization.
+
+Example idea: Two threads deposit money into the same bank account at the same time. Without coordination, one update might overwrite the other, leading to incorrect balances.
 
 ### Creating Threads in Java
 Java offers two primary ways to create threads: **extending the Thread class** or **implementing the Runnable interface**.
@@ -84,7 +102,6 @@ public class RunnableExample {
 * This approach promotes better code reuse and flexibility.
 
 ##### Thread Lifecycle
-
 A thread in Java goes through several states:
 * **New:** Created but not started.
 * **Runnable:** Ready to run or running.
@@ -105,3 +122,4 @@ Understanding the lifecycle helps manage threads effectively, especially when co
 - [Java Concurrency: Advanced Features](https://www.j-labs.pl/en/tech-blog/java-concurrency-advanced-features/)
 - [Java Concurrency (part 1): Thread](https://viblo.asia/p/java-concurrency-phan-1-thread-GAWVpevY405)
 - [List Mastering Java Concurrency](https://medium.com/@junfeng0828/list/mastering-java-concurrency-and-multithreading-0b92c92f397b)
+- [Understanding Java Threads: A Beginner’s Guide to Concurrency](https://medium.com/@thimalushara/understanding-java-threads-a-beginners-guide-to-concurrency-d6221727365b)
