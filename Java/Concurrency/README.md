@@ -17,6 +17,64 @@ Java offers two primary ways to create threads: **extending the Thread class** o
 #### Extending the Thread Class
 You can create a thread by extending the Thread class and overriding its `run()` method.
 
+```java
+class MyThread extends Thread {
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(Thread.currentThread().getName() + " printing: " + i);
+            try {
+                Thread.sleep(500); // Simulate work with a delay
+            } catch (InterruptedException e) {
+                System.out.println("Thread interrupted: " + e.getMessage());
+            }
+        }
+    }
+}
+
+public class ThreadExample {
+    public static void main(String[] args) {
+        MyThread thread1 = new MyThread();
+        MyThread thread2 = new MyThread();
+        thread1.start(); // Start the first thread
+        thread2.start(); // Start the second thread
+    }
+}
+```
+##### Explanation:
+* The MyThread class extends Thread and defines the task in the run() method.
+* The start() method initiates the thread, invoking run() in a separate execution path.
+* Output shows interleaved execution of thread1 and thread2, demonstrating concurrent behavior.
+
+#### Implementing the Runnable Interface
+The Runnable interface is preferred when you want to separate the task from the thread management or extend another class.
+
+The `Runnable` interface is used to define a task that can be executed by a thread, without directly managing the thread itself. It's especially useful when your class already extends another class, since Java doesn't support multiple inheritance. By implementing `Runnable`, you keep task logic separate from thread creation, promoting cleaner and more flexible code design.
+
+```java
+class MyRunnable implements Runnable {
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(Thread.currentThread().getName() + " printing: " + i);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                System.out.println("Thread interrupted: " + e.getMessage());
+            }
+        }
+    }
+}
+
+public class RunnableExample {
+    public static void main(String[] args) {
+        Thread thread1 = new Thread(new MyRunnable());
+        Thread thread2 = new Thread(new MyRunnable());
+        thread1.start();
+        thread2.start();
+    }
+}
+```
 
 ### References
 - [Java Concurrency Tutorial — From Basics to Advanced](https://solutionsarchitecture.medium.com/java-concurrency-tutorial-from-basics-to-advanced-89f3f6d1a9b9)
