@@ -14,6 +14,10 @@ Java offers two primary ways to create threads: **extending the Thread class** o
 ### Creating Threads in Java
 Java offers two primary ways to create threads: **extending the Thread class** or **implementing the Runnable interface**.
 
+#### Extending the Thread Class
+You can create a thread by extending the Thread class and overriding its `run()` method.
+
+
 ### References
 - [Java Concurrency Tutorial — From Basics to Advanced](https://solutionsarchitecture.medium.com/java-concurrency-tutorial-from-basics-to-advanced-89f3f6d1a9b9)
 - [Java Multithreading and Concurrency Best Practices](https://medium.com/@AlexanderObregon/java-multithreading-and-concurrency-best-practices-39c86602e666)
