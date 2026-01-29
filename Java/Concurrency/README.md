@@ -123,3 +123,5 @@ Understanding the lifecycle helps manage threads effectively, especially when co
 - [Java Concurrency (part 1): Thread](https://viblo.asia/p/java-concurrency-phan-1-thread-GAWVpevY405)
 - [List Mastering Java Concurrency](https://medium.com/@junfeng0828/list/mastering-java-concurrency-and-multithreading-0b92c92f397b)
 - [Understanding Java Threads: A Beginner’s Guide to Concurrency](https://medium.com/@thimalushara/understanding-java-threads-a-beginners-guide-to-concurrency-d6221727365b)
+- [Concurrency in Java: Threads vs Executors](https://medium.com/@aayushichourasiya/concurrency-in-java-threads-vs-executors-61e9cb9acf70)
+- [Java: Parallelism and concurrency a complete guide](https://pedrosilvatech.medium.com/java-parallelism-and-concurrency-a-complete-guide-d426957538aa)
