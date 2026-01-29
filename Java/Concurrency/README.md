@@ -75,7 +75,21 @@ public class RunnableExample {
     }
 }
 ```
+##### Explanation:
+* MyRunnable implements Runnable and defines the task in run().
+* Thread object is created with the Runnable instance and started.
+* This approach promotes better code reuse and flexibility.
 
+##### Thread Lifecycle
+
+A thread in Java goes through several states:
+* **New:** Created but not started.
+* **Runnable:** Ready to run or running.
+* **Blocked/Waiting:** Waiting for a resource or monitor lock.
+* **Timed Waiting:** Waiting for a specified time (e.g., via sleep() or wait(timeout)).
+* **Terminated:** Completed execution or stopped.
+Understanding the lifecycle helps manage threads effectively, especially when coordinating tasks.
+ 
 ### References
 - [Java Concurrency Tutorial — From Basics to Advanced](https://solutionsarchitecture.medium.com/java-concurrency-tutorial-from-basics-to-advanced-89f3f6d1a9b9)
 - [Java Multithreading and Concurrency Best Practices](https://medium.com/@AlexanderObregon/java-multithreading-and-concurrency-best-practices-39c86602e666)
