@@ -48,14 +48,11 @@ TIP: Quick Starter Script
 [source, bash]
 ----
 npm init -y && npm i -D typescript ts-node eslint prettier @types/node && npx tsc --init
----
+----
 
+== Running TypeScript with Build Tools
 
-
-
-
-
-
+For larger projects, integrating TypeScript with build tools like Webpack or Bebal can streamline our workflowk
 
 
 
