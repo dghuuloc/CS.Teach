@@ -170,6 +170,28 @@ npm install -D typescript
 npx tsc --init
 ----
 
+'''
+
+== TypeScript Basic
+
+=== Array
+
+[source, typescript]
+----
+function filterByTerm(input: string[], searchTerm: string) {
+    // omitted
+}
+----
+
+or: 
+
+[source, typescript]
+----
+function filterByTerm(input: Array<string>, searchTerm: string) {
+    // omitted
+}
+----
+
 
 
 
