@@ -1,1 +1,73 @@
-== Key Takeaways
+= Key Takeaways
+
+== Set up Dev Environment
+
+* Installing NodeJs and Npm
+* Initializing your project
+
+This creates a `tsconfig.json` file.
+
+[source, bash]
+----
+npm init -y
+----
+
+This file is essential for configuring how TypeScript compiles your code and helps maintain consistency across different environments.
+
+The `tsconfig.json` file is the heart of your TypeScript configuration. Here, we can specify important options such as `rootDir` (where your source files live), `outDir` (where compiled JavaScript will be output), `strict` (to enable strict type-checking for safer code), and `esModuleInterop` (to improve compatibility with CommonJS modules). Customizing these settings tailors the TypeScript compiler to your project’s structure and requirements.
+
+* Installing TypeScript
+
+[source, bash]
+----
+npm install typescript --save-dev
+----
+
+To convert your TypeScript files into JavaScript, use the `npx tsc` command. For a smoother development experience, you can enable watch mode with `npx tsc -w`, which automatically recompiles your code whenever you save changes. This immediate feedback loop helps you catch errors early and speeds up your workflow, making development more productive and less error-prone.
+
+* Configuring Typescript
+
+Execute npx tsc --init to generate a tsconfig.json file, which contains TypeScript compiler options and configurations.
+
+[source, bash]
+----
+npm tsc --init
+----
+
+*package.json*
+
+[source, json]
+----
+"devDependencies": {
+    "typescript": "^5.4.5"
+}
+----
+
+TIP: Quick Starter Script
+
+[source, bash]
+----
+npm init -y && npm i -D typescript ts-node eslint prettier @types/node && npx tsc --init
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
