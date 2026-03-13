@@ -50,12 +50,125 @@ TIP: Quick Starter Script
 npm init -y && npm i -D typescript ts-node eslint prettier @types/node && npx tsc --init
 ----
 
+* *Quick Execution:* Use `ts-node` to compile and run TypeScript files in one step
+
+This show how to run TypeScript code withou compiling every time. Use `ts-node`, which runs `.ts` files directly:
+
+[source,bash]
+----
+npm install -g ts-node
+ts-node hello.ts
+----
+
+[NOTE]
+====
+* `tsc`: compiles TypeScript into JavaScript files.
+* `ts-node`: Runs TypeScript files directly without creating separate `.js` outputs.
+====
+
+
 == Running TypeScript with Build Tools
 
 For larger projects, integrating TypeScript with build tools like Webpack or Bebal can streamline our workflowk
 
 
+== Best Practices
 
+=== Key tsconfig.json settings
+
+[source, json]
+----
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build",
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "nodenext",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true
+  }
+}
+----
+
+[cols="1,1"]  
+|===
+|Option
+|Purpose
+
+|`target` 
+|Specifies the JavaScript version to compile to (e.g., ES6, ES2020).
+|`module` 
+|Defines the module system (e.g., CommonJS, ESNext).
+|`moduleResolution` 
+|Determines how modules are resolved (commonly set to `node`).
+|`rootDir` 
+|The root folder of your TypeScript source files (e.g., `./src`).
+|`outDir` 
+|The output folder for compiled JavaScript files (e.g., `./build`).
+|`strict` 
+|Enables all strict type-checking options for safer code.
+|`esModuleInterop` 
+|Improves compatibility with CommonJS modules when using ES module syntax.
+
+|===
+
+These options form the backbone of most TypeScript project setups and can be customized based on our needs.
+
+* *module: "nodenext" vs commonjs:* Use "nodenext" for projects targeting ES modules in Node.js (Node 16+). Use "commonjs" for classic Node.js projects or older compatibility.
+* *moduleResolution: "node" vs "bundler":* "node" mimics Node.js resolution logic, best for server-side and most projects.
+"bundler" is for front-end projects using tools like Vite or Webpack, which handle resolution differently.
+* *skipLibCheck:* Set to true to speed up builds by skipping type checks on libraries in node_modules.
+* *noUncheckedIndexedAccess:* Enforces safer access to arrays and objects by making index access return possibly undefined unless checked.
+
+=== General Best Practices
+
+* Organize source code in `src/`, output in `build/` or `dist/`.
+* Use `camelCase` for variables/functions, `PascalCase` for classes/types.
+* Always enable `"strict": true` for robust type-checking.
+* Use interfaces/types for clear object and function signatures.
+
+=== Using Google. TypeScript Style to Lint and Correct Our Code
+
+*Installation `Google TypeScipt Style (GTS)*
+
+[source,bash]
+----
+# Install Google TypeScript Style (GTS)
+npm install -save-dev gts
+
+# Initialize GTS in our project
+npx gts init
+----
+
+GTS provides a style guide, linter, and code corrector in one. It bootstraps your project with opinionated defaults, including a `tsconfig.json`, ESLint config, and npm scripts:
+
+* `npm run compile` — Compile your TypeScript code.
+* `npm run check` — Check for lint/style errors.
+* `npm run fix` — Auto-fix lint problems.
+
+To customize rules, extend the ESLint config:
+
+[source,yml]
+----
+---
+extends:
+    - './node_modules/gts'
+----
+
+== FAQ
+
+=== How do I initialize a TypeScript project?
+
+We can initialize a new TypeScript project with:
+
+[source, bash]
+----
+npm init -y
+npm install -D typescript
+npx tsc --init
+----
 
 
 
