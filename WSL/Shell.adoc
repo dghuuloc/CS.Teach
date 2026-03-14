@@ -27,11 +27,10 @@ Then, run:
 
 [source,bash]
 ----
-#!/bin/bash
 sh hello.sh
 ----
 
-or:
+or make it executable:
 
 [source,bash]
 ----
