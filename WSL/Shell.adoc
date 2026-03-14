@@ -15,6 +15,15 @@ There are different types of shells, but Bash (Bourne Again SHell) is the most p
 
 == Important thing
 
+=== Overview Bash need to learn
+
+Strong at things:
+
+. *Using the shell interactively:* Navigate, search, inspect, chain commands, manage files, processes, permissions.
+. *Writing reliable scripts:* Variables, quoting, conditionals, loops, fucntions. arguments, exit codes.
+. *Using Unix tools well:* `grep`, `find`, `sed`, `awk`, `xargs`, `sort`, `cut`, `tr`, `tar`, `curl`
+. * Automating real work:* Build scripts, deployment helpers, log analysis, system checks.
+
 These are not always the same:
 
 [source,bash]
