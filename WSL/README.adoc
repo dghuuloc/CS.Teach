@@ -46,8 +46,25 @@ wsl --set-default-version 2
 
 That sets the *default WSL version*, not the default distro.
 
+* To delete *Ubuntu (Default)* from WSL, run this in PowerShell:
 
-																							   
+[source,bash]
+----
+wsl --unregister Ubuntu
+----
+
+That removes the *Ubuntu* distro from WSL completely, and *all files*, *packages*, *and settings inside that distro are permanently deleted*. Microsoft documents `wsl --unregister <DistributionName>` for removing a distro, and specifically notes `wsl --unregister Ubuntu` as the example.
+
+You can confirm first with:
+
+[source,bash]
+----
+wsl -l -v
+----
+
+Then make sure the name is exactly `Ubuntu` before running the unregister command. Microsoft notes `wsl -l` / `wsl --list` shows the installed distro names to use with `--unregister`.
+
+										   
 																							
 
 
