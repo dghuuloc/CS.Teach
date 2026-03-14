@@ -2,7 +2,7 @@
 
 == Basic Syntax
 
-=== *Use this shebang for Bash scripts*
+=== Basic Script Structure
 
 [source,bash]
 ----
@@ -21,4 +21,57 @@ set -Eeuo pipefail
 * `-u` fail on unset variable
 * `-o pipefail` fail pipline if one command fails
 * `-E` helps traps work through functions
+
+* *Run it"*
+
+[source,bash]
+----
+chmod +x hello.sh
+./hello.sh
+----
+
+=== Comments
+
+* Single-line comments:
+
+[source,bash]
+----
+# This is comment
+echo "Hi"
+----
+
+* There is no real multiline comment syntax. Usually people do:
+
+[source,bash]
+----
+: '
+This is a block of text
+used like a comment
+'
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
