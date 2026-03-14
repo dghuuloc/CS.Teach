@@ -1,0 +1,24 @@
+= Bash Syntax
+
+== Basic Syntax
+
+=== *Use this shebang for Bash scripts*
+
+[source,bash]
+----
+#!/usr/bin/env bash
+----
+
+And for safer scripts, start with:
+
+[source,bash]
+----
+#!/usr/bin/env bash
+set -Eeuo pipefail
+----
+
+* `-e` stop on error
+* `-u` fail on unset variable
+* `-o pipefail` fail pipline if one command fails
+* `-E` helps traps work through functions
+
