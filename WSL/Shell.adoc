@@ -13,6 +13,25 @@ There are different types of shells, but Bash (Bourne Again SHell) is the most p
 * *Korn Shell (ksh):* Combines features of sh and csh, offering advanced scripting capabilities.
 * *Bash (Bourne Again SHell):* An improved version of sh, with additional features like command history and tab completion.
 
+== Important thing
+
+These are not always the same:
+
+[source,bash]
+----
+#!/bin/sh
+----
+
+and
+
+[source,bash]
+----
+#!/bin/bash
+----
+
+`sh` means: write portable shell script syntax.
+`bash` means: we can use Bash-only features.
+
 == Practices
 
 * Example of a correct script
