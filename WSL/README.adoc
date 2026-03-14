@@ -64,8 +64,24 @@ wsl -l -v
 
 Then make sure the name is exactly `Ubuntu` before running the unregister command. Microsoft notes `wsl -l` / `wsl --list` shows the installed distro names to use with `--unregister`.
 
-										   
-																							
+== WSL Practices
+
+=== Steps to Access the C: Drive
+
+. *Open our WSL Ubuntu terminal*
+. *Navigate to the mount point* using the `cd` (change directory) command:
+
+[source,bash]
+----
+cd /mnt/c
+----
+
+Not that Lnix paths use forward slashes (`/`) instead of backslashes (`\`), and the file system is case-sensitive.
+
+. *Browse our files* using standard Linux commands:
+.. `ls`	to list files and directories in the current location.
+.. `cd Users/<your_Windows_username>` to go to your Windows user profile folder.
+																						
 
 
 
