@@ -1,0 +1,71 @@
+= WSL
+
+== Getting Started
+
+=== Installation
+
+Run this first in Powershell
+
+[source,bash]
+----
+wsl -l -v
+----
+
+That will show our installed distros and their exact names. Then use one of those names, for examples:
+
+[source,bash]
+----
+wsl --set-default Ubuntu
+----
+
+or 
+
+[source,bash]
+----
+wsl --set-default Ubuntu-24.04
+----
+
+*only if it appears exactly that way* in the list. Microsoft’s WSL command reference says `wsl --set-default <Distribution Name>` sets the default Linux distribution, and the name must match an installed distro.
+
+If` wsl -l -v` shows no installed distros, install one first:
+
+[source,bash]
+----
+wsl --list --online
+wsl --install -d Ubuntu-24.04
+----
+
+If `Ubuntu-24.04` is not in the online list on our system, install the available name instead (for example `Ubuntu`). Microsoft notes `wsl --list --online` shows valid installable distro names, and `wsl --install -d <Distro>` installs one.
+
+Also, if what you actually wanted was to make new installs use WSL 2, that is a different command:
+
+[source,bash]
+----
+wsl --set-default-version 2
+----
+
+That sets the *default WSL version*, not the default distro.
+
+
+																							   
+																							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
