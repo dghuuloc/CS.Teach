@@ -12,3 +12,29 @@ There are different types of shells, but Bash (Bourne Again SHell) is the most p
 * *C Shell (csh):* Known for its C-like syntax, popular for interactive use.
 * *Korn Shell (ksh):* Combines features of sh and csh, offering advanced scripting capabilities.
 * *Bash (Bourne Again SHell):* An improved version of sh, with additional features like command history and tab completion.
+
+== Practices
+
+* Example of a correct script
+
+[source,bash]
+----
+#!/bin/bash
+echo "Hello, World!"
+----
+
+Then, run:
+
+[source,bash]
+----
+#!/bin/bash
+sh hello.sh
+----
+
+or:
+
+[source,bash]
+----
+sed -i 's/\r$//' hello.sh && chmod +x hello.sh && ./hello.sh
+----
+
