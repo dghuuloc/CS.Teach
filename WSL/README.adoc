@@ -22,7 +22,7 @@ or
 
 [source,bash]
 ----
-wsl --set-default Ubuntu-24.04
+wsl --set-default Ubuntu-22.04
 ----
 
 *only if it appears exactly that way* in the list. Microsoft’s WSL command reference says `wsl --set-default <Distribution Name>` sets the default Linux distribution, and the name must match an installed distro.
