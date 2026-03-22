@@ -32,7 +32,7 @@ If` wsl -l -v` shows no installed distros, install one first:
 [source,bash]
 ----
 wsl --list --online
-wsl --install -d Ubuntu-24.04
+wsl --install -d Ubuntu-22.04
 ----
 
 If `Ubuntu-24.04` is not in the online list on our system, install the available name instead (for example `Ubuntu`). Microsoft notes `wsl --list --online` shows valid installable distro names, and `wsl --install -d <Distro>` installs one.
