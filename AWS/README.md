@@ -18,4 +18,7 @@ Management & Governance: Tools for monitoring and managing, such as AWS CloudWat
 * **Analytics:** Solutions for data analysis, such as Amazon Athena and Amazon EMR.
 Machine Learning/AI: Tools for AI, including Amazon SageMaker.
 
-Other specialized categories include Internet of Things (IoT), Game Tech, Application Integration, and Media Services. 
+Other specialized categories include Internet of Things (IoT), Game Tech, Application Integration, and Media Services.
+
+## References
+* [AWS key components and Functionalities](https://matrixcpmsolutions.com/aws-key-components-and-functionalities/#:~:text=Over%20the%20years,%20AWS%20has,the%20future%20needs%20of%20businesses.)
