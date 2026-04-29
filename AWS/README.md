@@ -24,3 +24,4 @@ Other specialized categories include Internet of Things (IoT), Game Tech, Applic
 * [AWS key components and Functionalities](https://matrixcpmsolutions.com/aws-key-components-and-functionalities/#:~:text=Over%20the%20years,%20AWS%20has,the%20future%20needs%20of%20businesses.)
 * [AWS services by Category](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/amazon-web-services-cloud-platform.html#:~:text=Table_title:%20AWS%20services%20by%20category%20Table_content:%20header:,integration:%20Quantum%20technologies%20%7C%20Blockchain:%20Satellite%20%7C)
 * [Introduction to AWS Architecture and Components of AWS](https://futransolutions.com/blog/introduction-to-aws-architecture-and-components-of-aws-architecture/#:~:text=There%20are%20four%20pillars%20of,compute%20capacity%20in%20the%20cloud.)
+* [AWS Cloud Architecture](https://aws.plainenglish.io/basics-of-aws-cloud-architecture-cf949129b824)
