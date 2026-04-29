@@ -1,7 +1,7 @@
-<p align="center"> AWS <p/>
+# <p align="center"> AWS <p/>
 ---
 
-# Overview
+## Overview
 AWS provides over 200 fully featured services organized into key infrastructure and functional categories, including Compute, Storage, Databases, Networking, and Management. Core pillars are Compute (EC2, Lambda), Storage (S3, EFS), Databases (RDS, DynamoDB), and Networking (VPC), allowing scalable, on-demand cloud solutions. 
 
 Core AWS Component Categories:
